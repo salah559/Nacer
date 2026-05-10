@@ -112,15 +112,27 @@ function SlideEditor() {
       }
     };
 
+    const onAutoAdvance = () => {
+      if (currentIndex < slides.length - 1) {
+        if (navigationDisabledRef.current) {
+          window.parent.postMessage({ type: "advanceSlide" }, "*");
+        } else {
+          navigate(`/slide${slides[currentIndex + 1].position}`);
+        }
+      }
+    };
+
     window.addEventListener("keydown", onKeyDown);
     window.addEventListener("click", onClick);
     window.addEventListener("touchstart", onTouchStart);
     window.addEventListener("touchend", onTouchEnd);
+    window.addEventListener("slideAutoAdvance", onAutoAdvance);
     return () => {
       window.removeEventListener("keydown", onKeyDown);
       window.removeEventListener("click", onClick);
       window.removeEventListener("touchstart", onTouchStart);
       window.removeEventListener("touchend", onTouchEnd);
+      window.removeEventListener("slideAutoAdvance", onAutoAdvance);
     };
   }, [currentIndex, navigate]);
 
