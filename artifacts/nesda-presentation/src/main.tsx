@@ -4,6 +4,7 @@ import { Router } from "wouter";
 
 import App from "./App";
 import "./index.css";
+import "./slideBackgrounds.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

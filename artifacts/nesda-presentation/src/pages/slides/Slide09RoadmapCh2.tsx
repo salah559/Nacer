@@ -19,10 +19,11 @@ export default function Slide09RoadmapCh2() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
-      <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)", backgroundSize: "6vw 6vw", pointerEvents: "none" }} />
-      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 60%, rgba(201,168,76,0.04) 100%)", pointerEvents: "none" }} />
+            <div className="slide-bg bg-stripes" />
+      <div className="bg-overlay-light" />
+      <div className="bg-grid-top" />
 
-      <div className="gold-bar-top" />
+<div className="gold-bar-top" />
       <div className="gold-bar-bottom" />
 
       <div className="particle particle-2" style={{ top: "14%", right: "22%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.4)", boxShadow: "0 0 1vw rgba(201,168,76,0.5)" }} />

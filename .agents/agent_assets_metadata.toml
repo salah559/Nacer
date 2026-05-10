@@ -18,3 +18,63 @@ id = "H73kC3L2Ep23DD4rdKOzf"
 uri = "file://artifacts/nesda-presentation/public/nesda-bg.png"
 type = "image"
 title = "nesda background"
+
+[[generated]]
+id = "mBxIqtzefs8L1igOyOA6I"
+uri = "file://artifacts/nesda-presentation/public/bg/slide01-cover.png"
+type = "image"
+title = "cover background"
+
+[[generated]]
+id = "5Nbx4jX5mKDrSG6abY1H-"
+uri = "file://artifacts/nesda-presentation/public/bg/slide03-problematic.png"
+type = "image"
+title = "problematic background"
+
+[[generated]]
+id = "iWc1XZ6bOWlDUJT5xBwsg"
+uri = "file://artifacts/nesda-presentation/public/bg/slide04-hypotheses.png"
+type = "image"
+title = "hypotheses background"
+
+[[generated]]
+id = "rQIXlO6tBCarBdP3_ZruB"
+uri = "file://artifacts/nesda-presentation/public/bg/slide06-pme.png"
+type = "image"
+title = "PME background"
+
+[[generated]]
+id = "g-eFbjXKvi103JzNCu-2v"
+uri = "file://artifacts/nesda-presentation/public/bg/slide07-economy.png"
+type = "image"
+title = "economy background"
+
+[[generated]]
+id = "2_ixXcGhPy4Clipl_ya_Q"
+uri = "file://artifacts/nesda-presentation/public/bg/slide08-financing.png"
+type = "image"
+title = "financing background"
+
+[[generated]]
+id = "4UCoudX2BjLF4wmNQbIIO"
+uri = "file://artifacts/nesda-presentation/public/bg/slide10-nesda.png"
+type = "image"
+title = "NESDA background"
+
+[[generated]]
+id = "xwsYQY5OX3yxj8fX22HRV"
+uri = "file://artifacts/nesda-presentation/public/bg/slide11-funding.png"
+type = "image"
+title = "funding background"
+
+[[generated]]
+id = "U88lIcm5m_vyXA3U6uxpM"
+uri = "file://artifacts/nesda-presentation/public/bg/slide12-entrepreneurship.png"
+type = "image"
+title = "entrepreneurship background"
+
+[[generated]]
+id = "Oz6HbvYheIdOZNGcAz3YJ"
+uri = "file://artifacts/nesda-presentation/public/bg/slide13-cde.png"
+type = "image"
+title = "CDE background"

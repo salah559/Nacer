@@ -4,10 +4,11 @@ const cls = isAllSlides ? "allslides-mode" : "";
 export default function Slide03Problematic() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 70% at 50% 40%, rgba(13,24,48,0.02) 0%, transparent 80%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 50% 50% at 80% 100%, rgba(201,168,76,0.07) 0%, transparent 60%)" }} />
-      <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px)", backgroundSize: "5vw 5vw", pointerEvents: "none" }} />
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+            <div className="slide-bg bg-problematic" />
+      <div className="bg-overlay-medium" />
+      <div className="bg-grid-top" />
+
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="anim-fade delay-1 absolute" style={{ top: "4vh", left: "5vw", width: "3vw", height: "3vw", borderTop: "0.3vh solid rgba(201,168,76,0.4)", borderLeft: "0.3vh solid rgba(201,168,76,0.4)" }} />
       <div className="anim-fade delay-1 absolute" style={{ bottom: "4vh", right: "5vw", width: "3vw", height: "3vw", borderBottom: "0.3vh solid rgba(201,168,76,0.4)", borderRight: "0.3vh solid rgba(201,168,76,0.4)" }} />
       <div className="particle particle-1" style={{ top: "20%", left: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />

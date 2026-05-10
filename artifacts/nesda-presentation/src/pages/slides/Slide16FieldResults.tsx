@@ -4,9 +4,11 @@ const cls = isAllSlides ? "allslides-mode" : "";
 export default function Slide16FieldResults() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 35%, rgba(13,24,48,0.02) 0%, transparent 70%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 5% 80%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+            <div className="slide-bg bg-analytics" />
+      <div className="bg-overlay-medium" />
+      <div className="bg-grid-top" />
+
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="particle particle-2" style={{ top: "8%", right: "8%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
       <div className="particle particle-5" style={{ top: "85%", right: "12%", width: "0.35vw", height: "0.35vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 

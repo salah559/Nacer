@@ -4,9 +4,11 @@ const cls = isAllSlides ? "allslides-mode" : "";
 export default function Slide13CDE() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 60% 40%, rgba(12,24,55,0.9) 0%, transparent 70%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 5% 80%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+            <div className="slide-bg bg-cde" />
+      <div className="bg-overlay-medium" />
+      <div className="bg-grid-top" />
+
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="particle particle-2" style={{ top: "10%", right: "10%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1.2vw rgba(201,168,76,0.7)" }} />
       <div className="particle particle-4" style={{ top: "80%", right: "8%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 

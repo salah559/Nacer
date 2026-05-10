@@ -4,10 +4,11 @@ const cls = isAllSlides ? "allslides-mode" : "";
 export default function Slide17Conclusions() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 70% at 50% 50%, rgba(13,24,48,0.02) 0%, transparent 75%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 40% at 80% 90%, rgba(201,168,76,0.07) 0%, transparent 60%)" }} />
-      <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(201,168,76,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.025) 1px, transparent 1px)", backgroundSize: "4vw 4vw" }} />
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+            <div className="slide-bg bg-circles" />
+      <div className="bg-overlay-light" />
+      <div className="bg-grid-top" />
+
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="particle particle-1" style={{ top: "8%", left: "8%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
       <div className="particle particle-4" style={{ top: "85%", left: "12%", width: "0.35vw", height: "0.35vw", background: "rgba(240,208,128,0.5)", borderRadius: "50%" }} />
       <div className="particle particle-3" style={{ top: "50%", right: "5%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.4)", borderRadius: "50%" }} />

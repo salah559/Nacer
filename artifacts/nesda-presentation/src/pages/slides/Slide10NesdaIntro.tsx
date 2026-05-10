@@ -4,10 +4,11 @@ const cls = isAllSlides ? "allslides-mode" : "";
 export default function Slide10NesdaIntro() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      {/* Dramatic central glow */}
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(20,40,90,0.8) 0%, transparent 70%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 40% at 50% 100%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+            <div className="slide-bg bg-nesda" />
+      <div className="bg-overlay-medium" />
+      <div className="bg-grid-top" />
+
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="particle particle-1" style={{ top: "8%", right: "8%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
       <div className="particle particle-4" style={{ top: "85%", right: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(240,208,128,0.5)", borderRadius: "50%" }} />
       <div className="particle particle-2" style={{ top: "40%", left: "5%", width: "0.35vw", height: "0.35vw", background: "rgba(201,168,76,0.4)", borderRadius: "50%" }} />

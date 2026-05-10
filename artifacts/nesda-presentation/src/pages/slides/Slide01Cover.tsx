@@ -6,39 +6,11 @@ export default function Slide01Cover() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
-      {/* ===== BACKGROUND LAYERS ===== */}
-      {/* Deep radial glow center-right */}
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 70% 50%, rgba(26,58,120,0.04) 0%, transparent 70%)" }} />
-      {/* Deep radial glow bottom-left */}
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 50% 40% at 15% 80%, rgba(201,168,76,0.18) 0%, transparent 60%)" }} />
-      {/* Subtle diagonal stripe texture */}
-      <div className="absolute inset-0" style={{ background: "repeating-linear-gradient(135deg, transparent, transparent 80px, rgba(201,168,76,0.015) 80px, rgba(201,168,76,0.015) 82px)", pointerEvents: "none" }} />
+            <div className="slide-bg bg-cover" />
+      <div className="bg-overlay-medium" />
+      <div className="bg-grid-top" />
 
-      {/* ===== ORBIT RINGS ===== */}
-      <div className="absolute" style={{ top: "50%", right: "-8vw", width: "55vw", height: "55vw", transform: "translateY(-50%)" }}>
-        <div className="orbit-cw absolute inset-0" style={{ border: "1px solid rgba(201,168,76,0.06)", borderRadius: "50%" }}>
-          <div style={{ position: "absolute", top: "10%", left: "50%", width: "0.8vw", height: "0.8vw", background: "#c9a84c", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)", transform: "translate(-50%,-50%)" }} />
-        </div>
-        <div className="orbit-ccw absolute" style={{ inset: "10%", border: "1px solid rgba(201,168,76,0.04)", borderRadius: "50%", borderStyle: "dashed" }}>
-          <div style={{ position: "absolute", top: "75%", left: "15%", width: "0.5vw", height: "0.5vw", background: "#f0d080", borderRadius: "50%", boxShadow: "0 0 1vw rgba(240,208,128,0.8)" }} />
-        </div>
-        <div className="orbit-cw absolute" style={{ inset: "22%", border: "1px solid rgba(201,168,76,0.07)", borderRadius: "50%", animationDuration: "50s" }}>
-          <div style={{ position: "absolute", top: "50%", right: "0", width: "0.6vw", height: "0.6vw", background: "#c9a84c", borderRadius: "50%", opacity: 0.7 }} />
-        </div>
-        {/* Center glow orb */}
-        <div className="absolute" style={{ inset: "30%", background: "radial-gradient(circle, rgba(201,168,76,0.35) 0%, transparent 70%)", borderRadius: "50%" }} />
-      </div>
-
-      {/* ===== FLOATING PARTICLES ===== */}
-      <div className="particle particle-1" style={{ top: "15%", left: "20%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.6)", boxShadow: "0 0 1vw rgba(201,168,76,0.8)" }} />
-      <div className="particle particle-2" style={{ top: "70%", left: "12%", width: "0.35vw", height: "0.35vw", background: "rgba(240,208,128,0.5)" }} />
-      <div className="particle particle-3" style={{ top: "40%", left: "35%", width: "0.25vw", height: "0.25vw", background: "rgba(201,168,76,0.4)" }} />
-      <div className="particle particle-4" style={{ top: "25%", left: "45%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.3)" }} />
-      <div className="particle particle-5" style={{ top: "80%", left: "40%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.5)", boxShadow: "0 0 0.8vw rgba(240,208,128,0.6)" }} />
-      <div className="particle particle-6" style={{ top: "55%", left: "28%", width: "0.2vw", height: "0.2vw", background: "rgba(201,168,76,0.7)" }} />
-
-      {/* ===== GOLD BARS ===== */}
-      <div className="gold-bar-top" />
+<div className="gold-bar-top" />
       <div className="gold-bar-bottom" />
       {/* Side accent line */}
       <div className="anim-line-v delay-2 absolute" style={{ right: "0", top: "15%", width: "0.4vh", height: "70%", background: "linear-gradient(180deg, transparent, #c9a84c 30%, #f0d080 50%, #c9a84c 70%, transparent)", opacity: 0.5 }} />

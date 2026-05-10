@@ -1,0 +1,164 @@
+/* ==================== SLIDE BACKGROUND SYSTEM ==================== */
+
+/* Base background class for all slides */
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ── GENERATED IMAGE BACKGROUNDS ── */
+
+/* Cover — graduation ceremony */
+.bg-cover {
+  background: url("/bg/slide01-cover.png") center center / cover no-repeat;
+}
+
+/* Problematic — abstract questions */
+.bg-problematic {
+  background: url("/bg/slide03-problematic.png") center center / cover no-repeat;
+}
+
+/* Hypotheses — lightbulb network */
+.bg-hypotheses {
+  background: url("/bg/slide04-hypotheses.png") center center / cover no-repeat;
+}
+
+/* PME definition — small business */
+.bg-pme {
+  background: url("/bg/slide06-pme.png") center center / cover no-repeat;
+}
+
+/* Economy role — growth charts */
+.bg-economy {
+  background: url("/bg/slide07-economy.png") center center / cover no-repeat;
+}
+
+/* Financing — banking */
+.bg-financing {
+  background: url("/bg/slide08-financing.png") center center / cover no-repeat;
+}
+
+/* NESDA intro — government agency */
+.bg-nesda {
+  background: url("/bg/slide10-nesda.png") center center / cover no-repeat;
+}
+
+/* NESDA financing — funding */
+.bg-funding {
+  background: url("/bg/slide11-funding.png") center center / cover no-repeat;
+}
+
+/* Entrepreneurship — startup */
+.bg-entrepreneurship {
+  background: url("/bg/slide12-entrepreneurship.png") center center / cover no-repeat;
+}
+
+/* CDE — training center */
+.bg-cde {
+  background: url("/bg/slide13-cde.png") center center / cover no-repeat;
+}
+
+/* ── CSS GENERATED PATTERNS (for slides without images) ── */
+
+/* Gold geometric mesh */
+.bg-mesh {
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, rgba(201,168,76,0.06) 100%),
+    radial-gradient(circle at 20% 30%, rgba(201,168,76,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(201,168,76,0.05) 0%, transparent 50%),
+    linear-gradient(135deg, #ffffff 0%, #faf8f4 50%, #f5f0ea 100%);
+}
+
+/* Diagonal gold stripes */
+.bg-stripes {
+  background:
+    repeating-linear-gradient(135deg, transparent, transparent 120px, rgba(201,168,76,0.03) 120px, rgba(201,168,76,0.03) 122px),
+    radial-gradient(ellipse 60% 60% at 30% 40%, rgba(201,168,76,0.04) 0%, transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #fbf9f5 100%);
+}
+
+/* Hexagon pattern */
+.bg-hex {
+  background:
+    radial-gradient(ellipse 70% 70% at 60% 30%, rgba(201,168,76,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 50%),
+    linear-gradient(0deg, #ffffff 0%, #faf7f0 100%);
+}
+
+/* Concentric circles */
+.bg-circles {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(201,168,76,0.06) 0%, transparent 40%),
+    radial-gradient(circle at 30% 70%, rgba(201,168,76,0.05) 0%, transparent 35%),
+    linear-gradient(45deg, #ffffff 0%, #f8f5ef 100%);
+}
+
+/* Dark navy gradient for closing */
+.bg-dark-gold {
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 20% 20%, rgba(201,168,76,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 60% at 80% 80%, rgba(201,168,76,0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #0a0e1a 0%, #111830 40%, #1a2040 100%);
+}
+
+/* Oran city — Mediterranean coastal feel */
+.bg-mediterranean {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(201,168,76,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 10% 80%, rgba(60,100,140,0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #f0f5fa 0%, #e8f0f8 50%, #f5f0e8 100%);
+}
+
+/* Results — data/analytics feel */
+.bg-analytics {
+  background:
+    radial-gradient(ellipse 60% 60% at 70% 30%, rgba(201,168,76,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 20% 70%, rgba(201,168,76,0.05) 0%, transparent 50%),
+    linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+}
+
+/* ── OVERLAY LAYERS ── */
+
+/* Semi-transparent white overlay for image backgrounds — ensures text readability */
+.bg-overlay-light {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.82);
+  z-index: 1;
+}
+
+/* Slightly stronger overlay for slides with more text */
+.bg-overlay-medium {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.88);
+  z-index: 1;
+}
+
+/* Subtle gold tint overlay */
+.bg-overlay-gold {
+  position: absolute;
+  inset: 0;
+  background: rgba(254,250,240,0.85);
+  z-index: 1;
+}
+
+/* Dark overlay for dark backgrounds */
+.bg-overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,14,26,0.35);
+  z-index: 1;
+}
+
+/* Subtle grid on top of everything */
+.bg-grid-top {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+  background-size: 6vw 6vw;
+  pointer-events: none;
+  z-index: 2;
+}

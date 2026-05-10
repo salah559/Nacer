@@ -5,30 +5,11 @@ export default function Slide18Closing() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
-      {/* ===== BACKGROUND ===== */}
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 90% 80% at 50% 50%, rgba(13,24,48,0.02) 0%, transparent 75%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 50% 50% at 80% 90%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 15% 15%, rgba(201,168,76,0.04) 0%, transparent 60%)" }} />
-      <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(135deg, transparent, transparent 80px, rgba(201,168,76,0.01) 80px, rgba(201,168,76,0.01) 82px)" }} />
+            <div className="slide-bg bg-dark-gold" />
+      <div className="bg-overlay-dark" />
+      <div className="bg-grid-top" />
 
-      {/* Orbit rings */}
-      <div className="absolute" style={{ top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "80vw", height: "80vw" }}>
-        <div className="orbit-cw absolute inset-0" style={{ border: "1px solid rgba(201,168,76,0.05)", borderRadius: "50%" }}>
-          <div style={{ position: "absolute", top: "5%", left: "50%", width: "0.6vw", height: "0.6vw", background: "#c9a84c", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)", transform: "translate(-50%,-50%)" }} />
-        </div>
-        <div className="orbit-ccw absolute" style={{ inset: "15%", border: "1px solid rgba(201,168,76,0.04)", borderRadius: "50%", borderStyle: "dashed" }}>
-          <div style={{ position: "absolute", top: "80%", left: "20%", width: "0.4vw", height: "0.4vw", background: "#f0d080", borderRadius: "50%", boxShadow: "0 0 1vw rgba(240,208,128,0.8)" }} />
-        </div>
-        <div className="absolute" style={{ inset: "30%", background: "radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%)", borderRadius: "50%" }} />
-      </div>
-
-      {/* Particles */}
-      <div className="particle particle-1" style={{ top: "12%", left: "15%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
-      <div className="particle particle-3" style={{ top: "80%", left: "20%", width: "0.35vw", height: "0.35vw", background: "rgba(240,208,128,0.5)", borderRadius: "50%" }} />
-      <div className="particle particle-5" style={{ top: "30%", right: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.4)", borderRadius: "50%" }} />
-      <div className="particle particle-2" style={{ top: "65%", right: "10%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%" }} />
-
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+<div className="gold-bar-top" /><div className="gold-bar-bottom" />
 
       <div className="relative z-10 flex flex-col h-full items-center justify-center" style={{ padding: "6vh 10vw", textAlign: "center", gap: "3vh" }}>
 
