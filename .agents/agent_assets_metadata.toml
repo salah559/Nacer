@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "AXBby-8V9PT6hdZCWUr3Q"
+uri = "file://artifacts/nesda-presentation/public/hero-bg.png"
+type = "image"
+title = "hero background"
+
+[[generated]]
+id = "hiv4Z5iXmo5dGez0SfNkg"
+uri = "file://artifacts/nesda-presentation/public/finance-bg.png"
+type = "image"
+title = "finance background"
+
+[[generated]]
+id = "H73kC3L2Ep23DD4rdKOzf"
+uri = "file://artifacts/nesda-presentation/public/nesda-bg.png"
+type = "image"
+title = "nesda background"
