@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const isAllSlides = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
 const cls = isAllSlides ? "allslides-mode" : "";
 
@@ -21,14 +19,6 @@ const NODE_DELAYS =  [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 1.15, 
 const CARD_DELAYS =  [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 1.20, SLIDE_ENTER_DURATION + 1.36, SLIDE_ENTER_DURATION + 1.48, SLIDE_ENTER_DURATION + 1.58];
 
 export default function Slide05RoadmapCh1() {
-  useEffect(() => {
-    if (isAllSlides) return;
-    const t = setTimeout(() => {
-      window.dispatchEvent(new CustomEvent("slideAutoAdvance"));
-    }, 3500);
-    return () => clearTimeout(t);
-  }, []);
-
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
