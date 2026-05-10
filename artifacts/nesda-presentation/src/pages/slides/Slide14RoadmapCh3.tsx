@@ -24,31 +24,28 @@ export default function Slide14RoadmapCh3() {
       <div className="bg-overlay-light" />
       <div className="bg-grid-top" />
 
-<div className="gold-bar-top" />
-      <div className="gold-bar-bottom" />
-
-      <div className="particle particle-3" style={{ top: "16%", right: "20%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.4)", boxShadow: "0 0 1vw rgba(201,168,76,0.5)" }} />
-      <div className="particle particle-6" style={{ top: "75%", right: "30%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.3)" }} />
+<div className="gold-accent-top" />
+      <div className="gold-accent-bottom" />
 
       <div className="relative z-10 flex h-full">
 
         {/* ── Left: Title panel ── */}
         <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
 
-          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "3.6vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>ننتقل إلى</h2>
-          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "3.6vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}>
-            <span className="gold-shimmer" style={{ display: "inline-block" }}>الفصل التطبيقي</span>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.6vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>ننتقل إلى</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.6vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}>
+            <span className="text-gold" style={{ display: "inline-block" }}>الفصل التطبيقي</span>
           </h2>
 
-          <div className="anim-line-h delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
 
-          <div className="anim-fade delay-5" style={{ fontSize: "1.35vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.35vw", color: "#4a5a78", lineHeight: 1.7 }}>
             دراسة حالة — NESDA فرع وهران
           </div>
 
           {/* Progress counter */}
-          <div className="anim-perspective delay-6" style={{ marginTop: "3.5vh", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "1.2vh 1.5vw", alignSelf: "flex-start" }}>
+          <div className="anim-card-morph delay-6" style={{ marginTop: "3.5vh", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "1.2vh 1.5vw", alignSelf: "flex-start" }}>
             <div style={{ fontSize: "1vw", color: "#4a5a78", marginBottom: "0.4vh" }}>التقدم في البحث</div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.8vw" }}>
               <div style={{ flex: 1, height: "0.4vh", background: "rgba(201,168,76,0.15)", borderRadius: "1vw", overflow: "hidden" }}>

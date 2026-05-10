@@ -20,29 +20,27 @@ export default function Slide02Roadmap() {
       <div className="bg-overlay-light" />
       <div className="bg-grid-top" />
 
-<div className="gold-bar-top" />
-      <div className="gold-bar-bottom" />
+<div className="gold-accent-top" />
+      <div className="gold-accent-bottom" />
 
       {/* Floating gold particles */}
-      <div className="particle particle-1" style={{ top: "12%", right: "18%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.4)", boxShadow: "0 0 1vw rgba(201,168,76,0.5)" }} />
-      <div className="particle particle-3" style={{ top: "70%", right: "28%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.3)" }} />
-      <div className="particle particle-5" style={{ top: "42%", left: "5%", width: "0.35vw", height: "0.35vw", background: "rgba(201,168,76,0.25)" }} />
+
 
       <div className="relative z-10 flex h-full">
 
         {/* ── Left: Title panel ── */}
         <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
-          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
-          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4.2vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
-            <span className="gold-shimmer" style={{ display: "inline-block" }}>الدراسة</span>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.2vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+            <span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span>
           </h2>
-          <div className="anim-line-h delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-          <div className="anim-fade delay-5" style={{ fontSize: "1.4vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.4vw", color: "#4a5a78", lineHeight: 1.7 }}>
             خمسة فصول تغطي الجانبين النظري والتطبيقي للبحث
           </div>
           {/* Chapter count badge */}
-          <div className="anim-scale delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
+          <div className="anim-morph-in delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
             <span style={{ fontSize: "1.7vw", fontWeight: 900, color: "#c9a84c" }}>05</span>
             <span style={{ fontSize: "1.1vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>

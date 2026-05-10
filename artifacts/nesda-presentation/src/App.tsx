@@ -138,15 +138,10 @@ function SlideEditor() {
       </div>
       {slides.map((slide, index) => {
         const isActive = index === currentIndex;
-        // Diagonal wipe for chapter-openers, transitions, cover, and closing
-        const specialPositions = [1, 2, 5, 9, 14, 17, 18];
-        const animClass = isActive
-          ? (specialPositions.includes(slide.position) ? "slide-enter-wipe" : "slide-enter-anim")
-          : "";
         return (
           <div
             key={isActive ? `active-${currentIndex}` : `inactive-${slide.id}`}
-            className={animClass}
+            className={isActive ? "slide-enter-morph" : ""}
             style={{ display: isActive ? "block" : "none" }}
           >
             <slide.Component />

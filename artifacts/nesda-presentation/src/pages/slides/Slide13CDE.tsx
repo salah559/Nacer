@@ -7,26 +7,22 @@ export default function Slide13CDE() {
             <div className="slide-bg bg-cde" />
       <div className="bg-overlay-medium" />
       <div className="bg-grid-top" />
-
-<div className="chapter-ribbon">الفصل الثاني</div>
-      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
-      <div className="particle particle-2" style={{ top: "10%", right: "10%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1.2vw rgba(201,168,76,0.7)" }} />
-      <div className="particle particle-4" style={{ top: "80%", right: "8%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
+      <div className="gold-accent-top" /><div className="gold-accent-bottom" />
 
       <div className="relative z-10 flex h-full">
         {/* Right — stat */}
         <div style={{ width: "38%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw", gap: "2vh" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, textTransform: "uppercase" }}>الفصل الثاني</div>
-          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1 }}>مراكز تطوير</h2>
-          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "3.5vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>المقاولاتية CDE</span></h2>
-          <div className="anim-line-h delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-          <div className="anim-scale delay-4" style={{ background: "rgba(201,168,76,0.18)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.35)" }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, textTransform: "uppercase" }}>الفصل الثاني</div>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1 }}>مراكز تطوير</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.5vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}><span className="text-gold" style={{ display: "inline-block" }}>المقاولاتية CDE</span></h2>
+          <div className="anim-line-draw delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-morph-in delay-4" style={{ background: "rgba(201,168,76,0.18)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.35)" }}>
             <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginBottom: "0.5vh" }}>إنجاز وطني</div>
             <div style={{ fontSize: "8vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>102</div>
             <div style={{ fontSize: "1.5vw", color: "#0d1830", fontWeight: 600 }}>مركز تطوير مقاولاتية</div>
             <div style={{ fontSize: "1.3vw", color: "#c9a84c", fontWeight: 700, marginTop: "0.3vh" }}>المرتبة الأولى عربياً</div>
           </div>
-          <div className="anim-fade-up delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
+          <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
             <div style={{ fontSize: "1.2vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.3vh" }}>الجهة المشرفة</div>
             <div style={{ fontSize: "1.3vw", color: "#0d1830", lineHeight: 1.4 }}>وزارة التعليم العالي ووزارة اقتصاد المعرفة والمؤسسات الناشئة</div>
           </div>
@@ -34,28 +30,28 @@ export default function Slide13CDE() {
 
         {/* Left — modules */}
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 6vw 7vh 3vw", gap: "1.3vh" }}>
-          <div className="anim-fade delay-2" style={{ fontSize: "1.5vw", color: "#4a5a78", fontWeight: 600, marginBottom: "0.5vh" }}>البرنامج التكويني — 5 مقاييس:</div>
-          <div className="anim-perspective delay-3" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
+          <div className="anim-smooth-fade delay-2" style={{ fontSize: "1.5vw", color: "#4a5a78", fontWeight: 600, marginBottom: "0.5vh" }}>البرنامج التكويني — 5 مقاييس:</div>
+          <div className="anim-card-morph delay-3" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
             <div style={{ width: "0.6vw", height: "0.6vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
             <div style={{ fontSize: "1.6vw", color: "#0d1830" }}>أساسيات في المقاولاتية</div>
           </div>
-          <div className="anim-perspective delay-4" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
+          <div className="anim-card-morph delay-4" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
             <div style={{ width: "0.6vw", height: "0.6vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
             <div style={{ fontSize: "1.6vw", color: "#0d1830" }}>التخطيط الاستراتيجي وتطوير المؤسسة</div>
           </div>
-          <div className="anim-perspective delay-5" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
+          <div className="anim-card-morph delay-5" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
             <div style={{ width: "0.6vw", height: "0.6vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
             <div style={{ fontSize: "1.6vw", color: "#0d1830" }}>التسيير العملياتي وإدارة الموارد</div>
           </div>
-          <div className="anim-perspective delay-6" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
+          <div className="anim-card-morph delay-6" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
             <div style={{ width: "0.6vw", height: "0.6vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
             <div style={{ fontSize: "1.6vw", color: "#0d1830" }}>الجوانب القانونية لإنشاء مؤسسة</div>
           </div>
-          <div className="anim-perspective delay-7" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
+          <div className="anim-card-morph delay-7" style={{ display: "flex", gap: "1.2vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw" }}>
             <div style={{ width: "0.6vw", height: "0.6vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
             <div style={{ fontSize: "1.6vw", color: "#0d1830" }}>استراتيجيات النمو والابتكار واقتراح القيم</div>
           </div>
-          <div className="anim-fade-up delay-8" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw", marginTop: "0.5vh" }}>
+          <div className="anim-morph-in delay-8" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw", marginTop: "0.5vh" }}>
             <div style={{ fontSize: "1.4vw", color: "#0d1830" }}>
               مدة التكوين
               <span style={{ color: "#c9a84c", fontWeight: 700, margin: "0 0.5vw" }}>15 يوماً</span>
