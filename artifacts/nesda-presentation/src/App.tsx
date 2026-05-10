@@ -136,15 +136,23 @@ function SlideEditor() {
       <div style={{ position: "fixed", bottom: "1.5vh", left: "50%", transform: "translateX(-50%)", zIndex: 1000, fontSize: "1vw", color: "rgba(13,24,48,0.25)", fontFamily: "Cairo, sans-serif", letterSpacing: "0.12em", fontWeight: 600, pointerEvents: "none" }}>
         {currentIndex + 1} / {slides.length}
       </div>
-      {slides.map((slide, index) => (
-        <div
-          key={index === currentIndex ? `active-${currentIndex}` : `inactive-${slide.id}`}
-          className={index === currentIndex ? "slide-enter-anim" : ""}
-          style={{ display: index === currentIndex ? "block" : "none" }}
-        >
-          <slide.Component />
-        </div>
-      ))}
+      {slides.map((slide, index) => {
+        const isActive = index === currentIndex;
+        // Diagonal wipe for chapter-openers, transitions, cover, and closing
+        const specialPositions = [1, 2, 5, 9, 14, 17, 18];
+        const animClass = isActive
+          ? (specialPositions.includes(slide.position) ? "slide-enter-wipe" : "slide-enter-anim")
+          : "";
+        return (
+          <div
+            key={isActive ? `active-${currentIndex}` : `inactive-${slide.id}`}
+            className={animClass}
+            style={{ display: isActive ? "block" : "none" }}
+          >
+            <slide.Component />
+          </div>
+        );
+      })}
     </div>
   );
 }

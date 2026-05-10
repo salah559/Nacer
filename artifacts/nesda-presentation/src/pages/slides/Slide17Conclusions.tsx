@@ -8,7 +8,11 @@ export default function Slide17Conclusions() {
       <div className="bg-overlay-light" />
       <div className="bg-grid-top" />
 
-<div className="gold-bar-top" /><div className="gold-bar-bottom" />
+<div className="chapter-ribbon">الخاتمة</div>
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="sparkle sparkle-1" style={{ right: "25%" }} />
+      <div className="sparkle sparkle-2" style={{ right: "30%", top: "30%" }} />
+      <div className="sparkle sparkle-4" style={{ right: "22%", top: "75%" }} />
       <div className="particle particle-1" style={{ top: "8%", left: "8%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
       <div className="particle particle-4" style={{ top: "85%", left: "12%", width: "0.35vw", height: "0.35vw", background: "rgba(240,208,128,0.5)", borderRadius: "50%" }} />
       <div className="particle particle-3" style={{ top: "50%", right: "5%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.4)", borderRadius: "50%" }} />

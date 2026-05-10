@@ -161,6 +161,147 @@ body {
   animation: slideEnterFade 0.45s cubic-bezier(0.22,1,0.36,1) both;
 }
 
+/* ── DIAGONAL WIPE TRANSITION ── */
+@keyframes diagonalWipeIn {
+  from { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); opacity: 0; }
+  to   { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); opacity: 1; }
+}
+@keyframes diagonalWipeOut {
+  from { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); opacity: 1; }
+  to   { clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); opacity: 0; }
+}
+.slide-enter-wipe {
+  animation: diagonalWipeIn 0.55s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+/* ── KINETIC / TYPING TITLE ── */
+@keyframes typeInRTL {
+  from { clip-path: inset(0 0 0 100%); }
+  to   { clip-path: inset(0 0 0 0%); }
+}
+.anim-type-rtl {
+  animation: typeInRTL 0.7s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+/* ── 3D CARD TILT HOVER ── */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s ease;
+}
+.card-3d:hover {
+  transform: perspective(900px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+  box-shadow: 0 1.5vw 4vw rgba(201,168,76,0.15), 0 0 2vw rgba(201,168,76,0.08);
+}
+
+/* ── LIVE NUMBER COUNTER ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(3vh) scale(0.7); }
+  30%  { opacity: 1; transform: translateY(0) scale(1.05); }
+  60%  { transform: scale(0.98); }
+  to   { transform: scale(1); }
+}
+.anim-count-up {
+  animation: countUp 0.85s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+
+/* ── GOLD SPARKLE ── */
+@keyframes sparkle {
+  0%   { opacity: 0; transform: scale(0) rotate(0deg); }
+  50%  { opacity: 1; transform: scale(1) rotate(180deg); }
+  100% { opacity: 0; transform: scale(0) rotate(360deg); }
+}
+.sparkle {
+  position: absolute;
+  width: 0.6vw; height: 0.6vw;
+  background: #f0d080;
+  border-radius: 50%;
+  box-shadow: 0 0 1.5vw rgba(240,208,128,0.8), 0 0 0.5vw rgba(201,168,76,0.6);
+  animation: sparkle 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+.sparkle-1 { top: 12%; right: 18%; animation-delay: 0s; }
+.sparkle-2 { top: 25%; right: 12%; animation-delay: 0.7s; }
+.sparkle-3 { top: 45%; right: 22%; animation-delay: 1.4s; }
+.sparkle-4 { top: 65%; right: 15%; animation-delay: 2.1s; }
+.sparkle-5 { top: 80%; right: 20%; animation-delay: 0.3s; }
+
+/* ── CHAPTER RIBBON ── */
+.chapter-ribbon {
+  position: absolute;
+  top: 0;
+  right: 8vw;
+  z-index: 20;
+  background: linear-gradient(135deg, #c9a84c, #f0d080, #c9a84c);
+  color: #0d1830;
+  font-weight: 900;
+  font-size: 1.1vw;
+  padding: 0.8vh 2vw 1.5vh 2vw;
+  border-radius: 0 0 0.8vw 0.8vw;
+  box-shadow: 0 0.5vh 2vw rgba(201,168,76,0.3), 0 0.2vh 0.5vh rgba(0,0,0,0.15);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  animation: ribbonDrop 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes ribbonDrop {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.chapter-ribbon::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6vh;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 1.2vw solid transparent;
+  border-top: 0.6vh solid #a07830;
+}
+
+/* ── PARALLAX BACKGROUND SHIFT ── */
+.parallax-bg {
+  transition: transform 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+
+/* ── ENHANCED GLASS MORPHISM ── */
+.glass-premium {
+  background: linear-gradient(135deg, rgba(248,250,255,0.92), rgba(255,255,255,0.88));
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border: 1px solid rgba(201,168,76,0.25);
+  box-shadow: 0 0.5vh 3vw rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+.glass-premium::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 20%; right: 20%; height: 0.25vh;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent);
+}
+
+/* ── STAT BADGE ── */
+.stat-badge {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5vh 1.5vw;
+  border-radius: 1vw;
+  background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04));
+  border: 1px solid rgba(201,168,76,0.25);
+  box-shadow: 0 0 2vw rgba(201,168,76,0.08);
+}
+.stat-badge::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 1vw;
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.5), transparent, rgba(201,168,76,0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 /* ==================== ROADMAP TIMELINE ANIMATIONS ==================== */
 @keyframes nodePopIn {
   from { opacity: 0; transform: scale(0.4); }

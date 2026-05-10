@@ -11,6 +11,14 @@ export default function Slide18Closing() {
 
 <div className="gold-bar-top" /><div className="gold-bar-bottom" />
 
+      {/* Extra sparkles on closing */}
+      <div className="sparkle sparkle-1" style={{ animationDuration: "1.8s" }} />
+      <div className="sparkle sparkle-2" style={{ animationDuration: "2.2s" }} />
+      <div className="sparkle sparkle-3" style={{ animationDuration: "1.5s" }} />
+      <div className="sparkle sparkle-4" style={{ animationDuration: "2s" }} />
+      <div className="sparkle sparkle-5" style={{ animationDuration: "1.7s" }} />
+      <div className="sparkle" style={{ top: "50%", right: "30%", animationDuration: "2.3s", animationDelay: "0.5s" }} />
+
       <div className="relative z-10 flex flex-col h-full items-center justify-center" style={{ padding: "6vh 10vw", textAlign: "center", gap: "3vh" }}>
 
         {/* Thank you */}

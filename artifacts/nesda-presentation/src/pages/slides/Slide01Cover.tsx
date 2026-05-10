@@ -10,6 +10,13 @@ export default function Slide01Cover() {
       <div className="bg-overlay-medium" />
       <div className="bg-grid-top" />
 
+      {/* Sparkle effects */}
+      <div className="sparkle sparkle-1" />
+      <div className="sparkle sparkle-2" />
+      <div className="sparkle sparkle-3" />
+      <div className="sparkle sparkle-4" />
+      <div className="sparkle sparkle-5" />
+
 <div className="gold-bar-top" />
       <div className="gold-bar-bottom" />
       {/* Side accent line */}

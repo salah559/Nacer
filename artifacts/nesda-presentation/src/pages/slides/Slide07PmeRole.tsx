@@ -8,7 +8,11 @@ export default function Slide07PmeRole() {
       <div className="bg-overlay-medium" />
       <div className="bg-grid-top" />
 
-<div className="gold-bar-top" /><div className="gold-bar-bottom" />
+<div className="chapter-ribbon">الفصل الأول</div>
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="sparkle sparkle-1" style={{ right: "25%" }} />
+      <div className="sparkle sparkle-3" style={{ right: "30%", top: "30%" }} />
+      <div className="sparkle sparkle-5" style={{ right: "22%", top: "75%" }} />
       <div className="particle particle-1" style={{ top: "12%", right: "12%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1.2vw rgba(201,168,76,0.7)" }} />
       <div className="particle particle-4" style={{ top: "70%", right: "5%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 

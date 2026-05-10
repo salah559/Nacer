@@ -8,7 +8,8 @@ export default function Slide06PmeDef() {
       <div className="bg-overlay-medium" />
       <div className="bg-grid-top" />
 
-<div className="gold-bar-top" /><div className="gold-bar-bottom" />
+<div className="chapter-ribbon">الفصل الأول</div>
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
       <div className="particle particle-2" style={{ top: "20%", left: "10%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />
       <div className="particle particle-6" style={{ top: "65%", left: "5%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 
