@@ -124,11 +124,22 @@ function SlideEditor() {
     };
   }, [currentIndex, navigate]);
 
+  const progress = slides.length > 1 ? ((currentIndex) / (slides.length - 1)) * 100 : 100;
+
   return (
-    <div className="select-none">
+    <div className="select-none" style={{ position: "relative" }}>
+      {/* Gold progress bar */}
+      <div style={{ position: "fixed", top: 0, left: 0, right: 0, height: "3px", zIndex: 1000, background: "rgba(201,168,76,0.1)" }}>
+        <div style={{ height: "100%", width: `${progress}%`, background: "linear-gradient(90deg, #c9a84c, #f0d080, #c9a84c)", transition: "width 0.5s cubic-bezier(0.22,1,0.36,1)", boxShadow: "0 0 6px rgba(201,168,76,0.6)" }} />
+      </div>
+      {/* Slide counter */}
+      <div style={{ position: "fixed", bottom: "1.5vh", left: "50%", transform: "translateX(-50%)", zIndex: 1000, fontSize: "1vw", color: "rgba(13,24,48,0.25)", fontFamily: "Cairo, sans-serif", letterSpacing: "0.12em", fontWeight: 600, pointerEvents: "none" }}>
+        {currentIndex + 1} / {slides.length}
+      </div>
       {slides.map((slide, index) => (
         <div
-          key={slide.id}
+          key={index === currentIndex ? `active-${currentIndex}` : `inactive-${slide.id}`}
+          className={index === currentIndex ? "slide-enter-anim" : ""}
           style={{ display: index === currentIndex ? "block" : "none" }}
         >
           <slide.Component />

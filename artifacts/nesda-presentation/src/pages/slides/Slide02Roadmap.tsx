@@ -1,74 +1,109 @@
 const isAllSlides = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
 const cls = isAllSlides ? "allslides-mode" : "";
 
+const chapters = [
+  { n: "01", title: "الإشكالية والمنهج", sub: "المقدمة العامة" },
+  { n: "02", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة" },
+  { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة" },
+  { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان" },
+  { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة" },
+];
+
+const NODE_DELAYS = [0.35, 0.50, 0.65, 0.80, 0.95];
+const CARD_DELAYS = [0.42, 0.57, 0.72, 0.87, 1.02];
+
 export default function Slide02Roadmap() {
-  const chapters = [
-    { n: "01", title: "الإشكالية والمنهج", sub: "المقدمة العامة" },
-    { n: "02", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة" },
-    { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة" },
-    { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان" },
-    { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة" },
-  ];
-  const delays = ["delay-2", "delay-3", "delay-4", "delay-5", "delay-6"];
-
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 30% 50%, rgba(14,28,60,0.9) 0%, transparent 70%)" }} />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 85% 80%, rgba(201,168,76,0.05) 0%, transparent 60%)" }} />
-      <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.012) 60px, rgba(201,168,76,0.012) 62px)" }} />
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
-      {/* Particles */}
-      <div className="particle particle-1" style={{ top: "10%", right: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />
-      <div className="particle particle-3" style={{ top: "75%", right: "25%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
-      <div className="particle particle-5" style={{ top: "45%", right: "8%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.35)", borderRadius: "50%" }} />
+      {/* Subtle grid texture */}
+      <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)", backgroundSize: "6vw 6vw", pointerEvents: "none" }} />
+      {/* Soft radial vignette */}
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 60%, rgba(201,168,76,0.04) 100%)", pointerEvents: "none" }} />
 
       <div className="gold-bar-top" />
       <div className="gold-bar-bottom" />
 
-      {/* Right side decorative vertical line */}
-      <div className="anim-line-v delay-1 absolute" style={{ right: "42%", top: "8%", width: "0.2vh", height: "84%", background: "linear-gradient(180deg, transparent, rgba(201,168,76,0.15) 20%, rgba(201,168,76,0.3) 50%, rgba(201,168,76,0.15) 80%, transparent)" }} />
+      {/* Floating gold particles */}
+      <div className="particle particle-1" style={{ top: "12%", right: "18%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.4)", boxShadow: "0 0 1vw rgba(201,168,76,0.5)" }} />
+      <div className="particle particle-3" style={{ top: "70%", right: "28%", width: "0.3vw", height: "0.3vw", background: "rgba(201,168,76,0.3)" }} />
+      <div className="particle particle-5" style={{ top: "42%", left: "5%", width: "0.35vw", height: "0.35vw", background: "rgba(201,168,76,0.25)" }} />
 
       <div className="relative z-10 flex h-full">
-        {/* Left — Title panel */}
-        <div style={{ width: "38%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
-          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4.5vw", fontWeight: 900, color: "#f0f4ff", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
-          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4.5vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+
+        {/* ── Left: Title panel ── */}
+        <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4.2vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
             <span className="gold-shimmer" style={{ display: "inline-block" }}>الدراسة</span>
           </h2>
-          <div className="anim-line-h delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "3vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-          <div className="anim-fade delay-5" style={{ fontSize: "1.5vw", color: "#7a90b5", lineHeight: 1.6 }}>
+          <div className="anim-line-h delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-fade delay-5" style={{ fontSize: "1.4vw", color: "#4a5a78", lineHeight: 1.7 }}>
             خمسة فصول تغطي الجانبين النظري والتطبيقي للبحث
           </div>
-          {/* Mini decoration */}
-          <div className="anim-scale delay-6" style={{ marginTop: "3vh", display: "flex", gap: "0.8vw" }}>
-            <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#c9a84c", boxShadow: "0 0 1vw rgba(201,168,76,0.8)" }} />
-            <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(201,168,76,0.4)" }} />
-            <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(201,168,76,0.2)" }} />
+          {/* Chapter count badge */}
+          <div className="anim-scale delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
+            <span style={{ fontSize: "1.7vw", fontWeight: 900, color: "#c9a84c" }}>05</span>
+            <span style={{ fontSize: "1.1vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>
         </div>
 
-        {/* Right — Chapters list */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 6vw 7vh 4vw", gap: "1.4vh" }}>
-          {chapters.map((ch, i) => (
-            <div
-              key={ch.n}
-              className={`anim-perspective ${delays[i]}`}
-              style={{ display: "flex", alignItems: "center", gap: "2vw", cursor: "default" }}
-            >
-              {/* Number badge */}
-              <div style={{ width: "5vw", height: "5vw", flexShrink: 0, borderRadius: "0.8vw", background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.25)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.8vw", fontWeight: 900, color: "#c9a84c", boxShadow: "inset 0 1px 0 rgba(201,168,76,0.15)" }}>
-                {ch.n}
+        {/* ── Right: Animated vertical timeline ── */}
+        <div style={{ flex: 1, display: "flex", alignItems: "center", padding: "5vh 6vw 5vh 3vw", position: "relative" }}>
+
+          {/* Background track line */}
+          <div style={{ position: "absolute", right: "6vw", top: "10%", bottom: "10%", width: "0.25vw", background: "rgba(201,168,76,0.12)", borderRadius: "1vw" }} />
+
+          {/* Animated gold line drawing from top - full height for overview */}
+          <div style={{
+            position: "absolute", right: "6vw", top: "10%", bottom: "10%",
+            width: "0.25vw",
+            background: "linear-gradient(180deg, transparent, #c9a84c 8%, #f0d080 50%, #c9a84c 92%, transparent)",
+            borderRadius: "1vw",
+            transformOrigin: "top",
+            animation: "progressLineGrow 0.9s cubic-bezier(0.22,1,0.36,1) 0.25s both",
+          }} />
+
+          {/* Chapter items */}
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between", height: "80%", paddingRight: "3.5vw" }}>
+            {chapters.map((ch, i) => (
+              <div key={ch.n} style={{ display: "flex", alignItems: "center", gap: "2vw", position: "relative" }}>
+
+                {/* Node circle */}
+                <div style={{
+                  position: "absolute", right: "-3.5vw", top: "50%", transform: "translateY(-50%)",
+                  width: "1.4vw", height: "1.4vw",
+                  borderRadius: "50%",
+                  background: "#c9a84c",
+                  border: "2px solid #f0d080",
+                  boxShadow: "0 0 1vw rgba(201,168,76,0.4)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  animation: `nodePopIn 0.4s cubic-bezier(0.34,1.56,0.64,1) ${NODE_DELAYS[i]}s both`,
+                  zIndex: 2,
+                }} />
+
+                {/* Chapter card */}
+                <div style={{
+                  flex: 1,
+                  background: "rgba(248,250,255,0.95)",
+                  border: "1px solid rgba(201,168,76,0.25)",
+                  borderRadius: "0.8vw",
+                  padding: "1.2vh 2vw",
+                  boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+                  animation: `cardSlideIn 0.5s cubic-bezier(0.22,1,0.36,1) ${CARD_DELAYS[i]}s both`,
+                }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "1.2vw" }}>
+                    <div style={{ fontSize: "1.5vw", fontWeight: 900, color: "rgba(201,168,76,0.3)", letterSpacing: "0.05em", flexShrink: 0 }}>{ch.n}</div>
+                    <div>
+                      <div style={{ fontSize: "1.55vw", fontWeight: 700, color: "#0d1830", lineHeight: 1.3 }}>{ch.title}</div>
+                      <div style={{ fontSize: "1.15vw", color: "#4a5a78", marginTop: "0.15vh" }}>{ch.sub}</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              {/* Content */}
-              <div style={{ flex: 1, background: "rgba(14,22,44,0.55)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.03)" }}>
-                <div style={{ fontSize: "1.7vw", fontWeight: 700, color: "#f0f4ff", lineHeight: 1.3 }}>{ch.title}</div>
-                <div style={{ fontSize: "1.25vw", color: "#7a90b5", marginTop: "0.2vh" }}>{ch.sub}</div>
-              </div>
-              {/* Right accent dot */}
-              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(201,168,76,0.3)", flexShrink: 0 }} />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
