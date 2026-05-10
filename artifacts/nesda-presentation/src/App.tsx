@@ -193,6 +193,7 @@ function SlideViewer() {
     width: Math.min(window.innerWidth, window.innerHeight * (16 / 9)),
     height: Math.min(window.innerHeight, window.innerWidth * (9 / 16)),
   }));
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     const update = () => {
@@ -217,6 +218,22 @@ function SlideViewer() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  useEffect(() => {
+    const onFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+    return () => document.removeEventListener("fullscreenchange", onFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    } else {
+      document.exitFullscreen().catch(() => {});
+    }
+  };
+
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   const firstPosition = slides.length > 0 ? slides[0].position : 1;
 
@@ -232,6 +249,44 @@ function SlideViewer() {
         onLoad={() => iframeRef.current?.focus()}
         title="Slide viewer"
       />
+      {/* Fullscreen toggle button */}
+      <button
+        onClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
+        style={{
+          position: "fixed",
+          top: "2vh",
+          right: "2vh",
+          zIndex: 2000,
+          width: "4vh",
+          height: "4vh",
+          borderRadius: "0.6vh",
+          background: "rgba(21, 101, 192, 0.85)",
+          border: "none",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#ffffff",
+          fontSize: "2vh",
+          backdropFilter: "blur(8px)",
+          WebkitBackdropFilter: "blur(8px)",
+          transition: "background 0.2s ease",
+          pointerEvents: "auto",
+        }}
+        onMouseEnter={(e) => { (e.target as HTMLElement).style.background = "rgba(21, 101, 192, 1)"; }}
+        onMouseLeave={(e) => { (e.target as HTMLElement).style.background = "rgba(21, 101, 192, 0.85)"; }}
+        title={isFullscreen ? "خروج من وضع شاشة كاملة" : "عرض شاشة كاملة"}
+      >
+        {isFullscreen ? (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: "2.2vh", height: "2.2vh" }}>
+            <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: "2.2vh", height: "2.2vh" }}>
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+          </svg>
+        )}
+      </button>
     </div>
   );
 }
