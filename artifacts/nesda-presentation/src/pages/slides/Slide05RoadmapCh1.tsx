@@ -13,8 +13,10 @@ const chapters = [
 const PROGRESS_HEIGHT = "28%";
 const PROGRESS_DELAY = "0.3s";
 const ACTIVE_IDX = 1;
-const NODE_DELAYS =  [0.25, 1.15, 1.30, 1.42, 1.52];
-const CARD_DELAYS =  [0.30, 1.20, 1.36, 1.48, 1.58];
+// All animations wait for slide transition to finish (0.55s) then start
+const SLIDE_ENTER_DURATION = 0.55;
+const NODE_DELAYS =  [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 1.15, SLIDE_ENTER_DURATION + 1.30, SLIDE_ENTER_DURATION + 1.42, SLIDE_ENTER_DURATION + 1.52];
+const CARD_DELAYS =  [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 1.20, SLIDE_ENTER_DURATION + 1.36, SLIDE_ENTER_DURATION + 1.48, SLIDE_ENTER_DURATION + 1.58];
 
 export default function Slide05RoadmapCh1() {
   return (
