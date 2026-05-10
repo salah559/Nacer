@@ -22,7 +22,7 @@ export default function Slide13CDE() {
             <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginBottom: "0.5vh" }}>إنجاز وطني</div>
             <div style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>+
               <span style={{ fontSize: "6vw" }}>
-                <AnimatedCounter target={100} suffix="" duration={1000} style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914" }} />
+                <AnimatedCounter target={100} suffix="" duration={2200} style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914" }} />
               </span>
             </div>
             <div style={{ fontSize: "1.5vw", color: "#0d1830", fontWeight: 600 }}>مركز تطوير مقاولاتية</div>

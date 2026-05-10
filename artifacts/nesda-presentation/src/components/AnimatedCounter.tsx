@@ -6,11 +6,11 @@ interface Props {
   target: number;
   suffix?: string;
   prefix?: string;
-  duration?: number;
+  duration?: number;  // ms, default 2200
   style?: React.CSSProperties;
 }
 
-export default function AnimatedCounter({ target, suffix = "", prefix = "", duration = 1200, style }: Props) {
+export default function AnimatedCounter({ target, suffix = "", prefix = "", duration = 2200, style }: Props) {
   const [val, setVal] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
 
@@ -20,7 +20,7 @@ export default function AnimatedCounter({ target, suffix = "", prefix = "", dura
     const start = performance.now();
     const tick = (now: number) => {
       const p = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 4);
+      const eased = 1 - Math.pow(1 - p, 3);
       setVal(Math.floor(eased * target));
       if (p < 1) frame = requestAnimationFrame(tick);
     };

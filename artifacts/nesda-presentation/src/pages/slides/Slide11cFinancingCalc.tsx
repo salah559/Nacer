@@ -86,7 +86,7 @@ export default function Slide11cFinancingCalc() {
                 <div style={{ fontSize: "0.95vw", color: "#4a5a78" }}>30% من قيمة الاستثمار</div>
               </div>
               <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-                <AnimatedCounter target={contribution} suffix="M دج" duration={1000} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
+                <AnimatedCounter target={contribution} suffix="M دج" duration={2200} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
               </div>
             </div>
 
@@ -98,7 +98,7 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "0.95vw", color: "#4a5a78" }}>40% من قيمة الاستثمار</div>
                   </div>
                   <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-                    <AnimatedCounter target={nesdaLoan} suffix="M دج" duration={1000} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
+                    <AnimatedCounter target={nesdaLoan} suffix="M دج" duration={2200} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
                   </div>
                 </div>
                 <div style={{ background: "#ffffff", border: "2px solid rgba(42,64,96,0.3)", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(42,64,96,0.08)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -107,7 +107,7 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "0.95vw", color: "#4a5a78" }}>30% من قيمة الاستثمار</div>
                   </div>
                   <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={1000} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
+                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
                   </div>
                 </div>
               </>
@@ -119,7 +119,7 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "0.95vw", color: "#4a5a78" }}>70% من قيمة الاستثمار</div>
                   </div>
                   <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={1000} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
+                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
                   </div>
                 </div>
                 <div style={{ background: "rgba(201,168,76,0.08)", border: "2px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "2vh 2vw", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -128,7 +128,7 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "0.95vw", color: "#4a5a78" }}>85% من قيمة القرض البنكي</div>
                   </div>
                   <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-                    <AnimatedCounter target={nesdaGuarantee} suffix="M دج" duration={1000} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
+                    <AnimatedCounter target={nesdaGuarantee} suffix="M دج" duration={2200} style={{ fontSize: "2.8vw", fontWeight: 900, color: "#8B6914" }} />
                   </div>
                 </div>
               </>

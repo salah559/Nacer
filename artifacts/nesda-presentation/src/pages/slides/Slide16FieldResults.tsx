@@ -29,14 +29,14 @@ export default function Slide16FieldResults() {
           <div className="anim-count-morph delay-4 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
             <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-              <AnimatedCounter target={65812} suffix="" duration={1500} style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914" }} />
+              <AnimatedCounter target={65812} suffix="" duration={2500} style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914" }} />
             </div>
             <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>أعلى قمة مشاريع ممولة (2012)</div>
           </div>
           <div className="anim-count-morph delay-5 card-active" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
             <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>
-              <AnimatedCounter target={51} suffix="" duration={1200} style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914" }} />
+              <AnimatedCounter target={51} suffix="" duration={2200} style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914" }} />
             </div>
             <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>وكالة ولائية + 170 فرع محلي</div>
           </div>
