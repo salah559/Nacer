@@ -50,44 +50,46 @@ export default function Slide04bObjectives() {
 
       <div className="relative z-10 flex h-full">
         {/* Left — title */}
-        <div style={{ width: "32%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw", borderLeft: "1px solid rgba(201,168,76,0.18)" }}>
+        <div style={{ width: "22%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "3vh 1.5vw 3vh 4vw", borderLeft: "1px solid rgba(201,168,76,0.18)" }}>
           <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#8B6914", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>المقدمة العامة</div>
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>أهداف</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span></h2>
-          <div className="anim-line-draw delay-4" style={{ width: "50%", height: "0.3vh", marginTop: "2vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.25vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>أهداف</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.2vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span></h2>
+          <div className="anim-line-draw delay-4" style={{ width: "50%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.1vw", color: "#4a5a78", lineHeight: 1.6 }}>
             تسعى هذه الدراسة إلى الإجابة على إشكالية التمويل من خلال أربعة أهداف محددة ومترابطة
           </div>
         </div>
 
-        {/* Right — objectives */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "5vh 5vw 5vh 3vw", gap: "1.2vh" }}>
+        {/* Right — objectives in 2 columns */}
+        <div style={{ flex: 1, display: "flex", flexWrap: "wrap", alignContent: "center", padding: "2vh 2vw 2vh 1vw", gap: "0.8vh 1vw" }}>
           {objectives.map((obj, i) => (
             <div
               key={obj.n}
               className={`anim-card-morph delay-${i + 3}`}
               style={{
+                width: "calc(50% - 0.5vw)",
                 background: i === 0 ? "rgba(14,22,44,0.65)" : "rgba(14,22,44,0.5)",
                 backdropFilter: "blur(16px)",
                 WebkitBackdropFilter: "blur(16px)",
                 border: i === 0 ? "1px solid rgba(201,168,76,0.3)" : "1px solid rgba(201,168,76,0.18)",
-                borderRadius: "1.2vw",
-                padding: "1.4vh 2vw",
+                borderRadius: "0.7vw",
+                padding: "0.9vh 1vw",
                 position: "relative",
                 overflow: "hidden",
                 boxShadow: i === 0 ? "0 0 3vw rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.28)" : "inset 0 1px 0 rgba(201,168,76,0.18)",
                 display: "flex",
-                gap: "1.2vw",
+                gap: "0.6vw",
                 alignItems: "center",
+                boxSizing: "border-box",
               }}
             >
-              <div style={{ position: "absolute", top: 0, right: "15%", left: "15%", height: "0.3vh", background: `linear-gradient(90deg, transparent, rgba(201,168,76,${i === 0 ? "1" : "0.5"}), transparent)` }} />
-              <div style={{ width: "3.5vw", height: "3.5vw", flexShrink: 0, borderRadius: "50%", background: i === 0 ? "rgba(201,168,76,0.35)" : "rgba(201,168,76,0.18)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.3vw", fontWeight: 900, color: "#8B6914" }}>
+              <div style={{ position: "absolute", top: 0, right: "15%", left: "15%", height: "0.2vh", background: `linear-gradient(90deg, transparent, rgba(201,168,76,${i === 0 ? "1" : "0.5"}), transparent)` }} />
+              <div style={{ width: "2.2vw", height: "2.2vw", flexShrink: 0, borderRadius: "50%", background: i === 0 ? "rgba(201,168,76,0.35)" : "rgba(201,168,76,0.18)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.95vw", fontWeight: 900, color: "#8B6914" }}>
                 {obj.n}
               </div>
-              <div>
-                <div style={{ fontSize: "1.55vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.3 }}>{obj.title}</div>
-                <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginTop: "0.3vh" }}>{obj.sub}</div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: "1vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.2 }}>{obj.title}</div>
+                <div style={{ fontSize: "0.8vw", color: "#4a5a78", marginTop: "0.05vh" }}>{obj.sub}</div>
               </div>
             </div>
           ))}
