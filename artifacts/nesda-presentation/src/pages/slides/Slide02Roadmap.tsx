@@ -30,19 +30,19 @@ export default function Slide02Roadmap() {
 
         {/* ── Left: Title panel ── */}
         <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#8B6914", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.2vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#DAA520", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "5.04vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "5.04vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
             <span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span>
           </h2>
-          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.4vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #E8B923, transparent)" }} />
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.96vw", color: "#4a5a78", lineHeight: 1.7 }}>
             خمسة فصول تغطي الجانبين النظري والتطبيقي للبحث
           </div>
           {/* Chapter count badge */}
           <div className="anim-morph-in delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
-            <span style={{ fontSize: "1.7vw", fontWeight: 900, color: "#8B6914" }}>05</span>
-            <span style={{ fontSize: "1.1vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
+            <span style={{ fontSize: "2.29vw", fontWeight: 900, color: "#DAA520" }}>05</span>
+            <span style={{ fontSize: "1.59vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>
         </div>
 
@@ -56,7 +56,7 @@ export default function Slide02Roadmap() {
           <div style={{
             position: "absolute", right: "6vw", top: "10%", bottom: "10%",
             width: "0.25vw",
-            background: "linear-gradient(180deg, transparent, #c9a84c 8%, #f0d080 50%, #c9a84c 92%, transparent)",
+            background: "linear-gradient(180deg, transparent, #E8B923 8%, #f0d080 50%, #E8B923 92%, transparent)",
             borderRadius: "1vw",
             transformOrigin: "top",
             animation: "progressLineGrow 0.9s cubic-bezier(0.22,1,0.36,1) 0.25s both",
@@ -72,7 +72,7 @@ export default function Slide02Roadmap() {
                   position: "absolute", right: "-3.5vw", top: "50%", transform: "translateY(-50%)",
                   width: "1.4vw", height: "1.4vw",
                   borderRadius: "50%",
-                  background: "#c9a84c",
+                  background: "#E8B923",
                   border: "2px solid #f0d080",
                   boxShadow: "0 0 1vw rgba(201,168,76,0.4)",
                   display: "flex", alignItems: "center", justifyContent: "center",
@@ -91,10 +91,10 @@ export default function Slide02Roadmap() {
                   animation: `cardSlideIn 0.5s cubic-bezier(0.22,1,0.36,1) ${CARD_DELAYS[i]}s both`,
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "1.2vw" }}>
-                    <div style={{ fontSize: "1.5vw", fontWeight: 900, color: "rgba(201,168,76,0.3)", letterSpacing: "0.05em", flexShrink: 0 }}>{ch.n}</div>
+                    <div style={{ fontSize: "2.1vw", fontWeight: 900, color: "rgba(201,168,76,0.3)", letterSpacing: "0.05em", flexShrink: 0 }}>{ch.n}</div>
                     <div>
-                      <div style={{ fontSize: "1.55vw", fontWeight: 700, color: "#0d1830", lineHeight: 1.3 }}>{ch.title}</div>
-                      <div style={{ fontSize: "1.15vw", color: "#4a5a78", marginTop: "0.15vh" }}>{ch.sub}</div>
+                      <div style={{ fontSize: "2.17vw", fontWeight: 700, color: "#0d1830", lineHeight: 1.3 }}>{ch.title}</div>
+                      <div style={{ fontSize: "1.67vw", color: "#4a5a78", marginTop: "0.15vh" }}>{ch.sub}</div>
                     </div>
                   </div>
                 </div>

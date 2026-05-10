@@ -33,27 +33,27 @@ export default function Slide05RoadmapCh1() {
 
         {/* ── Left: Title panel ── */}
         <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#8B6914", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#DAA520", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
 
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.6vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>ننتقل إلى</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.6vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.32vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>ننتقل إلى</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.32vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}>
             <span className="text-gold" style={{ display: "inline-block" }}>الفصل الأول</span>
           </h2>
 
-          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #E8B923, transparent)" }} />
 
-          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.35vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.89vw", color: "#4a5a78", lineHeight: 1.7 }}>
             الإطار النظري للمؤسسات الصغيرة والمتوسطة
           </div>
 
           {/* Progress counter */}
           <div className="anim-card-morph delay-6" style={{ marginTop: "3.5vh", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "1.2vh 1.5vw", alignSelf: "flex-start" }}>
-            <div style={{ fontSize: "1vw", color: "#4a5a78", marginBottom: "0.4vh" }}>التقدم في البحث</div>
+            <div style={{ fontSize: "1.5vw", color: "#4a5a78", marginBottom: "0.4vh" }}>التقدم في البحث</div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.8vw" }}>
               <div style={{ flex: 1, height: "0.4vh", background: "rgba(201,168,76,0.15)", borderRadius: "1vw", overflow: "hidden" }}>
-                <div style={{ width: "20%", height: "100%", background: "linear-gradient(90deg, #c9a84c, #f0d080)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
+                <div style={{ width: "20%", height: "100%", background: "linear-gradient(90deg, #E8B923, #f0d080)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
               </div>
-              <span style={{ fontSize: "1.1vw", fontWeight: 700, color: "#8B6914" }}>20%</span>
+              <span style={{ fontSize: "1.59vw", fontWeight: 700, color: "#DAA520" }}>20%</span>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Slide05RoadmapCh1() {
             position: "absolute", right: "6vw", top: "10%",
             width: "0.25vw",
             height: PROGRESS_HEIGHT,
-            background: "linear-gradient(180deg, transparent, #c9a84c 10%, #f0d080 80%, #c9a84c)",
+            background: "linear-gradient(180deg, transparent, #E8B923 10%, #f0d080 80%, #E8B923)",
             borderRadius: "1vw",
             transformOrigin: "top",
             animation: `progressLineGrow 0.85s cubic-bezier(0.22,1,0.36,1) ${PROGRESS_DELAY} both`,
@@ -91,14 +91,14 @@ export default function Slide05RoadmapCh1() {
                     width: isActive ? "1.8vw" : "1.4vw",
                     height: isActive ? "1.8vw" : "1.4vw",
                     borderRadius: "50%",
-                    background: isDone ? "rgba(201,168,76,0.25)" : isActive ? "#8B6914" : "rgba(201,168,76,0.1)",
+                    background: isDone ? "rgba(201,168,76,0.25)" : isActive ? "#DAA520" : "rgba(201,168,76,0.1)",
                     border: isDone ? "2px solid rgba(201,168,76,0.5)" : isActive ? "2px solid #f0d080" : "2px solid rgba(201,168,76,0.25)",
                     boxShadow: isActive ? "0 0 1.5vw rgba(201,168,76,0.5)" : "none",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     animation: `nodePopIn 0.4s cubic-bezier(0.34,1.56,0.64,1) ${NODE_DELAYS[i]}s both`,
                     zIndex: 2,
                   }}>
-                    {isDone && <span style={{ fontSize: "0.7vw", color: "#8B6914", fontWeight: 900 }}>✓</span>}
+                    {isDone && <span style={{ fontSize: "1.12vw", color: "#DAA520", fontWeight: 900 }}>✓</span>}
                     {isActive && <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#ffffff" }} />}
                   </div>
 
@@ -122,13 +122,13 @@ export default function Slide05RoadmapCh1() {
                     animation: `cardSlideIn 0.5s cubic-bezier(0.22,1,0.36,1) ${CARD_DELAYS[i]}s both`,
                   }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "1.2vw" }}>
-                      <div style={{ fontSize: isActive ? "1.6vw" : "1.4vw", fontWeight: 900, color: isDone ? "rgba(201,168,76,0.5)" : isActive ? "#8B6914" : "rgba(201,168,76,0.25)", letterSpacing: "0.05em", flexShrink: 0 }}>{ch.n}</div>
+                      <div style={{ fontSize: isActive ? "1.6vw" : "1.4vw", fontWeight: 900, color: isDone ? "rgba(201,168,76,0.5)" : isActive ? "#DAA520" : "rgba(201,168,76,0.25)", letterSpacing: "0.05em", flexShrink: 0 }}>{ch.n}</div>
                       <div>
                         <div style={{ fontSize: isActive ? "1.65vw" : "1.5vw", fontWeight: isActive ? 800 : isDone ? 600 : 600, color: isDone ? "#4a5a78" : isActive ? "#0d1830" : "#0d1830", lineHeight: 1.3, textDecoration: isDone ? "none" : "none" }}>{ch.title}</div>
-                        <div style={{ fontSize: "1.1vw", color: "#4a5a78", marginTop: "0.15vh" }}>{ch.sub}</div>
+                        <div style={{ fontSize: "1.59vw", color: "#4a5a78", marginTop: "0.15vh" }}>{ch.sub}</div>
                       </div>
                       {isActive && (
-                        <div style={{ marginRight: "auto", marginLeft: "0", background: "#c9a84c", borderRadius: "2vw", padding: "0.3vh 0.9vw", fontSize: "0.9vw", fontWeight: 700, color: "#ffffff", whiteSpace: "nowrap", animation: "fadeIn 0.4s ease 1.5s both" }}>الفصل الحالي</div>
+                        <div style={{ marginRight: "auto", marginLeft: "0", background: "#E8B923", borderRadius: "2vw", padding: "0.3vh 0.9vw", fontSize: "1.35vw", fontWeight: 700, color: "#ffffff", whiteSpace: "nowrap", animation: "fadeIn 0.4s ease 1.5s both" }}>الفصل الحالي</div>
                       )}
                     </div>
                   </div>

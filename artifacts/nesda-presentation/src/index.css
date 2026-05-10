@@ -13,12 +13,12 @@
 }
 
 :root {
-  --slide-primary: #c9a84c;
+  --slide-primary: #D4AF37;
   --slide-accent: #1e3a5f;
   --slide-bg: #ffffff;
   --slide-text: #1a1a2e;
   --slide-muted: #5a5a7a;
-  --slide-gold: #c9a84c;
+  --slide-gold: #D4AF37;
   --slide-navy: #1a1a2e;
   --font-display-family: "Cairo", sans-serif;
   --font-body-family: "Cairo", sans-serif;
@@ -252,7 +252,8 @@ body {
 
 /* Clean gold text shimmer */
 .text-gold {
-  background: linear-gradient(90deg, #6b4e00, #8B6914, #b8860b, #8B6914, #6b4e00);
+  background: linear-gradient(90deg, #B8860B, #D4AF37, #FFD700, #D4AF37, #B8860B);
+  color: #D4AF37;
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -277,7 +278,7 @@ body {
 /* Active card */
 .card-active {
   background: #ffffff;
-  border: 2px solid #c9a84c;
+  border: 2px solid #E8B923;
   border-radius: 0.8vw;
   padding: 2vh 2vw;
   box-shadow: 0 4px 16px rgba(201, 168, 76, 0.12);
@@ -294,7 +295,7 @@ body {
 /* Gold accent line */
 .gold-line {
   height: 2px;
-  background: linear-gradient(90deg, #c9a84c, #f0d080, #c9a84c);
+  background: linear-gradient(90deg, #E8B923, #f0d080, #E8B923);
   border-radius: 1px;
 }
 
@@ -305,7 +306,7 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 5%, #c9a84c 35%, #f0d080 50%, #c9a84c 65%, transparent 95%);
+  background: linear-gradient(90deg, transparent 5%, #E8B923 35%, #f0d080 50%, #E8B923 65%, transparent 95%);
 }
 .gold-accent-bottom {
   position: absolute;
@@ -313,14 +314,14 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 5%, #c9a84c 35%, #f0d080 50%, #c9a84c 65%, transparent 95%);
+  background: linear-gradient(90deg, transparent 5%, #E8B923 35%, #f0d080 50%, #E8B923 65%, transparent 95%);
 }
 
 /* Chapter badge */
 .chapter-badge {
   display: inline-block;
   background: #1a1a2e;
-  color: #c9a84c;
+  color: #E8B923;
   font-weight: 700;
   font-size: 0.9vw;
   padding: 0.6vh 1.2vw;
@@ -352,12 +353,12 @@ body {
 
 .roadmap-node-done {
   background: #ffffff;
-  border: 2px solid #c9a84c;
-  color: #8B6914;
+  border: 2px solid #E8B923;
+  color: #DAA520;
 }
 .roadmap-node-active {
-  background: #c9a84c;
-  border: 2px solid #c9a84c;
+  background: #E8B923;
+  border: 2px solid #E8B923;
   color: #ffffff;
   box-shadow: 0 0 12px rgba(201, 168, 76, 0.3);
 }
@@ -374,7 +375,7 @@ body {
 }
 .roadmap-card-active {
   background: #ffffff;
-  border: 1.5px solid #c9a84c;
+  border: 1.5px solid #E8B923;
   box-shadow: 0 2px 12px rgba(201, 168, 76, 0.08);
 }
 .roadmap-card-future {
