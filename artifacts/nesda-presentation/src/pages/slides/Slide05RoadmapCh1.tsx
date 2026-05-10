@@ -1,64 +1,47 @@
 const isAllSlides = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
 const cls = isAllSlides ? "allslides-mode" : "";
 
+const chapters = [
+  { n: "✓", title: "الإشكالية والمنهج", sub: "المقدمة العامة", done: true, active: false },
+  { n: "02", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة", done: false, active: true },
+  { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة", done: false, active: false },
+  { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان", done: false, active: false },
+  { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة", done: false, active: false },
+];
+const delays = ["delay-2", "delay-3", "delay-4", "delay-5", "delay-6"];
+
 export default function Slide05RoadmapCh1() {
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#0a0f1e", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(160deg, #0d1628 0%, #0a0f1e 100%)" }} />
-      <div className="absolute top-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
-
-      <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 8vw" }}>
-        <div className="anim-fade delay-1" style={{ fontSize: "1.3vw", color: "#c9a84c", letterSpacing: "0.1em", marginBottom: "0.5vh", fontWeight: 600 }}>خطة البحث — الانتقال</div>
-        <div className="anim-fade-up delay-2" style={{ marginBottom: "0.3vh" }}>
-          <h2 style={{ fontSize: "2.8vw", fontWeight: 900, color: "#f0f4ff", margin: 0 }}>ننتقل الآن إلى الفصل الأول</h2>
-          <div style={{ fontSize: "1.6vw", color: "#c9a84c", fontWeight: 600 }}>الإطار النظري للمؤسسات الصغيرة والمتوسطة</div>
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 30% 50%, rgba(14,28,60,0.9) 0%, transparent 70%)" }} />
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 50% 40% at 85% 80%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.012) 60px, rgba(201,168,76,0.012) 62px)" }} />
+      <div className="particle particle-1" style={{ top: "10%", right: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />
+      <div className="particle particle-3" style={{ top: "75%", right: "25%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="anim-line-v delay-1 absolute" style={{ right: "42%", top: "8%", width: "0.2vh", height: "84%", background: "linear-gradient(180deg, transparent, rgba(201,168,76,0.2) 20%, rgba(201,168,76,0.35) 50%, rgba(201,168,76,0.2) 80%, transparent)" }} />
+      <div className="relative z-10 flex h-full">
+        <div style={{ width: "38%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "3.8vw", fontWeight: 900, color: "#f0f4ff", margin: 0, lineHeight: 1.15 }}>ننتقل</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "3.8vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>للفصل الأول</span></h2>
+          <div className="anim-line-h delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-fade delay-5" style={{ fontSize: "1.5vw", color: "#7a90b5", lineHeight: 1.5 }}>الإطار النظري للمؤسسات الصغيرة والمتوسطة</div>
         </div>
-        <div className="anim-fade delay-2" style={{ width: "8vw", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)", marginBottom: "2.5vh" }} />
-
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1.6vh", justifyContent: "center" }}>
-          <div className="anim-fade delay-2" style={{ display: "flex", alignItems: "center", gap: "1.5vw" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", flexShrink: 0, background: "rgba(201,168,76,0.2)", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4vw", fontWeight: 900, color: "rgba(201,168,76,0.7)" }}>✓</div>
-            <div style={{ flex: 1, height: "0.12vh", background: "rgba(201,168,76,0.12)" }} />
-            <div style={{ flex: 8, padding: "1vh 1.5vw", background: "rgba(30,58,95,0.1)", border: "1px solid rgba(201,168,76,0.06)", borderRadius: "0.7vw", opacity: 0.55 }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 600, color: "#f0f4ff" }}>الإشكالية والمنهج</div>
-              <div style={{ fontSize: "1.2vw", color: "#8899bb" }}>المقدمة العامة</div>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 6vw 7vh 4vw", gap: "1.4vh" }}>
+          {chapters.map((ch, i) => (
+            <div key={ch.n} className={`anim-perspective ${delays[i]}`} style={{ display: "flex", alignItems: "center", gap: "2vw" }}>
+              <div style={{ width: "4.8vw", height: "4.8vw", flexShrink: 0, borderRadius: "0.8vw", background: ch.active ? "#c9a84c" : ch.done ? "rgba(201,168,76,0.15)" : "rgba(14,22,44,0.6)", border: ch.active ? "2px solid #f0d080" : "1px solid rgba(201,168,76,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: ch.done ? "1.6vw" : "1.8vw", fontWeight: 900, color: ch.active ? "#050a18" : "#c9a84c", boxShadow: ch.active ? "0 0 2vw rgba(201,168,76,0.4)" : "none" }}>
+                {ch.n}
+              </div>
+              <div style={{ flex: 1, background: ch.active ? "rgba(201,168,76,0.1)" : "rgba(14,22,44,0.5)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: ch.active ? "1px solid rgba(201,168,76,0.4)" : "1px solid rgba(201,168,76,0.08)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", opacity: ch.done ? 0.5 : 1, boxShadow: ch.active ? "0 0 2vw rgba(201,168,76,0.08), inset 0 1px 0 rgba(201,168,76,0.12)" : "none" }}>
+                <div style={{ fontSize: "1.7vw", fontWeight: ch.active ? 800 : 600, color: ch.active ? "#c9a84c" : "#f0f4ff", lineHeight: 1.3 }}>{ch.title}</div>
+                <div style={{ fontSize: "1.2vw", color: "#7a90b5", marginTop: "0.2vh" }}>{ch.sub}</div>
+              </div>
             </div>
-          </div>
-          <div className="anim-fade delay-3" style={{ display: "flex", alignItems: "center", gap: "1.5vw" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", flexShrink: 0, background: "#c9a84c", border: "2px solid #f0d080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#0a0f1e" }}>02</div>
-            <div style={{ flex: 1, height: "0.15vh", background: "rgba(201,168,76,0.5)" }} />
-            <div style={{ flex: 8, padding: "1.3vh 1.5vw", background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.5)", borderRadius: "0.7vw" }}>
-              <div style={{ fontSize: "1.7vw", fontWeight: 800, color: "#c9a84c" }}>الإطار النظري — PME</div>
-              <div style={{ fontSize: "1.2vw", color: "#8899bb" }}>ماهيتها، تمويلها، دور الدولة</div>
-            </div>
-          </div>
-          <div className="anim-fade delay-4" style={{ display: "flex", alignItems: "center", gap: "1.5vw" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", flexShrink: 0, background: "rgba(30,58,95,0.4)", border: "1px solid rgba(201,168,76,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c" }}>03</div>
-            <div style={{ flex: 1, height: "0.12vh", background: "rgba(201,168,76,0.1)" }} />
-            <div style={{ flex: 8, padding: "1vh 1.5vw", background: "rgba(30,58,95,0.15)", border: "1px solid rgba(201,168,76,0.07)", borderRadius: "0.7vw" }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 600, color: "#f0f4ff" }}>NESDA والمقاولاتية</div>
-              <div style={{ fontSize: "1.2vw", color: "#8899bb" }}>النشأة، القانون، دور الوكالة</div>
-            </div>
-          </div>
-          <div className="anim-fade delay-5" style={{ display: "flex", alignItems: "center", gap: "1.5vw" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", flexShrink: 0, background: "rgba(30,58,95,0.4)", border: "1px solid rgba(201,168,76,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c" }}>04</div>
-            <div style={{ flex: 1, height: "0.12vh", background: "rgba(201,168,76,0.1)" }} />
-            <div style={{ flex: 8, padding: "1vh 1.5vw", background: "rgba(30,58,95,0.15)", border: "1px solid rgba(201,168,76,0.07)", borderRadius: "0.7vw" }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 600, color: "#f0f4ff" }}>الدراسة التطبيقية</div>
-              <div style={{ fontSize: "1.2vw", color: "#8899bb" }}>فرع وهران — نتائج الميدان</div>
-            </div>
-          </div>
-          <div className="anim-fade delay-6" style={{ display: "flex", alignItems: "center", gap: "1.5vw" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", flexShrink: 0, background: "rgba(30,58,95,0.4)", border: "1px solid rgba(201,168,76,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c" }}>05</div>
-            <div style={{ flex: 1, height: "0.12vh", background: "rgba(201,168,76,0.1)" }} />
-            <div style={{ flex: 8, padding: "1vh 1.5vw", background: "rgba(30,58,95,0.15)", border: "1px solid rgba(201,168,76,0.07)", borderRadius: "0.7vw" }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 600, color: "#f0f4ff" }}>الخلاصة والتوصيات</div>
-              <div style={{ fontSize: "1.2vw", color: "#8899bb" }}>النتائج الكاملة</div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
     </div>
   );
 }

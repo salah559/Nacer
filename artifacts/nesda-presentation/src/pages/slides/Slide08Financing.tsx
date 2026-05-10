@@ -3,52 +3,65 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 export default function Slide08Financing() {
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#0a0f1e", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(160deg, #0d1628 0%, #0a0f1e 100%)" }} />
-      <div className="absolute top-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 40% 40%, rgba(10,20,50,0.9) 0%, transparent 75%)" }} />
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 90% 80%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="particle particle-3" style={{ top: "15%", left: "12%", width: "0.4vw", height: "0.4vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />
+      <div className="particle particle-6" style={{ top: "72%", left: "8%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "6vh 8vw" }}>
-        <div className="anim-fade delay-1" style={{ fontSize: "1.4vw", color: "#c9a84c", letterSpacing: "0.1em", marginBottom: "1vh", fontWeight: 600 }}>الفصل الأول</div>
-        <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#f0f4ff", margin: 0, marginBottom: "0.5vh" }}>مصادر التمويل التقليدي</h2>
-        <div className="anim-fade delay-2 gold-line" style={{ width: "10vw", marginBottom: "3vh" }} />
-
-        {/* Two columns */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3vw", flex: 1, alignContent: "center" }}>
-          {/* Internal */}
-          <div>
-            <div className="anim-fade-right delay-3" style={{ fontSize: "2vw", fontWeight: 800, color: "#c9a84c", marginBottom: "2vh", display: "flex", alignItems: "center", gap: "1vw" }}>
-              <div style={{ width: "0.4vw", height: "3vh", background: "#c9a84c", borderRadius: "0.2vw" }} />
-              التمويل الداخلي
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1.2vh" }}>
-              <div className="anim-fade-right delay-4" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>المدخرات الشخصية</div>
-              <div className="anim-fade-right delay-5" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>الأرباح المحتجزة</div>
-              <div className="anim-fade-right delay-6" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>التمويل الذاتي</div>
-            </div>
-          </div>
-          {/* External */}
-          <div>
-            <div className="anim-fade-left delay-3" style={{ fontSize: "2vw", fontWeight: 800, color: "#c9a84c", marginBottom: "2vh", display: "flex", alignItems: "center", gap: "1vw" }}>
-              <div style={{ width: "0.4vw", height: "3vh", background: "#c9a84c", borderRadius: "0.2vw" }} />
-              التمويل الخارجي
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1.2vh" }}>
-              <div className="anim-fade-left delay-4" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>القروض البنكية</div>
-              <div className="anim-fade-left delay-5" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>الإعانات الحكومية</div>
-              <div className="anim-fade-left delay-6" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.2vh 1.8vw", fontSize: "1.7vw", color: "#f0f4ff" }}>صناديق رأس المال المخاطر</div>
-            </div>
-          </div>
+        <div style={{ marginBottom: "3vh" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.8vh", textTransform: "uppercase" }}>الفصل الأول</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#f0f4ff", margin: 0 }}>إشكالية تمويل المؤسسات الصغيرة</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>ومصادر التمويل المتاحة</span></h2>
+          <div className="anim-line-h delay-4" style={{ width: "14vw", height: "0.3vh", marginTop: "1.5vh", background: "linear-gradient(90deg, #c9a84c, #f0d080, transparent)" }} />
         </div>
 
-        {/* Limitation note */}
-        <div className="anim-fade-up delay-7" style={{ marginTop: "3vh", display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.25)", borderRadius: "0.8vw", padding: "1.5vh 2vw" }}>
-          <div style={{ fontSize: "2.5vw", color: "#c9a84c", flexShrink: 0 }}>!</div>
-          <div style={{ fontSize: "1.7vw", color: "#f0f4ff", lineHeight: 1.5 }}>
-            هذه المصادر غالباً محدودة أو مشروطة — مما يستوجب تدخل هيئات دعم كـ NESDA
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2.5vw", flex: 1, alignItems: "center" }}>
+          {/* Left — problems */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.5vh" }}>
+            <div className="anim-fade delay-2" style={{ fontSize: "1.4vw", color: "#7a90b5", fontWeight: 600, marginBottom: "0.5vh" }}>عوائق التمويل التقليدي</div>
+            <div className="anim-fade-right delay-3" style={{ background: "rgba(200,50,50,0.08)", border: "1px solid rgba(200,50,50,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(220,80,80,0.8)", flexShrink: 0 }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>غياب الضمانات والرهونات الكافية</div>
+            </div>
+            <div className="anim-fade-right delay-4" style={{ background: "rgba(200,50,50,0.08)", border: "1px solid rgba(200,50,50,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(220,80,80,0.8)", flexShrink: 0 }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>ارتفاع تكلفة الاقتراض البنكي</div>
+            </div>
+            <div className="anim-fade-right delay-5" style={{ background: "rgba(200,50,50,0.08)", border: "1px solid rgba(200,50,50,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(220,80,80,0.8)", flexShrink: 0 }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>تعقيد الإجراءات البيروقراطية</div>
+            </div>
+            <div className="anim-fade-right delay-6" style={{ background: "rgba(200,50,50,0.08)", border: "1px solid rgba(200,50,50,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "rgba(220,80,80,0.8)", flexShrink: 0 }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>ضعف الاستفادة من سوق الأسهم</div>
+            </div>
+          </div>
+
+          {/* Right — solutions */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.5vh" }}>
+            <div className="anim-fade delay-2" style={{ fontSize: "1.4vw", color: "#c9a84c", fontWeight: 600, marginBottom: "0.5vh" }}>مصادر التمويل البديلة</div>
+            <div className="anim-fade-left delay-3" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>القرض المصغر عبر أجهزة الدولة</div>
+            </div>
+            <div className="anim-fade-left delay-4" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>رأس المال المخاطر والمشاركة</div>
+            </div>
+            <div className="anim-fade-left delay-5" style={{ background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.4)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center", boxShadow: "0 0 2vw rgba(201,168,76,0.08)" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#f0d080", flexShrink: 0, boxShadow: "0 0 1vw rgba(240,208,128,0.8)" }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", fontWeight: 700 }}>تمويل NESDA الثلاثي والثنائي</div>
+            </div>
+            <div className="anim-fade-left delay-6" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
+              <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>التمويل الإسلامي والمرابحة</div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
     </div>
   );
 }

@@ -1,60 +1,57 @@
-const base = import.meta.env.BASE_URL;
 const isAllSlides = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
 const cls = isAllSlides ? "allslides-mode" : "";
 
 export default function Slide10NesdaIntro() {
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#0a0f1e", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <img src={`${base}nesda-bg.png`} crossOrigin="anonymous" className="absolute inset-0 w-full h-full object-cover" alt="" style={{ opacity: 0.18 }} />
-      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(10,15,30,0.96) 45%, rgba(30,58,95,0.55) 100%)" }} />
-      <div className="absolute top-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
+      {/* Dramatic central glow */}
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(20,40,90,0.8) 0%, transparent 70%)" }} />
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 40% at 50% 100%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="particle particle-1" style={{ top: "8%", right: "8%", width: "0.5vw", height: "0.5vw", background: "rgba(201,168,76,0.6)", borderRadius: "50%", boxShadow: "0 0 1.5vw rgba(201,168,76,0.8)" }} />
+      <div className="particle particle-4" style={{ top: "85%", right: "15%", width: "0.4vw", height: "0.4vw", background: "rgba(240,208,128,0.5)", borderRadius: "50%" }} />
+      <div className="particle particle-2" style={{ top: "40%", left: "5%", width: "0.35vw", height: "0.35vw", background: "rgba(201,168,76,0.4)", borderRadius: "50%" }} />
 
-      <div className="relative z-10 flex h-full" style={{ padding: "6vh 8vw", gap: "4vw" }}>
-        {/* Left content */}
-        <div style={{ flex: 1.4, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.4vw", color: "#c9a84c", letterSpacing: "0.1em", marginBottom: "1vh", fontWeight: 600 }}>الفصل الثاني</div>
-          <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#f0f4ff", margin: 0, marginBottom: "0.3vh" }}>الوكالة الوطنية</h2>
-          <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, margin: 0, marginBottom: "0.5vh" }} >
-            <span className="gold-shimmer">NESDA</span>
-          </h2>
-          <div className="anim-fade delay-2 gold-line" style={{ width: "8vw", marginBottom: "2.5vh" }} />
+      <div className="relative z-10 flex flex-col h-full" style={{ padding: "6vh 8vw" }}>
+        {/* Header */}
+        <div style={{ textAlign: "center", marginBottom: "4vh" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>الفصل الثاني</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4.5vw", fontWeight: 900, color: "#f0f4ff", margin: 0, lineHeight: 1.1 }}>الوكالة الوطنية لدعم وتنمية</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4.5vw", fontWeight: 900, margin: "0 0 1.5vh", lineHeight: 1.1 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>المقاولاتية — NESDA</span></h2>
+          <div className="anim-line-h delay-4" style={{ width: "20vw", height: "0.3vh", margin: "0 auto", background: "linear-gradient(90deg, transparent, #c9a84c, #f0d080, #c9a84c, transparent)" }} />
+        </div>
 
-          <div className="anim-fade-up delay-3" style={{ background: "rgba(30,58,95,0.35)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "1vw", padding: "2vh 2.5vw", marginBottom: "2vh" }}>
-            <div style={{ fontSize: "1.5vw", color: "#8899bb", marginBottom: "0.5vh" }}>التعريف الرسمي:</div>
-            <div style={{ fontSize: "1.7vw", color: "#f0f4ff", lineHeight: 1.6 }}>
-              هيئة عمومية ذات طابع خاص، تعمل تحت وصاية مصالح الوزير المكلف بالمؤسسات المصغرة، تأسست عام 1995 باسم ANSEJ
-            </div>
+        {/* Timeline — 3 eras */}
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "2vw", marginBottom: "3vh" }}>
+          <div className="anim-perspective delay-3" style={{ background: "rgba(14,22,44,0.65)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1.2vw", padding: "2.5vh 2vw", textAlign: "center", position: "relative", overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.25vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
+            <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#c9a84c", marginBottom: "0.5vh" }}>2004</div>
+            <div style={{ fontSize: "1.3vw", fontWeight: 700, color: "#f0f4ff", marginBottom: "0.3vh" }}>ANSEJ</div>
+            <div style={{ fontSize: "1.15vw", color: "#7a90b5" }}>أول هيئة دعم المقاولة الشبابية</div>
           </div>
-
-          <div style={{ display: "flex", gap: "1.5vw" }}>
-            <div className="anim-fade-up delay-4" style={{ flex: 1, background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.5vh 1.5vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.4vh" }}>التأسيس</div>
-              <div style={{ fontSize: "1.6vw", color: "#f0f4ff" }}>8 سبتمبر 1995</div>
-            </div>
-            <div className="anim-fade-up delay-5" style={{ flex: 1, background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.5vh 1.5vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.4vh" }}>التغطية</div>
-              <div style={{ fontSize: "1.6vw", color: "#f0f4ff" }}>كل ولايات الجزائر</div>
-            </div>
+          <div className="anim-perspective delay-4" style={{ background: "rgba(14,22,44,0.65)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1.2vw", padding: "2.5vh 2vw", textAlign: "center", position: "relative", overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.25vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
+            <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#c9a84c", marginBottom: "0.5vh" }}>2022</div>
+            <div style={{ fontSize: "1.3vw", fontWeight: 700, color: "#f0f4ff", marginBottom: "0.3vh" }}>الدمج</div>
+            <div style={{ fontSize: "1.15vw", color: "#7a90b5" }}>اندماج ANSEJ + CNAC + ANGEM</div>
+          </div>
+          <div className="anim-perspective delay-5" style={{ background: "rgba(201,168,76,0.1)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.4)", borderRadius: "1.2vw", padding: "2.5vh 2vw", textAlign: "center", position: "relative", overflow: "hidden", boxShadow: "0 0 3vw rgba(201,168,76,0.12)" }}>
+            <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+            <div style={{ fontSize: "2.8vw", fontWeight: 900, color: "#c9a84c", marginBottom: "0.5vh", textShadow: "0 0 2vw rgba(201,168,76,0.5)" }}>2023</div>
+            <div style={{ fontSize: "1.3vw", fontWeight: 700, color: "#f0f4ff", marginBottom: "0.3vh" }}>NESDA</div>
+            <div style={{ fontSize: "1.15vw", color: "#c9a84c", fontWeight: 600 }}>الوكالة الوطنية الموحدة</div>
           </div>
         </div>
 
-        {/* Right — mission */}
-        <div className="anim-scale delay-4" style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5vh" }}>
-          <div style={{ fontSize: "1.8vw", fontWeight: 700, color: "#c9a84c", marginBottom: "0.5vh" }}>مهام الوكالة</div>
-          {[
-            "مرافقة حاملي المشاريع منذ الفكرة حتى التشغيل",
-            "تمويل المؤسسات المصغرة بقروض ميسّرة",
-            "الإعفاءات الجبائية خلال مرحلتي الإنجاز والاستغلال",
-            "ترقية الفكر المقاولاتي ونشر ثقافة المبادرة",
-          ].map((mission, i) => (
-            <div key={i} className={`anim-fade-left delay-${i + 4}`} style={{ display: "flex", gap: "1.2vw", alignItems: "flex-start", background: "rgba(30,58,95,0.25)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.7vw", padding: "1.2vh 1.5vw" }}>
-              <div style={{ width: "0.8vw", height: "0.8vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, marginTop: "0.5vh" }} />
-              <div style={{ fontSize: "1.6vw", color: "#f0f4ff" }}>{mission}</div>
-            </div>
-          ))}
+        {/* Mission statement */}
+        <div className="anim-fade-up delay-5" style={{ background: "rgba(14,22,44,0.6)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "1.2vw", padding: "2.5vh 3vw", position: "relative", overflow: "hidden", boxShadow: "inset 0 1px 0 rgba(201,168,76,0.1)" }}>
+          <div style={{ position: "absolute", top: 0, left: "30%", right: "30%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+          <div style={{ fontSize: "1.4vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.8vh", textAlign: "center" }}>المهمة الوطنية</div>
+          <div style={{ fontSize: "1.7vw", color: "#f0f4ff", lineHeight: 1.6, textAlign: "center", fontWeight: 600 }}>
+            دعم المقاولين الشباب وتمويل المؤسسات الصغيرة والمتوسطة بصيغ تمويلية متنوعة، بهدف خلق الثروة وتقليص البطالة على المستوى الوطني
+          </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
     </div>
   );
 }

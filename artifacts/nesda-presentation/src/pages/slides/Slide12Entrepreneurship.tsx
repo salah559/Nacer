@@ -3,67 +3,50 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 export default function Slide12Entrepreneurship() {
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#0a0f1e", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #0d1628 0%, #0a0f1e 100%)" }} />
-      <div className="absolute top-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 30% 50%, rgba(12,24,55,0.9) 0%, transparent 70%)" }} />
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 50% 50% at 90% 30%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="particle particle-1" style={{ top: "15%", left: "8%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1vw rgba(201,168,76,0.7)" }} />
+      <div className="particle particle-5" style={{ top: "70%", left: "5%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 
-      <div className="relative z-10 flex h-full" style={{ padding: "6vh 8vw", gap: "4vw" }}>
+      <div className="relative z-10 flex h-full">
         {/* Left */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <div className="anim-fade delay-1" style={{ fontSize: "1.4vw", color: "#c9a84c", letterSpacing: "0.1em", marginBottom: "1vh", fontWeight: 600 }}>الفصل الثاني</div>
-          <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.3vw", fontWeight: 900, color: "#f0f4ff", margin: 0, marginBottom: "0.3vh" }}>المقاولاتية</h2>
-          <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.3vw", fontWeight: 900, color: "#c9a84c", margin: 0, marginBottom: "0.5vh" }}>روح المبادرة</h2>
-          <div className="anim-fade delay-2 gold-line" style={{ width: "8vw", marginBottom: "2.5vh" }} />
-
-          <div className="anim-fade-up delay-3" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "2vh 2.5vw", marginBottom: "2vh" }}>
-            <div style={{ fontSize: "1.7vw", color: "#f0f4ff", lineHeight: 1.6, fontStyle: "italic" }}>
+        <div style={{ width: "45%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>الفصل الثاني</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#f0f4ff", margin: 0, lineHeight: 1.15 }}>المقاولاتية</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>روح المبادرة</span></h2>
+          <div className="anim-line-h delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "2vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
+          <div className="anim-perspective delay-4" style={{ background: "rgba(14,22,44,0.7)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.25)", borderRadius: "1.2vw", padding: "2.5vh 2.5vw", position: "relative", overflow: "hidden", boxShadow: "0 0 3vw rgba(201,168,76,0.07), inset 0 1px 0 rgba(201,168,76,0.1)" }}>
+            <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+            <div style={{ fontSize: "1.5vw", color: "#f0f4ff", lineHeight: 1.7, fontStyle: "italic" }}>
               "القابلية على المبادرة بتنفيذ عمل أو إنشاء مؤسسة جديدة، والمقدرة على اكتشاف الفرص حين لا يرى الآخرون سوى الفوضى"
             </div>
           </div>
-
-          <div className="anim-fade-up delay-4" style={{ fontSize: "1.5vw", color: "#8899bb", lineHeight: 1.6 }}>
-            المقاول يتحمل المخاطرة المالية والشخصية بحثاً عن فرص لخلق قيمة جديدة واستغلال الفرص المتاحة
-          </div>
         </div>
 
-        {/* Right — stages (static, no map) */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <div className="anim-fade delay-2" style={{ fontSize: "1.7vw", fontWeight: 700, color: "#c9a84c", marginBottom: "1.5vh" }}>مراحل المسار المقاولاتي</div>
+        {/* Right — stages */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 6vw 7vh 3vw", gap: "1.5vh" }}>
+          <div className="anim-fade delay-2" style={{ fontSize: "1.4vw", color: "#7a90b5", fontWeight: 600, marginBottom: "0.5vh" }}>المسار المقاولاتي</div>
 
-          <div className="anim-fade-left delay-3" style={{ display: "flex", gap: "1.5vw", alignItems: "center", marginBottom: "1.2vh" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.35)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>01</div>
-            <div style={{ background: "rgba(30,58,95,0.25)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "0.7vw", padding: "1vh 1.5vw", flex: 1 }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>النزعة المقاولاتية</div>
-              <div style={{ fontSize: "1.4vw", color: "#8899bb" }}>الميل الشخصي نحو المقاولة</div>
-            </div>
+          <div className="anim-perspective delay-3" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(14,22,44,0.6)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>01</div>
+            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>النزعة المقاولاتية</div><div style={{ fontSize: "1.2vw", color: "#7a90b5" }}>الميل الشخصي نحو المقاولة</div></div>
           </div>
-
-          <div className="anim-fade-left delay-4" style={{ display: "flex", gap: "1.5vw", alignItems: "center", marginBottom: "1.2vh" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.35)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>02</div>
-            <div style={{ background: "rgba(30,58,95,0.25)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "0.7vw", padding: "1vh 1.5vw", flex: 1 }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>التوجه المقاولاتي</div>
-              <div style={{ fontSize: "1.4vw", color: "#8899bb" }}>قرار السير نحو العمل الحر</div>
-            </div>
+          <div className="anim-perspective delay-4" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(14,22,44,0.6)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>02</div>
+            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>التوجه المقاولاتي</div><div style={{ fontSize: "1.2vw", color: "#7a90b5" }}>قرار السير نحو العمل الحر</div></div>
           </div>
-
-          <div className="anim-fade-left delay-5" style={{ display: "flex", gap: "1.5vw", alignItems: "center", marginBottom: "1.2vh" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.35)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>03</div>
-            <div style={{ background: "rgba(30,58,95,0.25)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "0.7vw", padding: "1vh 1.5vw", flex: 1 }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>بلورة الفكرة</div>
-              <div style={{ fontSize: "1.4vw", color: "#8899bb" }}>تشكيل المشروع وتعبئة الموارد</div>
-            </div>
+          <div className="anim-perspective delay-5" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(201,168,76,0.08)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1vw", padding: "1.5vh 2vw", boxShadow: "0 0 2vw rgba(201,168,76,0.07)" }}>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "#c9a84c", border: "1px solid #f0d080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#050a18", flexShrink: 0, boxShadow: "0 0 1.5vw rgba(201,168,76,0.4)" }}>03</div>
+            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#c9a84c" }}>بلورة الفكرة</div><div style={{ fontSize: "1.2vw", color: "#7a90b5" }}>تشكيل المشروع وتعبئة الموارد</div></div>
           </div>
-
-          <div className="anim-fade-left delay-6" style={{ display: "flex", gap: "1.5vw", alignItems: "center", marginBottom: "1.2vh" }}>
-            <div style={{ width: "4vw", height: "4vw", borderRadius: "50%", background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.35)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>04</div>
-            <div style={{ background: "rgba(30,58,95,0.25)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "0.7vw", padding: "1vh 1.5vw", flex: 1 }}>
-              <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>الانطلاق الفعلي</div>
-              <div style={{ fontSize: "1.4vw", color: "#8899bb" }}>إنتاج السلع والخدمات</div>
-            </div>
+          <div className="anim-perspective delay-6" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(14,22,44,0.6)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>04</div>
+            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#f0f4ff" }}>الانطلاق الفعلي</div><div style={{ fontSize: "1.2vw", color: "#7a90b5" }}>إنتاج السلع والخدمات</div></div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
     </div>
   );
 }

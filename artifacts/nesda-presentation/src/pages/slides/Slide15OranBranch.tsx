@@ -3,59 +3,67 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 export default function Slide15OranBranch() {
   return (
-    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#0a0f1e", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #0d1628 0%, #0a0f1e 100%)" }} />
-      <div className="absolute top-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+    <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#050a18", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 30%, rgba(10,20,50,0.9) 0%, transparent 70%)" }} />
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,168,76,0.07) 0%, transparent 60%)" }} />
+      <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(201,168,76,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.025) 1px, transparent 1px)", backgroundSize: "4vw 4vw" }} />
+      <div className="gold-bar-top" /><div className="gold-bar-bottom" />
+      <div className="particle particle-1" style={{ top: "10%", left: "10%", width: "0.45vw", height: "0.45vw", background: "rgba(201,168,76,0.5)", borderRadius: "50%", boxShadow: "0 0 1.2vw rgba(201,168,76,0.7)" }} />
+      <div className="particle particle-5" style={{ top: "80%", left: "8%", width: "0.3vw", height: "0.3vw", background: "rgba(240,208,128,0.4)", borderRadius: "50%" }} />
 
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "6vh 8vw" }}>
-        <div className="anim-fade delay-1" style={{ fontSize: "1.4vw", color: "#c9a84c", letterSpacing: "0.1em", marginBottom: "1vh", fontWeight: 600 }}>الفصل التطبيقي</div>
-        <h2 className="anim-fade-up delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#f0f4ff", margin: 0, marginBottom: "0.5vh" }}>NESDA فرع وهران</h2>
-        <div className="anim-fade delay-2 gold-line" style={{ width: "10vw", marginBottom: "2.5vh" }} />
+        <div style={{ marginBottom: "3vh" }}>
+          <div className="anim-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.8vh", textTransform: "uppercase" }}>الفصل التطبيقي</div>
+          <h2 className="anim-clip-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#f0f4ff", margin: 0 }}>NESDA فرع وهران</h2>
+          <h2 className="anim-clip-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0 }}><span className="gold-shimmer" style={{ display: "inline-block" }}>نشأة وهيكل تنظيمي</span></h2>
+          <div className="anim-line-h delay-4" style={{ width: "14vw", height: "0.3vh", marginTop: "1.5vh", background: "linear-gradient(90deg, #c9a84c, #f0d080, transparent)" }} />
+        </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "3vw", flex: 1, alignContent: "center" }}>
-          {/* Left */}
+        <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: "2.5vw", flex: 1, alignItems: "center" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "1.8vh" }}>
-            <div className="anim-fade-right delay-3" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "0.8vw", padding: "1.5vh 2vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.4vh" }}>الموقع الجغرافي</div>
-              <div style={{ fontSize: "1.6vw", color: "#f0f4ff" }}>شارع أقادير، منطقة باستي — وهران</div>
+            <div className="anim-perspective delay-3" style={{ background: "rgba(14,22,44,0.7)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.25)", borderRadius: "1.2vw", padding: "2.2vh 2.5vw", position: "relative", overflow: "hidden", boxShadow: "inset 0 1px 0 rgba(201,168,76,0.1)" }}>
+              <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
+              <div style={{ fontSize: "1.3vw", color: "#c9a84c", fontWeight: 700, marginBottom: "1vh" }}>معلومات الفرع</div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.8vh" }}>
+                <div style={{ display: "flex", gap: "1vw", alignItems: "center" }}>
+                  <div style={{ width: "0.4vw", height: "0.4vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0 }} />
+                  <div style={{ fontSize: "1.45vw", color: "#f0f4ff" }}>تأسس الفرع: <span style={{ color: "#c9a84c", fontWeight: 700 }}>2004</span> (ANSEJ سابقاً)</div>
+                </div>
+                <div style={{ display: "flex", gap: "1vw", alignItems: "center" }}>
+                  <div style={{ width: "0.4vw", height: "0.4vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0 }} />
+                  <div style={{ fontSize: "1.45vw", color: "#f0f4ff" }}>الموقع: <span style={{ color: "#c9a84c", fontWeight: 700 }}>وسط مدينة وهران</span></div>
+                </div>
+                <div style={{ display: "flex", gap: "1vw", alignItems: "center" }}>
+                  <div style={{ width: "0.4vw", height: "0.4vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0 }} />
+                  <div style={{ fontSize: "1.45vw", color: "#f0f4ff" }}>النطاق الجغرافي: <span style={{ color: "#c9a84c", fontWeight: 700 }}>ولاية وهران كاملة</span></div>
+                </div>
+              </div>
             </div>
-
-            <div className="anim-fade-right delay-4" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "0.8vw", padding: "1.5vh 2vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.8vh" }}>الملاحق الأربع</div>
-              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", lineHeight: 1.8 }}>
-                ملحقة وهران — شارع أقادير
-              </div>
-              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", lineHeight: 1.8 }}>
-                ملحقة بئر الجير — حي حسن الجوار
-              </div>
-              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", lineHeight: 1.8 }}>
-                ملحقة أرزيو — 160 مسكن
-              </div>
-              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", lineHeight: 1.8 }}>
-                ملحقة عيون الترك — حي بن سمير
+            <div className="anim-perspective delay-4" style={{ background: "rgba(14,22,44,0.5)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.8vh 2.5vw" }}>
+              <div style={{ fontSize: "1.3vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.8vh" }}>الهيكل التنظيمي</div>
+              <div style={{ display: "flex", gap: "1vw", flexWrap: "wrap" }}>
+                <div style={{ background: "rgba(201,168,76,0.08)", borderRadius: "0.5vw", padding: "0.6vh 1vw", fontSize: "1.3vw", color: "#f0f4ff" }}>المدير</div>
+                <div style={{ background: "rgba(201,168,76,0.08)", borderRadius: "0.5vw", padding: "0.6vh 1vw", fontSize: "1.3vw", color: "#f0f4ff" }}>التمويل</div>
+                <div style={{ background: "rgba(201,168,76,0.08)", borderRadius: "0.5vw", padding: "0.6vh 1vw", fontSize: "1.3vw", color: "#f0f4ff" }}>المتابعة</div>
+                <div style={{ background: "rgba(201,168,76,0.08)", borderRadius: "0.5vw", padding: "0.6vh 1vw", fontSize: "1.3vw", color: "#f0f4ff" }}>الاستقبال</div>
+                <div style={{ background: "rgba(201,168,76,0.08)", borderRadius: "0.5vw", padding: "0.6vh 1vw", fontSize: "1.3vw", color: "#f0f4ff" }}>المحاسبة</div>
               </div>
             </div>
           </div>
 
-          {/* Right */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1.8vh" }}>
-            <div className="anim-scale delay-3" style={{ background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "2vh 2vw", textAlign: "center" }}>
-              <div style={{ fontSize: "1.5vw", color: "#8899bb", marginBottom: "0.5vh" }}>أهمية وهران</div>
-              <div style={{ fontSize: "2vw", fontWeight: 700, color: "#c9a84c" }}>مركز اقتصادي وتجاري وصناعي</div>
-              <div style={{ fontSize: "1.5vw", color: "#f0f4ff", marginTop: "0.5vh" }}>من أكبر ولايات الجزائر</div>
+            <div className="anim-scale delay-4" style={{ background: "rgba(201,168,76,0.08)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.12)" }}>
+              <div style={{ fontSize: "1.2vw", color: "#7a90b5", marginBottom: "0.5vh" }}>ملفات ممولة منذ التأسيس</div>
+              <div style={{ fontSize: "6.5vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>3K+</div>
+              <div style={{ fontSize: "1.5vw", color: "#f0f4ff" }}>مشروع تنموي</div>
             </div>
-            <div className="anim-fade-up delay-4" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.5vh 2vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.4vh" }}>الفترة الزمنية للدراسة</div>
-              <div style={{ fontSize: "1.7vw", color: "#f0f4ff" }}>2020 — 2026</div>
-            </div>
-            <div className="anim-fade-up delay-5" style={{ background: "rgba(30,58,95,0.3)", border: "1px solid rgba(201,168,76,0.12)", borderRadius: "0.8vw", padding: "1.5vh 2vw" }}>
-              <div style={{ fontSize: "1.5vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.4vh" }}>أداة الدراسة الميدانية</div>
-              <div style={{ fontSize: "1.7vw", color: "#f0f4ff" }}>مقابلات مع إطارات الفرع</div>
+            <div className="anim-counter delay-5" style={{ background: "rgba(14,22,44,0.5)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.8vh 2vw", textAlign: "center" }}>
+              <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#c9a84c", textShadow: "0 0 2vw rgba(201,168,76,0.4)" }}>8K+</div>
+              <div style={{ fontSize: "1.4vw", color: "#f0f4ff" }}>منصب شغل مُستحدث</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0" style={{ height: "0.4vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
     </div>
   );
 }
