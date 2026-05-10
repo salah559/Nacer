@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/nesda-presentation/"
+title = "تمويل PME - NESDA"
+version = "1.0.0"
+id = "artifacts/nesda-presentation"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/nesda-presentation/" ]
+localPort = 25643
+
+[services.development]
+run = "pnpm --filter @workspace/nesda-presentation run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/nesda-presentation", "run", "build" ]
+publicDir = "artifacts/nesda-presentation/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25643"
+BASE_PATH = "/nesda-presentation/"
