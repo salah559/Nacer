@@ -11,7 +11,7 @@ export default function Slide08Financing() {
 
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "6vh 8vw" }}>
         <div style={{ marginBottom: "3vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.8vh", textTransform: "uppercase" }}>الفصل الأول</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#8B6914", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.8vh", textTransform: "uppercase" }}>الفصل الأول</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>إشكالية تمويل المؤسسات الصغيرة</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0 }}><span className="text-gold" style={{ display: "inline-block" }}>ومصادر التمويل المتاحة</span></h2>
           <div className="anim-line-draw delay-4" style={{ width: "14vw", height: "0.3vh", marginTop: "1.5vh", background: "linear-gradient(90deg, #c9a84c, #f0d080, transparent)" }} />
@@ -41,7 +41,7 @@ export default function Slide08Financing() {
 
           {/* Right — solutions */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1.5vh" }}>
-            <div className="anim-smooth-fade delay-2" style={{ fontSize: "1.4vw", color: "#c9a84c", fontWeight: 600, marginBottom: "0.5vh" }}>مصادر التمويل البديلة</div>
+            <div className="anim-smooth-fade delay-2" style={{ fontSize: "1.4vw", color: "#8B6914", fontWeight: 600, marginBottom: "0.5vh" }}>مصادر التمويل البديلة</div>
             <div className="anim-reveal-up delay-3" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.5vh 2vw", display: "flex", gap: "1.2vw", alignItems: "center" }}>
               <div style={{ width: "0.5vw", height: "0.5vw", borderRadius: "50%", background: "#c9a84c", flexShrink: 0, boxShadow: "0 0 0.8vw rgba(201,168,76,0.6)" }} />
               <div style={{ fontSize: "1.5vw", color: "#0d1830" }}>القرض المصغر عبر أجهزة الدولة</div>

@@ -12,7 +12,7 @@ export default function Slide12Entrepreneurship() {
       <div className="relative z-10 flex h-full">
         {/* Left */}
         <div style={{ width: "45%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>الفصل الثاني</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#8B6914", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>الفصل الثاني</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>المقاولاتية</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="text-gold" style={{ display: "inline-block" }}>روح المبادرة</span></h2>
           <div className="anim-line-draw delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "2vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
@@ -29,19 +29,19 @@ export default function Slide12Entrepreneurship() {
           <div className="anim-smooth-fade delay-2" style={{ fontSize: "1.4vw", color: "#4a5a78", fontWeight: 600, marginBottom: "0.5vh" }}>المسار المقاولاتي</div>
 
           <div className="anim-card-morph delay-3" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
-            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>01</div>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#8B6914", flexShrink: 0 }}>01</div>
             <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#0d1830" }}>النزعة المقاولاتية</div><div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>الميل الشخصي نحو المقاولة</div></div>
           </div>
           <div className="anim-card-morph delay-4" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
-            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>02</div>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#8B6914", flexShrink: 0 }}>02</div>
             <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#0d1830" }}>التوجه المقاولاتي</div><div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>قرار السير نحو العمل الحر</div></div>
           </div>
           <div className="anim-card-morph delay-5" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(201,168,76,0.18)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1vw", padding: "1.5vh 2vw", boxShadow: "0 0 2vw rgba(201,168,76,0.07)" }}>
             <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "#c9a84c", border: "1px solid #f0d080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#050a18", flexShrink: 0, boxShadow: "0 0 1.5vw rgba(201,168,76,0.4)" }}>03</div>
-            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#c9a84c" }}>بلورة الفكرة</div><div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>تشكيل المشروع وتعبئة الموارد</div></div>
+            <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#8B6914" }}>بلورة الفكرة</div><div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>تشكيل المشروع وتعبئة الموارد</div></div>
           </div>
           <div className="anim-card-morph delay-6" style={{ display: "flex", gap: "1.5vw", alignItems: "center", background: "rgba(240,244,252,0.88)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw" }}>
-            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#c9a84c", flexShrink: 0 }}>04</div>
+            <div style={{ width: "4.5vw", height: "4.5vw", borderRadius: "0.8vw", background: "rgba(201,168,76,0.28)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.6vw", fontWeight: 900, color: "#8B6914", flexShrink: 0 }}>04</div>
             <div><div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#0d1830" }}>الانطلاق الفعلي</div><div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>إنتاج السلع والخدمات</div></div>
           </div>
         </div>

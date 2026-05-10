@@ -207,7 +207,7 @@ body {
 
 /* Clean gold text shimmer */
 .text-gold {
-  background: linear-gradient(90deg, #b8953e, #c9a84c, #f0d080, #c9a84c, #b8953e);
+  background: linear-gradient(90deg, #6b4e00, #8B6914, #b8860b, #8B6914, #6b4e00);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,7 +308,7 @@ body {
 .roadmap-node-done {
   background: #ffffff;
   border: 2px solid #c9a84c;
-  color: #c9a84c;
+  color: #8B6914;
 }
 .roadmap-node-active {
   background: #c9a84c;

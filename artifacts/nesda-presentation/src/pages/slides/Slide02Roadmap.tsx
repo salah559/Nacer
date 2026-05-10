@@ -30,7 +30,7 @@ export default function Slide02Roadmap() {
 
         {/* ── Left: Title panel ── */}
         <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(201,168,76,0.15)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#8B6914", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.2vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
             <span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span>
@@ -41,7 +41,7 @@ export default function Slide02Roadmap() {
           </div>
           {/* Chapter count badge */}
           <div className="anim-morph-in delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
-            <span style={{ fontSize: "1.7vw", fontWeight: 900, color: "#c9a84c" }}>05</span>
+            <span style={{ fontSize: "1.7vw", fontWeight: 900, color: "#8B6914" }}>05</span>
             <span style={{ fontSize: "1.1vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>
         </div>

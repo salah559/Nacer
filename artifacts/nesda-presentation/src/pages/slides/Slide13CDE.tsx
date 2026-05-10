@@ -12,18 +12,18 @@ export default function Slide13CDE() {
       <div className="relative z-10 flex h-full">
         {/* Right — stat */}
         <div style={{ width: "38%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 8vw", gap: "2vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, textTransform: "uppercase" }}>الفصل الثاني</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.2vw", color: "#8B6914", letterSpacing: "0.18em", fontWeight: 700, textTransform: "uppercase" }}>الفصل الثاني</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.5vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1 }}>مراكز تطوير</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.5vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}><span className="text-gold" style={{ display: "inline-block" }}>المقاولاتية CDE</span></h2>
           <div className="anim-line-draw delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
           <div className="anim-morph-in delay-4" style={{ background: "rgba(201,168,76,0.18)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.35)" }}>
             <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginBottom: "0.5vh" }}>إنجاز وطني</div>
-            <div style={{ fontSize: "8vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>102</div>
+            <div style={{ fontSize: "8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>102</div>
             <div style={{ fontSize: "1.5vw", color: "#0d1830", fontWeight: 600 }}>مركز تطوير مقاولاتية</div>
-            <div style={{ fontSize: "1.3vw", color: "#c9a84c", fontWeight: 700, marginTop: "0.3vh" }}>المرتبة الأولى عربياً</div>
+            <div style={{ fontSize: "1.3vw", color: "#8B6914", fontWeight: 700, marginTop: "0.3vh" }}>المرتبة الأولى عربياً</div>
           </div>
           <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
-            <div style={{ fontSize: "1.2vw", color: "#c9a84c", fontWeight: 700, marginBottom: "0.3vh" }}>الجهة المشرفة</div>
+            <div style={{ fontSize: "1.2vw", color: "#8B6914", fontWeight: 700, marginBottom: "0.3vh" }}>الجهة المشرفة</div>
             <div style={{ fontSize: "1.3vw", color: "#0d1830", lineHeight: 1.4 }}>وزارة التعليم العالي ووزارة اقتصاد المعرفة والمؤسسات الناشئة</div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Slide13CDE() {
           <div className="anim-morph-in delay-8" style={{ background: "rgba(201,168,76,0.07)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "0.8vw", padding: "1.3vh 1.5vw", marginTop: "0.5vh" }}>
             <div style={{ fontSize: "1.4vw", color: "#0d1830" }}>
               مدة التكوين
-              <span style={{ color: "#c9a84c", fontWeight: 700, margin: "0 0.5vw" }}>15 يوماً</span>
+              <span style={{ color: "#8B6914", fontWeight: 700, margin: "0 0.5vw" }}>15 يوماً</span>
               — شهادة CDE تُتيح الحصول على تمويل NESDA
             </div>
           </div>

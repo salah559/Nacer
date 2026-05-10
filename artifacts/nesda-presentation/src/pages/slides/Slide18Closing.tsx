@@ -20,7 +20,7 @@ export default function Slide18Closing() {
           <div style={{ fontSize: "2.8vw", color: "#1a1a2e", fontWeight: 700, lineHeight: 1.6 }}>
             ﴿وَأَنْ لَيْسَ لِلْإِنْسَانِ إِلَّا مَا سَعَى﴾
           </div>
-          <div style={{ fontSize: "1.5vw", color: "#c9a84c", marginTop: "1vh", fontWeight: 600 }}>سورة النجم — الآية 39</div>
+          <div style={{ fontSize: "1.5vw", color: "#8B6914", marginTop: "1vh", fontWeight: 600 }}>سورة النجم — الآية 39</div>
         </div>
 
         {/* Project title recap — gold text on dark */}
@@ -42,9 +42,9 @@ export default function Slide18Closing() {
         {/* Author names — light on dark */}
         <div className="anim-smooth-fade delay-6" style={{ display: "flex", gap: "4vw", fontSize: "1.5vw", color: "#a0a0b8" }}>
           <span>سويسي أيوب زيد</span>
-          <span style={{ color: "#c9a84c" }}>•</span>
+          <span style={{ color: "#8B6914" }}>•</span>
           <span>عمراني عبد الناصر</span>
-          <span style={{ color: "#c9a84c" }}>•</span>
+          <span style={{ color: "#8B6914" }}>•</span>
           <span style={{ color: "#f0d080" }}>إشراف: د. بن سعيد محمد</span>
         </div>
       </div>

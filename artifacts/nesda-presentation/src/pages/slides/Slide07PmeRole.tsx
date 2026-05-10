@@ -11,7 +11,7 @@ export default function Slide07PmeRole() {
 
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 7vw" }}>
         <div style={{ marginBottom: "2.5vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#c9a84c", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.6vh" }}>الفصل الأول</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.1vw", color: "#8B6914", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.6vh" }}>الفصل الأول</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.4vw", fontWeight: 900, color: "#1a1a2e", margin: 0, lineHeight: 1.2 }}>دور PME في الاقتصاد الوطني</h2>
           <div className="anim-line-draw delay-3" style={{ width: "12vw", height: "0.3vh", marginTop: "1.2vh", background: "linear-gradient(90deg, #c9a84c, #f0d080, transparent)" }} />
         </div>
@@ -20,22 +20,22 @@ export default function Slide07PmeRole() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: "1.5vw", marginBottom: "2vh" }}>
           <div className="anim-count-morph delay-3 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1 }}>97%</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>97%</div>
             <div style={{ fontSize: "1.1vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>من النسيج الاقتصادي الوطني</div>
           </div>
           <div className="anim-count-morph delay-4 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1 }}>60%</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>60%</div>
             <div style={{ fontSize: "1.1vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>من إجمالي مناصب الشغل</div>
           </div>
           <div className="anim-count-morph delay-5 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1 }}>30%</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>30%</div>
             <div style={{ fontSize: "1.1vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>من الناتج المحلي الإجمالي</div>
           </div>
           <div className="anim-count-morph delay-6 card-active" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#c9a84c", lineHeight: 1 }}>1.2M</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>1.2M</div>
             <div style={{ fontSize: "1.1vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>مؤسسة مسجلة وطنياً</div>
           </div>
         </div>
