@@ -50,7 +50,7 @@ export default function Slide11bProjectsChart() {
       <div className="bg-grid-top" />
       <div className="gold-accent-top" /><div className="gold-accent-bottom" />
 
-      <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 6vw" }}>
+      <div className="relative z-10 flex flex-col h-full" style={{ padding: "4vh 5vw" }}>
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "2vh" }}>
           <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh" }}>الفصل الثاني — إحصائيات</div>

@@ -9,7 +9,7 @@ export default function Slide18Closing() {
       <div className="bg-grid-top" />
       <div className="gold-accent-top" /><div className="gold-accent-bottom" />
 
-      <div className="relative z-10 flex flex-col h-full items-center justify-center" style={{ padding: "6vh 10vw", textAlign: "center", gap: "3vh" }}>
+      <div className="relative z-10 flex flex-col h-full items-center justify-center" style={{ padding: "4vh 8vw", textAlign: "center", gap: "2.5vh" }}>
 
         {/* Thank you image */}
         <div className="anim-morph-in delay-1" style={{ width: "12vw", height: "12vw", borderRadius: "50%", overflow: "hidden", border: "3px solid rgba(21,101,192,0.4)", boxShadow: "0 0 3vw rgba(21,101,192,0.2)" }}>

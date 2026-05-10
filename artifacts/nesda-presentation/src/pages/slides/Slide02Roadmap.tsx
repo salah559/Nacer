@@ -29,25 +29,25 @@ export default function Slide02Roadmap() {
       <div className="relative z-10 flex h-full">
 
         {/* ── Left: Title panel ── */}
-        <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(21,101,192,0.15)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث</div>
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "5.04vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.5vh" }}>هيكل</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "5.04vw", fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+        <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "5vh 3vw 5vh 5vw", borderLeft: "1px solid rgba(21,101,192,0.15)", minHeight: 0 }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.4vw", color: "#1565C0", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase", flexShrink: 0 }}>خطة البحث</div>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.1, marginBottom: "0.3vh", flexShrink: 0 }}>هيكل</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.1, flexShrink: 0 }}>
             <span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span>
           </h2>
-          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #1565C0, transparent)" }} />
-          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.96vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #1565C0, transparent)", flexShrink: 0 }} />
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.5vw", color: "#4a5a78", lineHeight: 1.5, flexShrink: 0 }}>
             خمسة فصول تغطي الجانبين النظري والتطبيقي للبحث
           </div>
           {/* Chapter count badge */}
-          <div className="anim-morph-in delay-6" style={{ marginTop: "3.5vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(21,101,192,0.07)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "2vw", padding: "0.8vh 1.5vw", alignSelf: "flex-start" }}>
-            <span style={{ fontSize: "2.29vw", fontWeight: 900, color: "#1565C0" }}>05</span>
-            <span style={{ fontSize: "1.59vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
+          <div className="anim-morph-in delay-6" style={{ marginTop: "2vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(21,101,192,0.07)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "2vw", padding: "0.6vh 1.2vw", alignSelf: "flex-start", flexShrink: 0 }}>
+            <span style={{ fontSize: "1.8vw", fontWeight: 900, color: "#1565C0" }}>05</span>
+            <span style={{ fontSize: "1.3vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>
         </div>
 
         {/* ── Right: Animated vertical timeline ── */}
-        <div style={{ flex: 1, display: "flex", alignItems: "center", padding: "5vh 6vw 5vh 3vw", position: "relative" }}>
+        <div style={{ flex: 1, display: "flex", alignItems: "center", padding: "4vh 4vw 4vh 2vw", position: "relative", minHeight: 0 }}>
 
           {/* Background track line */}
           <div style={{ position: "absolute", right: "6vw", top: "10%", bottom: "10%", width: "0.25vw", background: "rgba(21,101,192,0.12)", borderRadius: "1vw" }} />

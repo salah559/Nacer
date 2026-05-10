@@ -21,7 +21,7 @@ export default function Slide01Cover() {
       </div>
 
       <div className="anim-smooth-fade delay-2 absolute" style={{ right: "0", top: "15%", width: "0.4vh", height: "70%", background: "linear-gradient(180deg, transparent, #1565C0 30%, #42A5F5 50%, #1565C0 70%, transparent)", opacity: 0.5 }} />
-      <div className="relative z-10 flex flex-col h-full" style={{ padding: "7vh 9vw 6vh 5vw" }}>
+      <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 6vw 5vh 5vw" }}>
 
         {/* Meta header */}
         <div className="anim-morph-in delay-1" style={{ display: "flex", alignItems: "center", gap: "1.2vw", marginBottom: "1.5vh" }}>

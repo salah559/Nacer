@@ -24,9 +24,9 @@ export default function Slide11dDashboard() {
       <div className="bg-grid-top" />
       <div className="gold-accent-top" /><div className="gold-accent-bottom" />
 
-      <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 6vw" }}>
-        <div style={{ textAlign: "center", marginBottom: "2vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700 }}>الفصل الثاني — بانوراما تفاعلية</div>
+      <div className="relative z-10 flex flex-col h-full" style={{ padding: "4vh 5vw" }}>
+        <div style={{ textAlign: "center", marginBottom: "1.5vh", flexShrink: 0 }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.4vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700 }}>الفصل الثاني — بانوراما تفاعلية</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>لوحة معلومات NESDA — وهران</h2>
           <div className="anim-line-draw delay-3" style={{ width: "12vw", height: "0.3vh", margin: "1vh auto", background: "linear-gradient(90deg, transparent, #1565C0, transparent)" }} />
         </div>
@@ -62,20 +62,20 @@ export default function Slide11dDashboard() {
           <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1.5vh" }}>
             {/* Main 3 stats */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1.5vw" }}>
-              <div style={{ background: "#ffffff", border: "2px solid #1565C0", borderRadius: "1vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 4px 20px rgba(21,101,192,0.12)" }}>
-                <div style={{ fontSize: "1.5vw", color: "#4a5a78", marginBottom: "1vh" }}>المشاريع الممولة</div>
-                <div style={{ fontSize: "4.38vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>{wilaya.projects.toLocaleString()}</div>
-                <div style={{ fontSize: "1.35vw", color: "#1565C0" }}>+{wilaya.growth}% من العام الماضي</div>
+              <div style={{ background: "#ffffff", border: "2px solid #1565C0", borderRadius: "1vw", padding: "2vh 1.5vw", textAlign: "center", boxShadow: "0 4px 20px rgba(21,101,192,0.12)", flexShrink: 0 }}>
+                <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginBottom: "0.5vh" }}>المشاريع الممولة</div>
+                <div style={{ fontSize: "4vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>{wilaya.projects.toLocaleString()}</div>
+                <div style={{ fontSize: "1.2vw", color: "#1565C0" }}>+{wilaya.growth}% من العام الماضي</div>
               </div>
-              <div style={{ background: "#ffffff", border: "2px solid rgba(42,64,96,0.3)", borderRadius: "1vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 4px 20px rgba(42,64,96,0.08)" }}>
-                <div style={{ fontSize: "1.5vw", color: "#4a5a78", marginBottom: "1vh" }}>مناصب الشغل المخلقة</div>
-                <div style={{ fontSize: "4.38vw", fontWeight: 900, color: "#2a4060", lineHeight: 1 }}>{wilaya.jobs.toLocaleString()}</div>
-                <div style={{ fontSize: "1.35vw", color: "#4a5a78" }}>3 مناصب في المعدل</div>
+              <div style={{ background: "#ffffff", border: "2px solid rgba(42,64,96,0.3)", borderRadius: "1vw", padding: "2vh 1.5vw", textAlign: "center", boxShadow: "0 4px 20px rgba(42,64,96,0.08)", flexShrink: 0 }}>
+                <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginBottom: "0.5vh" }}>مناصب الشغل المخلقة</div>
+                <div style={{ fontSize: "4vw", fontWeight: 900, color: "#2a4060", lineHeight: 1 }}>{wilaya.jobs.toLocaleString()}</div>
+                <div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>3 مناصب في المعدل</div>
               </div>
-              <div style={{ background: "#ffffff", border: "2px solid rgba(21,101,192,0.3)", borderRadius: "1vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 4px 20px rgba(21,101,192,0.08)" }}>
-                <div style={{ fontSize: "1.5vw", color: "#4a5a78", marginBottom: "1vh" }}>نسبة النساء</div>
-                <div style={{ fontSize: "4.38vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>~13%</div>
-                <div style={{ fontSize: "1.35vw", color: "#4a5a78" }}>هيمنة واضحة في المقاولة</div>
+              <div style={{ background: "#ffffff", border: "2px solid rgba(21,101,192,0.3)", borderRadius: "1vw", padding: "2vh 1.5vw", textAlign: "center", boxShadow: "0 4px 20px rgba(21,101,192,0.08)", flexShrink: 0 }}>
+                <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginBottom: "0.5vh" }}>نسبة النساء</div>
+                <div style={{ fontSize: "4vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>~13%</div>
+                <div style={{ fontSize: "1.2vw", color: "#4a5a78" }}>هيمنة واضحة في المقاولة</div>
               </div>
             </div>
 

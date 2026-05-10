@@ -9,68 +9,68 @@ export default function Slide06PmeDef() {
       <div className="bg-grid-top" />
       <div className="gold-accent-top" /><div className="gold-accent-bottom" />
 
-      <div className="relative z-10 flex flex-col h-full" style={{ padding: "6vh 8vw" }}>
-        <div style={{ marginBottom: "3vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.74vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.8vh", textTransform: "uppercase" }}>الفصل الأول</div>
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.8vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>تعريف المؤسسات الصغيرة</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.8vw", fontWeight: 900, margin: 0 }}><span className="text-gold" style={{ display: "inline-block" }}>والمتوسطة — PME</span></h2>
-          <div className="anim-line-draw delay-4" style={{ width: "14vw", height: "0.3vh", marginTop: "1.5vh", background: "linear-gradient(90deg, #1565C0, #42A5F5, transparent)" }} />
+      <div className="relative z-10 flex flex-col h-full" style={{ padding: "4vh 5vw" }}>
+        <div style={{ marginBottom: "2vh", flexShrink: 0 }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.4vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh", textTransform: "uppercase" }}>الفصل الأول</div>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>تعريف المؤسسات الصغيرة</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0 }}><span className="text-gold" style={{ display: "inline-block" }}>والمتوسطة — PME</span></h2>
+          <div className="anim-line-draw delay-4" style={{ width: "14vw", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #1565C0, #42A5F5, transparent)" }} />
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "2.5vw", flex: 1, alignItems: "center" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: "2vw", flex: 1, alignItems: "center", minHeight: 0 }}>
           {/* Left — criteria */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.8vh" }}>
-            <div className="anim-card-morph delay-3" style={{ background: "rgba(240,244,252,0.92)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(21,101,192,0.25)", borderRadius: "1.2vw", padding: "2vh 2.5vw", position: "relative", overflow: "hidden", boxShadow: "0 0 3vw rgba(21,101,192,0.06), inset 0 1px 0 rgba(21,101,192,0.28)" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.5vh", minHeight: 0 }}>
+            <div className="anim-card-morph delay-3" style={{ background: "rgba(240,244,252,0.92)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(21,101,192,0.25)", borderRadius: "1.2vw", padding: "1.8vh 2vw", position: "relative", overflow: "hidden", boxShadow: "0 0 3vw rgba(21,101,192,0.06), inset 0 1px 0 rgba(21,101,192,0.28)", flexShrink: 0 }}>
               <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #1565C0, transparent)" }} />
-              <div style={{ fontSize: "1.89vw", color: "#1565C0", fontWeight: 700, marginBottom: "1.2vh" }}>معيار القانون الجزائري 18-01</div>
+              <div style={{ fontSize: "1.6vw", color: "#1565C0", fontWeight: 700, marginBottom: "1vh" }}>معيار القانون الجزائري 18-01</div>
               <div style={{ display: "flex", gap: "2vw" }}>
                 <div style={{ textAlign: "center" }}>
-                  <div style={{ fontSize: "4vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>{"< 250"}</div>
-                  <div style={{ fontSize: "1.74vw", color: "#4a5a78", marginTop: "0.3vh" }}>عامل</div>
+                  <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>{"< 250"}</div>
+                  <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginTop: "0.3vh" }}>عامل</div>
                 </div>
                 <div style={{ width: "0.15vh", background: "rgba(21,101,192,0.2)", alignSelf: "stretch" }} />
                 <div style={{ textAlign: "center" }}>
-                  <div style={{ fontSize: "4vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>4مـ</div>
-                  <div style={{ fontSize: "1.74vw", color: "#4a5a78", marginTop: "0.3vh" }}>رقم الأعمال</div>
+                  <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>4مـ</div>
+                  <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginTop: "0.3vh" }}>رقم الأعمال</div>
                 </div>
                 <div style={{ width: "0.15vh", background: "rgba(21,101,192,0.2)", alignSelf: "stretch" }} />
                 <div style={{ textAlign: "center" }}>
-                  <div style={{ fontSize: "4vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>1مـ</div>
-                  <div style={{ fontSize: "1.74vw", color: "#4a5a78", marginTop: "0.3vh" }}>الميزانية</div>
+                  <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>1مـ</div>
+                  <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginTop: "0.3vh" }}>الميزانية</div>
                 </div>
               </div>
             </div>
 
-            <div className="anim-card-morph delay-4" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(21,101,192,0.15)", borderRadius: "1vw", padding: "1.8vh 2.5vw" }}>
-              <div style={{ fontSize: "1.89vw", color: "#1565C0", fontWeight: 700, marginBottom: "0.8vh" }}>التصنيف الثلاثي</div>
-              <div style={{ display: "flex", gap: "1.5vw" }}>
-                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "1vh 0.8vw", textAlign: "center" }}>
-                  <div style={{ fontSize: "1.96vw", fontWeight: 700, color: "#0d1830" }}>TPE</div>
-                  <div style={{ fontSize: "1.59vw", color: "#4a5a78" }}>{"< 10 عمال"}</div>
+            <div className="anim-card-morph delay-4" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(21,101,192,0.15)", borderRadius: "1vw", padding: "1.5vh 2vw", flexShrink: 0 }}>
+              <div style={{ fontSize: "1.6vw", color: "#1565C0", fontWeight: 700, marginBottom: "0.6vh" }}>التصنيف الثلاثي</div>
+              <div style={{ display: "flex", gap: "1.2vw" }}>
+                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "0.8vh 0.6vw", textAlign: "center" }}>
+                  <div style={{ fontSize: "1.7vw", fontWeight: 700, color: "#0d1830" }}>TPE</div>
+                  <div style={{ fontSize: "1.3vw", color: "#4a5a78" }}>{"< 10 عمال"}</div>
                 </div>
-                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "1vh 0.8vw", textAlign: "center" }}>
-                  <div style={{ fontSize: "1.96vw", fontWeight: 700, color: "#0d1830" }}>PE</div>
-                  <div style={{ fontSize: "1.59vw", color: "#4a5a78" }}>{"10 — 49"}</div>
+                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "0.8vh 0.6vw", textAlign: "center" }}>
+                  <div style={{ fontSize: "1.7vw", fontWeight: 700, color: "#0d1830" }}>PE</div>
+                  <div style={{ fontSize: "1.3vw", color: "#4a5a78" }}>{"10 — 49"}</div>
                 </div>
-                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "1vh 0.8vw", textAlign: "center" }}>
-                  <div style={{ fontSize: "1.96vw", fontWeight: 700, color: "#0d1830" }}>ME</div>
-                  <div style={{ fontSize: "1.59vw", color: "#4a5a78" }}>{"50 — 249"}</div>
+                <div style={{ flex: 1, background: "rgba(21,101,192,0.07)", borderRadius: "0.6vw", padding: "0.8vh 0.6vw", textAlign: "center" }}>
+                  <div style={{ fontSize: "1.7vw", fontWeight: 700, color: "#0d1830" }}>ME</div>
+                  <div style={{ fontSize: "1.3vw", color: "#4a5a78" }}>{"50 — 249"}</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right — stat */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.8vh" }}>
-            <div className="anim-morph-in delay-4" style={{ background: "rgba(21,101,192,0.07)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(21,101,192,0.28)" }}>
-              <div style={{ fontSize: "1.74vw", color: "#4a5a78", marginBottom: "0.5vh" }}>حجم القطاع في الجزائر</div>
-              <div style={{ fontSize: "6.9vw", fontWeight: 900, color: "#1565C0", lineHeight: 1, textShadow: "0 0 3vw rgba(21,101,192,0.5)" }}>1.2M</div>
-              <div style={{ fontSize: "2.24vw", color: "#0d1830", marginTop: "0.5vh" }}>مؤسسة صغيرة ومتوسطة</div>
-              <div style={{ fontSize: "1.89vw", color: "#1565C0", fontWeight: 700, marginTop: "0.5vh" }}>+97% من النسيج الاقتصادي</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.5vh", minHeight: 0 }}>
+            <div className="anim-morph-in delay-4" style={{ background: "rgba(21,101,192,0.07)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "1.5vw", padding: "2vh 1.5vw", textAlign: "center", boxShadow: "0 0 3vw rgba(21,101,192,0.28)", flexShrink: 0 }}>
+              <div style={{ fontSize: "1.4vw", color: "#4a5a78", marginBottom: "0.3vh" }}>حجم القطاع في الجزائر</div>
+              <div style={{ fontSize: "5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1, textShadow: "0 0 3vw rgba(21,101,192,0.5)" }}>1.2M</div>
+              <div style={{ fontSize: "1.8vw", color: "#0d1830", marginTop: "0.3vh" }}>مؤسسة صغيرة ومتوسطة</div>
+              <div style={{ fontSize: "1.5vw", color: "#1565C0", fontWeight: 700, marginTop: "0.3vh" }}>+97% من النسيج الاقتصادي</div>
             </div>
-            <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(21,101,192,0.35)", borderRadius: "1vw", padding: "1.8vh 2vw" }}>
-              <div style={{ fontSize: "1.89vw", color: "#1565C0", fontWeight: 700, marginBottom: "0.5vh" }}>الأهمية الاستراتيجية</div>
-              <div style={{ fontSize: "1.96vw", color: "#0d1830", lineHeight: 1.5 }}>ركيزة التنويع الاقتصادي وخلق الثروة خارج المحروقات</div>
+            <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", border: "1px solid rgba(21,101,192,0.35)", borderRadius: "1vw", padding: "1.5vh 1.5vw", flexShrink: 0 }}>
+              <div style={{ fontSize: "1.6vw", color: "#1565C0", fontWeight: 700, marginBottom: "0.4vh" }}>الأهمية الاستراتيجية</div>
+              <div style={{ fontSize: "1.5vw", color: "#0d1830", lineHeight: 1.4 }}>ركيزة التنويع الاقتصادي وخلق الثروة خارج المحروقات</div>
             </div>
           </div>
         </div>

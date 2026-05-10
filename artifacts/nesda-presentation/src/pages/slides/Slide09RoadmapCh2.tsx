@@ -30,34 +30,34 @@ export default function Slide09RoadmapCh2() {
       <div className="relative z-10 flex h-full">
 
         {/* ── Left: Title panel ── */}
-        <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "7vh 3vw 7vh 7vw", borderLeft: "1px solid rgba(21,101,192,0.15)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1.5vh", textTransform: "uppercase" }}>خطة البحث — الانتقال</div>
+        <div style={{ width: "36%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "5vh 3vw 5vh 5vw", borderLeft: "1px solid rgba(21,101,192,0.15)", minHeight: 0 }}>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.4vw", color: "#1565C0", letterSpacing: "0.2em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase", flexShrink: 0 }}>خطة البحث — الانتقال</div>
 
-          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4.32vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>ننتقل إلى</h2>
-          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4.32vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}>
+          <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15, flexShrink: 0 }}>ننتقل إلى</h2>
+          <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.15, flexShrink: 0 }}>
             <span className="text-gold" style={{ display: "inline-block" }}>الفصل الثاني</span>
           </h2>
 
-          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "2.5vh", marginBottom: "2.5vh", background: "linear-gradient(90deg, #1565C0, transparent)" }} />
+          <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #1565C0, transparent)", flexShrink: 0 }} />
 
-          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.89vw", color: "#4a5a78", lineHeight: 1.7 }}>
+          <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.5vw", color: "#4a5a78", lineHeight: 1.5, flexShrink: 0 }}>
             المقاولاتية والوكالة الوطنية NESDA
           </div>
 
           {/* Progress counter */}
-          <div className="anim-card-morph delay-6" style={{ marginTop: "3.5vh", background: "rgba(21,101,192,0.07)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "1vw", padding: "1.2vh 1.5vw", alignSelf: "flex-start" }}>
-            <div style={{ fontSize: "1.5vw", color: "#4a5a78", marginBottom: "0.4vh" }}>التقدم في البحث</div>
+          <div className="anim-card-morph delay-6" style={{ marginTop: "2vh", background: "rgba(21,101,192,0.07)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "1vw", padding: "1vh 1.2vw", alignSelf: "flex-start", flexShrink: 0 }}>
+            <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginBottom: "0.3vh" }}>التقدم في البحث</div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.8vw" }}>
               <div style={{ flex: 1, height: "0.4vh", background: "rgba(21,101,192,0.15)", borderRadius: "1vw", overflow: "hidden" }}>
                 <div style={{ width: "40%", height: "100%", background: "linear-gradient(90deg, #1565C0, #42A5F5)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
               </div>
-              <span style={{ fontSize: "1.59vw", fontWeight: 700, color: "#1565C0" }}>40%</span>
+              <span style={{ fontSize: "1.4vw", fontWeight: 700, color: "#1565C0" }}>40%</span>
             </div>
           </div>
         </div>
 
         {/* ── Right: Animated vertical timeline ── */}
-        <div style={{ flex: 1, display: "flex", alignItems: "center", padding: "5vh 6vw 5vh 3vw", position: "relative" }}>
+        <div style={{ flex: 1, display: "flex", alignItems: "center", padding: "4vh 4vw 4vh 2vw", position: "relative", minHeight: 0 }}>
 
           {/* Background track */}
           <div style={{ position: "absolute", right: "6vw", top: "10%", bottom: "10%", width: "0.25vw", background: "rgba(21,101,192,0.12)", borderRadius: "1vw" }} />
