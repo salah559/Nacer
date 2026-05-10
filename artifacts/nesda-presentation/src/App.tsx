@@ -146,7 +146,7 @@ function SlideEditor() {
       </div>
       {/* Slide counter */}
       <div style={{ position: "fixed", bottom: "1.5vh", left: "50%", transform: "translateX(-50%)", zIndex: 1000, fontSize: "1vw", color: "rgba(13,24,48,0.25)", fontFamily: "Cairo, sans-serif", letterSpacing: "0.12em", fontWeight: 600, pointerEvents: "none" }}>
-        {currentIndex + 1} / {slides.length}
+        <span dir="ltr">{currentIndex + 1} / {slides.length}</span>
       </div>
       {slides.map((slide, index) => {
         const isActive = index === currentIndex;

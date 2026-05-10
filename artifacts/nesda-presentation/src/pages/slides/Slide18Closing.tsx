@@ -11,16 +11,26 @@ export default function Slide18Closing() {
 
       <div className="relative z-10 flex flex-col h-full items-center justify-center" style={{ padding: "6vh 10vw", textAlign: "center", gap: "3vh" }}>
 
-        {/* Thank you — white on dark */}
-        <div className="anim-morph-in delay-1" style={{ fontSize: "1.8vw", color: "#e8e8f0", letterSpacing: "0.15em", fontWeight: 600, textTransform: "uppercase" }}>شكراً على الاستماع</div>
+        {/* Thank you image */}
+        <div className="anim-morph-in delay-1" style={{ width: "12vw", height: "12vw", borderRadius: "50%", overflow: "hidden", border: "3px solid rgba(201,168,76,0.4)", boxShadow: "0 0 3vw rgba(201,168,76,0.2)" }}>
+          <img src="images/thank-you-gesture.png" alt="Thank you" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
 
-        {/* Quranic verse — bright card */}
-        <div className="anim-card-morph delay-2" style={{ background: "#ffffff", border: "2px solid #c9a84c", borderRadius: "1.5vw", padding: "3vh 4vw", maxWidth: "70vw", position: "relative", overflow: "hidden", boxShadow: "0 4px 24px rgba(201,168,76,0.2)" }}>
+        {/* Thank you text */}
+        <div className="anim-morph-in delay-2" style={{ fontSize: "2vw", color: "#e8e8f0", letterSpacing: "0.15em", fontWeight: 600 }}>شكراً لحسن الاستماع والمتابعة</div>
+
+        {/* Quranic verse — elegant calligraphy card */}
+        <div className="anim-card-morph delay-3" style={{ background: "linear-gradient(135deg, #ffffff, #faf8f4)", border: "2px solid #c9a84c", borderRadius: "1.5vw", padding: "4vh 5vw", maxWidth: "75vw", position: "relative", overflow: "hidden", boxShadow: "0 4px 24px rgba(201,168,76,0.2)" }}>
           <div className="gold-line" style={{ position: "absolute", top: 0, left: "25%", right: "25%" }} />
-          <div style={{ fontSize: "2.8vw", color: "#1a1a2e", fontWeight: 700, lineHeight: 1.6 }}>
+          {/* Decorative Islamic pattern corners */}
+          <svg style={{ position: "absolute", top: "1vh", left: "1vw", width: "3vw", height: "3vw", opacity: 0.15 }} viewBox="0 0 100 100"><path d="M0,0 L40,0 L40,10 L10,10 L10,40 L0,40 Z" fill="#c9a84c" /></svg>
+          <svg style={{ position: "absolute", top: "1vh", right: "1vw", width: "3vw", height: "3vw", opacity: 0.15, transform: "scaleX(-1)" }} viewBox="0 0 100 100"><path d="M0,0 L40,0 L40,10 L10,10 L10,40 L0,40 Z" fill="#c9a84c" /></svg>
+          <svg style={{ position: "absolute", bottom: "1vh", left: "1vw", width: "3vw", height: "3vw", opacity: 0.15, transform: "scaleY(-1)" }} viewBox="0 0 100 100"><path d="M0,0 L40,0 L40,10 L10,10 L10,40 L0,40 Z" fill="#c9a84c" /></svg>
+          <svg style={{ position: "absolute", bottom: "1vh", right: "1vw", width: "3vw", height: "3vw", opacity: 0.15, transform: "scale(-1, -1)" }} viewBox="0 0 100 100"><path d="M0,0 L40,0 L40,10 L10,10 L10,40 L0,40 Z" fill="#c9a84c" /></svg>
+          <div style={{ fontSize: "3.2vw", color: "#1a1a2e", fontWeight: 700, lineHeight: 1.8, fontFamily: "'Amiri', 'Scheherazade New', 'Noto Naskh Arabic', serif", textAlign: "center", letterSpacing: "0.05em" }}>
             ﴿وَأَنْ لَيْسَ لِلْإِنْسَانِ إِلَّا مَا سَعَى﴾
           </div>
-          <div style={{ fontSize: "1.5vw", color: "#8B6914", marginTop: "1vh", fontWeight: 600 }}>سورة النجم — الآية 39</div>
+          <div style={{ fontSize: "1.4vw", color: "#8B6914", marginTop: "1.5vh", fontWeight: 600, textAlign: "center" }}>سورة النجم — الآية 39</div>
         </div>
 
         {/* Project title recap — gold text on dark */}

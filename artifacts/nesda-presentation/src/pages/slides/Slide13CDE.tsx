@@ -1,3 +1,5 @@
+import AnimatedCounter from "../../components/AnimatedCounter";
+
 const isAllSlides = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
 const cls = isAllSlides ? "allslides-mode" : "";
 
@@ -18,7 +20,11 @@ export default function Slide13CDE() {
           <div className="anim-line-draw delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
           <div className="anim-morph-in delay-4" style={{ background: "rgba(201,168,76,0.18)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.35)" }}>
             <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginBottom: "0.5vh" }}>إنجاز وطني</div>
-            <div style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>+100</div>
+            <div style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>+
+              <span style={{ fontSize: "6vw" }}>
+                <AnimatedCounter target={100} suffix="" duration={1000} style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914" }} />
+              </span>
+            </div>
             <div style={{ fontSize: "1.5vw", color: "#0d1830", fontWeight: 600 }}>مركز تطوير مقاولاتية</div>
             <div style={{ fontSize: "1.3vw", color: "#8B6914", fontWeight: 700, marginTop: "0.3vh" }}>المرتبة الأولى عربياً</div>
           </div>

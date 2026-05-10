@@ -6,11 +6,20 @@ export default function Slide01Cover() {
   return (
     <div className={`relative w-screen h-screen overflow-hidden ${cls}`} style={{ background: "#ffffff", fontFamily: "Cairo, sans-serif", direction: "rtl" }}>
 
-            <div className="slide-bg bg-cover" />
+      {/* Hero image background */}
+      <div style={{ position: "absolute", inset: 0, background: `url("${base}images/cover-hero.png") center center / cover no-repeat` }} />
       <div className="bg-overlay-medium" />
       <div className="bg-grid-top" />
-<div className="gold-accent-top" />
+      <div className="gold-accent-top" />
       <div className="gold-accent-bottom" />
+
+      {/* Particle effect */}
+      <div className="particle-container">
+        {Array.from({ length: 12 }).map((_, i) => (
+          <div key={i} className="particle" />
+        ))}
+      </div>
+
       <div className="anim-smooth-fade delay-2 absolute" style={{ right: "0", top: "15%", width: "0.4vh", height: "70%", background: "linear-gradient(180deg, transparent, #c9a84c 30%, #f0d080 50%, #c9a84c 70%, transparent)", opacity: 0.5 }} />
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "7vh 9vw 6vh 5vw" }}>
 

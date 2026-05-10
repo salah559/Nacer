@@ -78,3 +78,15 @@ id = "Oz6HbvYheIdOZNGcAz3YJ"
 uri = "file://artifacts/nesda-presentation/public/bg/slide13-cde.png"
 type = "image"
 title = "CDE background"
+
+[[generated]]
+id = "AOaSwBGePCREReA9xtiOn"
+uri = "file://artifacts/nesda-presentation/public/images/cover-hero.png"
+type = "image"
+title = "academic thesis cover design"
+
+[[generated]]
+id = "nfNJynPb70DGbKCtSMniJ"
+uri = "file://artifacts/nesda-presentation/public/images/thank-you-gesture.png"
+type = "image"
+title = "thank you gesture closing"
