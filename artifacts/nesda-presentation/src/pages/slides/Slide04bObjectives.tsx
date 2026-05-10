@@ -51,10 +51,10 @@ export default function Slide04bObjectives() {
       <div className="relative z-10 flex h-full">
         {/* Left — title */}
         <div style={{ width: "18%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "2vh 1vw 2vh 3vw", borderLeft: "1px solid rgba(232,185,35,0.18)" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.3vw", color: "#DAA520", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>المقدمة العامة</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.3vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "1vh", textTransform: "uppercase" }}>المقدمة العامة</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "3.2vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15 }}>أهداف</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "3.2vw", fontWeight: 900, margin: 0, lineHeight: 1.15 }}><span className="text-gold" style={{ display: "inline-block" }}>الدراسة</span></h2>
-          <div className="anim-line-draw delay-4" style={{ width: "50%", height: "0.3vh", marginTop: "1vh", marginBottom: "1vh", background: "linear-gradient(90deg, #E8B923, transparent)" }} />
+          <div className="anim-line-draw delay-4" style={{ width: "50%", height: "0.3vh", marginTop: "1vh", marginBottom: "1vh", background: "linear-gradient(90deg, #1565C0, transparent)" }} />
           <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.1vw", color: "#4a5a78", lineHeight: 1.5 }}>
             تسعى هذه الدراسة إلى الإجابة على إشكالية التمويل من خلال أهداف محددة ومترابطة
           </div>
@@ -83,7 +83,7 @@ export default function Slide04bObjectives() {
               }}
             >
               <div style={{ position: "absolute", top: 0, right: "15%", left: "15%", height: "0.15vh", background: `linear-gradient(90deg, transparent, rgba(232,185,35,${i === 0 ? "1" : "0.5"}), transparent)` }} />
-              <div style={{ width: "1.8vw", height: "1.8vw", flexShrink: 0, borderRadius: "50%", background: i === 0 ? "rgba(232,185,35,0.35)" : "rgba(232,185,35,0.18)", border: "1px solid rgba(232,185,35,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1vw", fontWeight: 900, color: "#DAA520" }}>
+              <div style={{ width: "1.8vw", height: "1.8vw", flexShrink: 0, borderRadius: "50%", background: i === 0 ? "rgba(232,185,35,0.35)" : "rgba(232,185,35,0.18)", border: "1px solid rgba(232,185,35,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1vw", fontWeight: 900, color: "#1565C0" }}>
                 {obj.n}
               </div>
               <div style={{ minWidth: 0, overflow: "hidden" }}>

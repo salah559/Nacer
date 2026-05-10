@@ -23,23 +23,23 @@ export default function Slide11cFinancingCalc() {
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 6vw" }}>
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "2vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#DAA520", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh" }}>الفصل الثاني — تفاعلي</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh" }}>الفصل الثاني — تفاعلي</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>حاسبة تمويل المشاريع</h2>
-          <div className="anim-line-draw delay-3" style={{ width: "12vw", height: "0.3vh", margin: "1vh auto", background: "linear-gradient(90deg, transparent, #E8B923, transparent)" }} />
+          <div className="anim-line-draw delay-3" style={{ width: "12vw", height: "0.3vh", margin: "1vh auto", background: "linear-gradient(90deg, transparent, #1565C0, transparent)" }} />
         </div>
 
         <div className="anim-morph-in delay-3" style={{ display: "flex", gap: "3vw", flex: 1 }}>
           {/* Left — controls */}
           <div style={{ width: "40%", display: "flex", flexDirection: "column", gap: "2vh" }}>
             {/* Mode selector */}
-            <div style={{ background: "rgba(240,244,252,0.9)", borderRadius: "1vw", padding: "2vh 2vw", border: "1px solid rgba(201,168,76,0.2)" }}>
-              <div style={{ fontSize: "1.74vw", color: "#DAA520", fontWeight: 700, marginBottom: "1.5vh" }}>اختر صيغة التمويل:</div>
+            <div style={{ background: "rgba(240,244,252,0.9)", borderRadius: "1vw", padding: "2vh 2vw", border: "1px solid rgba(21,101,192,0.2)" }}>
+              <div style={{ fontSize: "1.74vw", color: "#1565C0", fontWeight: 700, marginBottom: "1.5vh" }}>اختر صيغة التمويل:</div>
               <div style={{ display: "flex", gap: "1vw" }}>
-                <button onClick={() => setMode("binary")} style={{ flex: 1, padding: "1.5vh", borderRadius: "0.8vw", border: mode === "binary" ? "2px solid #E8B923" : "1px solid #ddd", background: mode === "binary" ? "rgba(201,168,76,0.15)" : "#fff", color: mode === "binary" ? "#DAA520" : "#4a5a78", fontWeight: 700, fontSize: "1.59vw", cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}>
+                <button onClick={() => setMode("binary")} style={{ flex: 1, padding: "1.5vh", borderRadius: "0.8vw", border: mode === "binary" ? "2px solid #1565C0" : "1px solid #ddd", background: mode === "binary" ? "rgba(21,101,192,0.15)" : "#fff", color: mode === "binary" ? "#1565C0" : "#4a5a78", fontWeight: 700, fontSize: "1.59vw", cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}>
                   <div style={{ fontSize: "1.96vw", marginBottom: "0.5vh" }}>التمويل الثنائي</div>
                   <div style={{ fontSize: "1.35vw", fontWeight: 400 }}>مساهمة + قرض بنكي بضمان الوكالة</div>
                 </button>
-                <button onClick={() => setMode("triple")} style={{ flex: 1, padding: "1.5vh", borderRadius: "0.8vw", border: mode === "triple" ? "2px solid #E8B923" : "1px solid #ddd", background: mode === "triple" ? "rgba(201,168,76,0.15)" : "#fff", color: mode === "triple" ? "#DAA520" : "#4a5a78", fontWeight: 700, fontSize: "1.59vw", cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}>
+                <button onClick={() => setMode("triple")} style={{ flex: 1, padding: "1.5vh", borderRadius: "0.8vw", border: mode === "triple" ? "2px solid #1565C0" : "1px solid #ddd", background: mode === "triple" ? "rgba(21,101,192,0.15)" : "#fff", color: mode === "triple" ? "#1565C0" : "#4a5a78", fontWeight: 700, fontSize: "1.59vw", cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}>
                   <div style={{ fontSize: "1.96vw", marginBottom: "0.5vh" }}>التمويل الثلاثي</div>
                   <div style={{ fontSize: "1.35vw", fontWeight: 400 }}>مساهمة + قرض NESDA + قرض بنكي</div>
                 </button>
@@ -47,10 +47,10 @@ export default function Slide11cFinancingCalc() {
             </div>
 
             {/* Slider */}
-            <div style={{ background: "rgba(240,244,252,0.9)", borderRadius: "1vw", padding: "2vh 2vw", border: "1px solid rgba(201,168,76,0.2)" }}>
+            <div style={{ background: "rgba(240,244,252,0.9)", borderRadius: "1vw", padding: "2vh 2vw", border: "1px solid rgba(21,101,192,0.2)" }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5vh" }}>
-                <span style={{ fontSize: "1.74vw", color: "#DAA520", fontWeight: 700 }}>مبلغ الاستثمار:</span>
-                <span style={{ fontSize: "2.7vw", fontWeight: 900, color: "#DAA520" }}>{investment}M <span style={{ fontSize: "1.5vw" }}>دج</span></span>
+                <span style={{ fontSize: "1.74vw", color: "#1565C0", fontWeight: 700 }}>مبلغ الاستثمار:</span>
+                <span style={{ fontSize: "2.7vw", fontWeight: 900, color: "#1565C0" }}>{investment}M <span style={{ fontSize: "1.5vw" }}>دج</span></span>
               </div>
               <input
                 type="range"
@@ -58,7 +58,7 @@ export default function Slide11cFinancingCalc() {
                 max="30"
                 value={investment}
                 onChange={(e) => setInvestment(parseInt(e.target.value))}
-                style={{ width: "100%", accentColor: "#E8B923", cursor: "pointer" }}
+                style={{ width: "100%", accentColor: "#1565C0", cursor: "pointer" }}
               />
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: "1.27vw", color: "#4a5a78", marginTop: "0.5vh" }}>
                 <span>1M</span><span>15M</span><span>30M</span>
@@ -68,7 +68,7 @@ export default function Slide11cFinancingCalc() {
             {/* Quick presets */}
             <div style={{ display: "flex", gap: "0.8vw", justifyContent: "center" }}>
               {[5, 10, 15, 20, 25, 30].map(v => (
-                <button key={v} onClick={() => setInvestment(v)} style={{ padding: "0.6vh 1.2vw", borderRadius: "2vw", border: investment === v ? "2px solid #E8B923" : "1px solid #ddd", background: investment === v ? "#E8B923" : "#fff", color: investment === v ? "#fff" : "#4a5a78", fontSize: "1.35vw", fontWeight: 600, cursor: "pointer", fontFamily: "Cairo" }}>
+                <button key={v} onClick={() => setInvestment(v)} style={{ padding: "0.6vh 1.2vw", borderRadius: "2vw", border: investment === v ? "2px solid #1565C0" : "1px solid #ddd", background: investment === v ? "#1565C0" : "#fff", color: investment === v ? "#fff" : "#4a5a78", fontSize: "1.35vw", fontWeight: 600, cursor: "pointer", fontFamily: "Cairo" }}>
                   {v}M
                 </button>
               ))}
@@ -77,28 +77,28 @@ export default function Slide11cFinancingCalc() {
 
           {/* Right — results */}
           <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1.5vh" }}>
-            <div style={{ fontSize: "1.74vw", color: "#DAA520", fontWeight: 700, textAlign: "center" }}>تفاصيل التمويل:</div>
+            <div style={{ fontSize: "1.74vw", color: "#1565C0", fontWeight: 700, textAlign: "center" }}>تفاصيل التمويل:</div>
 
             {/* Owner contribution */}
-            <div style={{ background: "#ffffff", border: "2px solid #E8B923", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(201,168,76,0.12)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ background: "#ffffff", border: "2px solid #1565C0", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(21,101,192,0.12)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <div>
                 <div style={{ fontSize: "1.89vw", color: "#0d1830", fontWeight: 700 }}>مساهمة صاحب المشروع</div>
                 <div style={{ fontSize: "1.42vw", color: "#4a5a78" }}>30% من قيمة الاستثمار</div>
               </div>
-              <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520", lineHeight: 1 }}>
-                <AnimatedCounter target={contribution} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520" }} />
+              <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>
+                <AnimatedCounter target={contribution} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0" }} />
               </div>
             </div>
 
             {mode === "triple" ? (
               <>
-                <div style={{ background: "#ffffff", border: "2px solid rgba(201,168,76,0.4)", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(201,168,76,0.08)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div style={{ background: "#ffffff", border: "2px solid rgba(21,101,192,0.4)", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(21,101,192,0.08)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
                     <div style={{ fontSize: "1.89vw", color: "#0d1830", fontWeight: 700 }}>قرض NESDA المباشر</div>
                     <div style={{ fontSize: "1.42vw", color: "#4a5a78" }}>40% من قيمة الاستثمار</div>
                   </div>
-                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520", lineHeight: 1 }}>
-                    <AnimatedCounter target={nesdaLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520" }} />
+                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>
+                    <AnimatedCounter target={nesdaLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0" }} />
                   </div>
                 </div>
                 <div style={{ background: "#ffffff", border: "2px solid rgba(42,64,96,0.3)", borderRadius: "1vw", padding: "2vh 2vw", boxShadow: "0 4px 16px rgba(42,64,96,0.08)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -106,8 +106,8 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "1.89vw", color: "#0d1830", fontWeight: 700 }}>قرض بنكي تكميلي</div>
                     <div style={{ fontSize: "1.42vw", color: "#4a5a78" }}>30% من قيمة الاستثمار</div>
                   </div>
-                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520", lineHeight: 1 }}>
-                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520" }} />
+                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>
+                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0" }} />
                   </div>
                 </div>
               </>
@@ -118,17 +118,17 @@ export default function Slide11cFinancingCalc() {
                     <div style={{ fontSize: "1.89vw", color: "#0d1830", fontWeight: 700 }}>قرض بنكي</div>
                     <div style={{ fontSize: "1.42vw", color: "#4a5a78" }}>70% من قيمة الاستثمار</div>
                   </div>
-                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520", lineHeight: 1 }}>
-                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520" }} />
+                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>
+                    <AnimatedCounter target={bankLoan} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0" }} />
                   </div>
                 </div>
-                <div style={{ background: "rgba(201,168,76,0.08)", border: "2px solid rgba(201,168,76,0.3)", borderRadius: "1vw", padding: "2vh 2vw", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div style={{ background: "rgba(21,101,192,0.08)", border: "2px solid rgba(21,101,192,0.3)", borderRadius: "1vw", padding: "2vh 2vw", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
                     <div style={{ fontSize: "1.89vw", color: "#0d1830", fontWeight: 700 }}>ضمان الوكالة</div>
                     <div style={{ fontSize: "1.42vw", color: "#4a5a78" }}>85% من قيمة القرض البنكي</div>
                   </div>
-                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520", lineHeight: 1 }}>
-                    <AnimatedCounter target={nesdaGuarantee} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#DAA520" }} />
+                  <div style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0", lineHeight: 1 }}>
+                    <AnimatedCounter target={nesdaGuarantee} suffix="M دج" duration={2200} style={{ fontSize: "3.5vw", fontWeight: 900, color: "#1565C0" }} />
                   </div>
                 </div>
               </>
@@ -136,8 +136,8 @@ export default function Slide11cFinancingCalc() {
 
             {/* Total check */}
             <div style={{ background: "rgba(14,22,44,0.9)", borderRadius: "1vw", padding: "2vh 2vw", display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "auto" }}>
-              <div style={{ fontSize: "1.96vw", color: "#E8B923", fontWeight: 700 }}>المجموع:</div>
-              <div style={{ fontSize: "3.25vw", fontWeight: 900, color: "#f0d080" }}>
+              <div style={{ fontSize: "1.96vw", color: "#1565C0", fontWeight: 700 }}>المجموع:</div>
+              <div style={{ fontSize: "3.25vw", fontWeight: 900, color: "#42A5F5" }}>
                 {investment}M <span style={{ fontSize: "1.74vw" }}>دج</span>
               </div>
             </div>

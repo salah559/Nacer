@@ -27,10 +27,10 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     label === "2015" ? 23676 :
     label === "2016" ? 11262 : 0;
   return (
-    <div style={{ background: "rgba(14,22,44,0.95)", border: "1px solid #E8B923", borderRadius: "0.8vw", padding: "1.2vh 1.5vw", direction: "rtl" }}>
-      <div style={{ fontSize: "1.59vw", color: "#E8B923", fontWeight: 700, marginBottom: "0.5vh" }}>سنة {label}</div>
+    <div style={{ background: "rgba(14,22,44,0.95)", border: "1px solid #1565C0", borderRadius: "0.8vw", padding: "1.2vh 1.5vw", direction: "rtl" }}>
+      <div style={{ fontSize: "1.59vw", color: "#1565C0", fontWeight: 700, marginBottom: "0.5vh" }}>سنة {label}</div>
       <div style={{ fontSize: "1.5vw", color: "#fff", lineHeight: 1.6 }}>
-        المشاريع الجديدة: <span style={{ color: "#E8B923", fontWeight: 700 }}>{currentYearTotal.toLocaleString()}</span>
+        المشاريع الجديدة: <span style={{ color: "#1565C0", fontWeight: 700 }}>{currentYearTotal.toLocaleString()}</span>
       </div>
       <div style={{ fontSize: "1.42vw", color: "#a0a0b8", lineHeight: 1.5 }}>
         الرجال: {item.men.toLocaleString()} | النساء: {item.women.toLocaleString()}
@@ -53,33 +53,33 @@ export default function Slide11bProjectsChart() {
       <div className="relative z-10 flex flex-col h-full" style={{ padding: "5vh 6vw" }}>
         {/* Header */}
         <div style={{ textAlign: "center", marginBottom: "2vh" }}>
-          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#DAA520", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh" }}>الفصل الثاني — إحصائيات</div>
+          <div className="anim-smooth-fade delay-1" style={{ fontSize: "1.59vw", color: "#1565C0", letterSpacing: "0.18em", fontWeight: 700, marginBottom: "0.5vh" }}>الفصل الثاني — إحصائيات</div>
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0 }}>تطور المشاريع الممولة (2010 — 2016)</h2>
-          <div className="anim-line-draw delay-3" style={{ width: "15vw", height: "0.3vh", margin: "1vh auto", background: "linear-gradient(90deg, transparent, #E8B923, #f0d080, transparent)" }} />
+          <div className="anim-line-draw delay-3" style={{ width: "15vw", height: "0.3vh", margin: "1vh auto", background: "linear-gradient(90deg, transparent, #1565C0, #42A5F5, transparent)" }} />
         </div>
 
         {/* Chart container */}
-        <div className="anim-morph-in delay-3" style={{ flex: 1, background: "rgba(255,255,255,0.9)", borderRadius: "1.2vw", border: "1px solid rgba(201,168,76,0.2)", padding: "2vh 2vw", boxShadow: "0 4px 24px rgba(0,0,0,0.06)", minHeight: "30vh" }}>
+        <div className="anim-morph-in delay-3" style={{ flex: 1, background: "rgba(255,255,255,0.9)", borderRadius: "1.2vw", border: "1px solid rgba(21,101,192,0.2)", padding: "2vh 2vw", boxShadow: "0 4px 24px rgba(0,0,0,0.06)", minHeight: "30vh" }}>
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 10 }}>
               <defs>
-                <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#E8B923" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#E8B923" stopOpacity={0.05} />
+                <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#1565C0" stopOpacity={0.3} />
+                  <stop offset="95%" stopColor="#1565C0" stopOpacity={0.05} />
                 </linearGradient>
                 <linearGradient id="menGrad" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#2a4060" stopOpacity={0.25} />
                   <stop offset="95%" stopColor="#2a4060" stopOpacity={0.03} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(201,168,76,0.15)" />
-              <XAxis dataKey="year" tick={{ fontSize: "1.5vw", fill: "#4a5a78", fontFamily: "Cairo" }} axisLine={{ stroke: "#E8B923" }} tickLine={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(21,101,192,0.15)" />
+              <XAxis dataKey="year" tick={{ fontSize: "1.5vw", fill: "#4a5a78", fontFamily: "Cairo" }} axisLine={{ stroke: "#1565C0" }} tickLine={false} />
               <YAxis tick={{ fontSize: "1.35vw", fill: "#4a5a78", fontFamily: "Cairo" }} axisLine={false} tickLine={false} tickFormatter={(v: number) => (v / 1000).toFixed(0) + "K"} />
-              <Tooltip content={<CustomTooltip />} cursor={{ stroke: "#E8B923", strokeWidth: 1, strokeDasharray: "4 4" }} />
-              <ReferenceLine x="2012" stroke="#E8B923" strokeDasharray="6 3" strokeWidth={2}>
-                <Label value="القمة: 65,812" position="top" fill="#E8B923" fontSize={14} fontFamily="Cairo" />
+              <Tooltip content={<CustomTooltip />} cursor={{ stroke: "#1565C0", strokeWidth: 1, strokeDasharray: "4 4" }} />
+              <ReferenceLine x="2012" stroke="#1565C0" strokeDasharray="6 3" strokeWidth={2}>
+                <Label value="القمة: 65,812" position="top" fill="#1565C0" fontSize={14} fontFamily="Cairo" />
               </ReferenceLine>
-              <Area type="monotone" dataKey="total" stroke="#E8B923" strokeWidth={3} fill="url(#goldGrad)" activeDot={{ r: 8, fill: "#E8B923", stroke: "#fff", strokeWidth: 3 }} dot={{ r: 5, fill: "#E8B923", stroke: "#fff", strokeWidth: 2 }} />
+              <Area type="monotone" dataKey="total" stroke="#1565C0" strokeWidth={3} fill="url(#blueGrad)" activeDot={{ r: 8, fill: "#1565C0", stroke: "#fff", strokeWidth: 3 }} dot={{ r: 5, fill: "#1565C0", stroke: "#fff", strokeWidth: 2 }} />
               {showGender && <Area type="monotone" dataKey="men" stroke="#2a4060" strokeWidth={2} fill="url(#menGrad)" dot={false} />}
             </AreaChart>
           </ResponsiveContainer>
@@ -88,22 +88,22 @@ export default function Slide11bProjectsChart() {
         {/* Bottom stats + toggle */}
         <div className="anim-morph-in delay-5" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "2vh" }}>
           <div style={{ display: "flex", gap: "2vw" }}>
-            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(201,168,76,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(201,168,76,0.2)" }}>
-              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#DAA520" }}>367,980</div>
+            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(21,101,192,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(21,101,192,0.2)" }}>
+              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#1565C0" }}>367,980</div>
               <div style={{ fontSize: "1.35vw", color: "#4a5a78" }}>إجمالي مشاريع 2010-2016</div>
             </div>
-            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(201,168,76,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(201,168,76,0.2)" }}>
-              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#DAA520" }}>65,812</div>
+            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(21,101,192,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(21,101,192,0.2)" }}>
+              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#1565C0" }}>65,812</div>
               <div style={{ fontSize: "1.35vw", color: "#4a5a78" }}>أعلى قمة (2012)</div>
             </div>
-            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(201,168,76,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(201,168,76,0.2)" }}>
-              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#DAA520" }}>11,262</div>
+            <div style={{ textAlign: "center", padding: "1vh 2vw", background: "rgba(21,101,192,0.08)", borderRadius: "0.8vw", border: "1px solid rgba(21,101,192,0.2)" }}>
+              <div style={{ fontSize: "2.7vw", fontWeight: 900, color: "#1565C0" }}>11,262</div>
               <div style={{ fontSize: "1.35vw", color: "#4a5a78" }}>أقل عدد (2016)</div>
             </div>
           </div>
           <button
             onClick={() => setShowGender(!showGender)}
-            style={{ background: showGender ? "#E8B923" : "rgba(201,168,76,0.15)", color: showGender ? "#fff" : "#DAA520", border: "1px solid #E8B923", borderRadius: "2vw", padding: "1vh 2vw", fontSize: "1.5vw", fontWeight: 700, cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}
+            style={{ background: showGender ? "#1565C0" : "rgba(21,101,192,0.15)", color: showGender ? "#fff" : "#1565C0", border: "1px solid #1565C0", borderRadius: "2vw", padding: "1vh 2vw", fontSize: "1.5vw", fontWeight: 700, cursor: "pointer", fontFamily: "Cairo", transition: "all 0.3s" }}
           >
             {showGender ? "إخفاء تفاصيل الرجال" : "إظهار تفاصيل الرجال والنساء"}
           </button>

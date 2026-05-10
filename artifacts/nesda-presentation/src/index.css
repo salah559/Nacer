@@ -13,12 +13,12 @@
 }
 
 :root {
-  --slide-primary: #D4AF37;
+  --slide-primary: #1565C0;
   --slide-accent: #1e3a5f;
   --slide-bg: #ffffff;
   --slide-text: #1a1a2e;
   --slide-muted: #5a5a7a;
-  --slide-gold: #D4AF37;
+  --slide-gold: #1565C0;
   --slide-navy: #1a1a2e;
   --font-display-family: "Cairo", sans-serif;
   --font-body-family: "Cairo", sans-serif;
@@ -54,7 +54,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: rgba(201, 168, 76, 0.6);
+  background: rgba(21, 101, 192, 0.6);
   animation: particleFloat 8s ease-in-out infinite;
 }
 .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; animation-duration: 12s; }
@@ -181,8 +181,8 @@ body {
   50%      { transform: translateY(-0.8vh); }
 }
 
-/* Gold shimmer on text */
-@keyframes goldShimmer {
+/* Blue shimmer on text */
+@keyframes blueShimmer {
   0%   { background-position: 0% center; }
   100% { background-position: 200% center; }
 }
@@ -250,38 +250,38 @@ body {
 
 /* ==================== DESIGN SYSTEM ==================== */
 
-/* Clean gold text shimmer */
+/* Clean blue text shimmer */
 .text-gold {
-  background: linear-gradient(90deg, #B8860B, #D4AF37, #FFD700, #D4AF37, #B8860B);
-  color: #D4AF37;
+  background: linear-gradient(90deg, #0D47A1, #1565C0, #42A5F5, #1565C0, #0D47A1);
+  color: #1565C0;
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: goldShimmer 5s linear infinite;
+  animation: blueShimmer 5s linear infinite;
 }
 
 /* Clean card style */
 .card-clean {
   background: #ffffff;
-  border: 1px solid rgba(201, 168, 76, 0.2);
+  border: 1px solid rgba(21, 101, 192, 0.2);
   border-radius: 0.8vw;
   padding: 2vh 2vw;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card-clean:hover {
-  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.08);
-  border-color: rgba(201, 168, 76, 0.35);
+  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.08);
+  border-color: rgba(21, 101, 192, 0.35);
 }
 
 /* Active card */
 .card-active {
   background: #ffffff;
-  border: 2px solid #E8B923;
+  border: 2px solid #1565C0;
   border-radius: 0.8vw;
   padding: 2vh 2vw;
-  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.12);
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.12);
 }
 
 /* Dark card for stats */
@@ -292,21 +292,21 @@ body {
   color: #ffffff;
 }
 
-/* Gold accent line */
+/* Blue accent line */
 .gold-line {
   height: 2px;
-  background: linear-gradient(90deg, #E8B923, #f0d080, #E8B923);
+  background: linear-gradient(90deg, #1565C0, #42A5F5, #1565C0);
   border-radius: 1px;
 }
 
-/* Top/bottom thin gold accent */
+/* Top/bottom thin blue accent */
 .gold-accent-top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 5%, #E8B923 35%, #f0d080 50%, #E8B923 65%, transparent 95%);
+  background: linear-gradient(90deg, transparent 5%, #1565C0 35%, #42A5F5 50%, #1565C0 65%, transparent 95%);
 }
 .gold-accent-bottom {
   position: absolute;
@@ -314,14 +314,14 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 5%, #E8B923 35%, #f0d080 50%, #E8B923 65%, transparent 95%);
+  background: linear-gradient(90deg, transparent 5%, #1565C0 35%, #42A5F5 50%, #1565C0 65%, transparent 95%);
 }
 
 /* Chapter badge */
 .chapter-badge {
   display: inline-block;
   background: #1a1a2e;
-  color: #E8B923;
+  color: #1565C0;
   font-weight: 700;
   font-size: 0.9vw;
   padding: 0.6vh 1.2vw;
@@ -335,7 +335,7 @@ body {
   width: 0.3vw;
   height: 0.3vw;
   border-radius: 50%;
-  background: rgba(201, 168, 76, 0.25);
+  background: rgba(21, 101, 192, 0.25);
 }
 
 /* Timeline node */
@@ -353,14 +353,14 @@ body {
 
 .roadmap-node-done {
   background: #ffffff;
-  border: 2px solid #E8B923;
-  color: #DAA520;
+  border: 2px solid #1565C0;
+  color: #1565C0;
 }
 .roadmap-node-active {
-  background: #E8B923;
-  border: 2px solid #E8B923;
+  background: #1565C0;
+  border: 2px solid #1565C0;
   color: #ffffff;
-  box-shadow: 0 0 12px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 0 12px rgba(21, 101, 192, 0.3);
 }
 .roadmap-node-future {
   background: #ffffff;
@@ -375,8 +375,8 @@ body {
 }
 .roadmap-card-active {
   background: #ffffff;
-  border: 1.5px solid #E8B923;
-  box-shadow: 0 2px 12px rgba(201, 168, 76, 0.08);
+  border: 1.5px solid #1565C0;
+  box-shadow: 0 2px 12px rgba(21, 101, 192, 0.08);
 }
 .roadmap-card-future {
   background: #fafafa;
