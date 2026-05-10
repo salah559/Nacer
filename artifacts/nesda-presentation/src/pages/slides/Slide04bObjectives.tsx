@@ -5,23 +5,38 @@ export default function Slide04bObjectives() {
   const objectives = [
     {
       n: "01",
-      title: "التحليل النظري لآليات التمويل",
-      sub: "استيعاب مفاهيم PME ومصادر تمويلها التقليدية والبديلة",
+      title: "التعرف على ماهية PME وأبعادها العامة",
+      sub: "دراسة ماهية المؤسسات الصغيرة والمتوسطة ومعايير التصنيف",
     },
     {
       n: "02",
-      title: "التعرف على دور NESDA",
-      sub: "دراسة الإطار القانوني وصيغ التمويل الثنائي والثلاثي للوكالة",
+      title: "دراسة التمويل التقليدي قبل تدخل NESDA",
+      sub: "مصادر التمويل الداخلي والخارجي وحدوده",
     },
     {
       n: "03",
-      title: "قياس الأثر على خلق مناصب الشغل",
-      sub: "تقييم مساهمة المشاريع الممولة في التشغيل والتنمية المحلية",
+      title: "تحليل دور الدولة وسياساتها في دعم PME",
+      sub: "الإطار التشريعي وآليات الدعم العمومي",
     },
     {
       n: "04",
-      title: "الدراسة الميدانية بفرع وهران",
-      sub: "تحليل الواقع التطبيقي واستخلاص التحديات والتوصيات العملية",
+      title: "فهم مفهوم المقاولاتية وأهميتها",
+      sub: "المسار المقاولاتي ودوره في التنمية الاقتصادية",
+    },
+    {
+      n: "05",
+      title: "استعراض نشأة NESDA والإطار القانوني",
+      sub: "الدمج والتطور من ANSEJ إلى الوكالة الوطنية الموحدة",
+    },
+    {
+      n: "06",
+      title: "توضيح دور NESDA في تمويل ومرافقة PME",
+      sub: "الصيغ التمويلية والمرافقة التقنية والإدارية",
+    },
+    {
+      n: "07",
+      title: "إبراز مساهمة مراكز CDE في نشر الثقافة المقاولاتية",
+      sub: "تكوين الطلبة وتشجيع روح المبادرة",
     },
   ];
 
@@ -46,7 +61,7 @@ export default function Slide04bObjectives() {
         </div>
 
         {/* Right — objectives */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "6vh 6vw 6vh 3vw", gap: "1.6vh" }}>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "5vh 5vw 5vh 3vw", gap: "1.2vh" }}>
           {objectives.map((obj, i) => (
             <div
               key={obj.n}
@@ -57,12 +72,12 @@ export default function Slide04bObjectives() {
                 WebkitBackdropFilter: "blur(16px)",
                 border: i === 0 ? "1px solid rgba(201,168,76,0.3)" : "1px solid rgba(201,168,76,0.18)",
                 borderRadius: "1.2vw",
-                padding: "1.8vh 2.2vw",
+                padding: "1.4vh 2vw",
                 position: "relative",
                 overflow: "hidden",
                 boxShadow: i === 0 ? "0 0 3vw rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.28)" : "inset 0 1px 0 rgba(201,168,76,0.18)",
                 display: "flex",
-                gap: "1.5vw",
+                gap: "1.2vw",
                 alignItems: "center",
               }}
             >

@@ -22,25 +22,25 @@ export default function Slide03Problematic() {
           <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.3vh", background: "linear-gradient(90deg, transparent, #c9a84c, transparent)" }} />
           <div style={{ fontSize: "1.3vw", color: "#8B6914", fontWeight: 600, marginBottom: "1vh", letterSpacing: "0.1em" }}>السؤال المحوري</div>
           <div style={{ fontSize: "2.1vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.6, fontStyle: "italic" }}>
-            "ما مدى إسهام NESDA في تمويل المؤسسات الصغيرة والمتوسطة
-            <br /><span style={{ color: "#8B6914" }}>ودعم خلق مناصب الشغل</span> في الجزائر؟"
+            "ما هو الدور الذي تقوم به الوكالة الوطنية
+            <br /><span style={{ color: "#8B6914" }}>لدعم وتنمية المقاولاتية</span> في تمويل المؤسسات الصغيرة والمتوسطة؟"
           </div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1.5vw" }}>
           <div className="anim-morph-in delay-4" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1vw", padding: "2vh 1.8vw", position: "relative" }}>
             <div style={{ position: "absolute", top: 0, left: "25%", right: "25%", height: "0.2vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent)" }} />
             <div style={{ fontSize: "2.5vw", fontWeight: 900, color: "rgba(201,168,76,0.18)", marginBottom: "0.5vh" }}>01</div>
-            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>ما هي آليات تمويل PME في الجزائر؟</div>
+            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>ما هي ماهية المؤسسات الصغيرة والمتوسطة وأبعادها العامة؟</div>
           </div>
           <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1vw", padding: "2vh 1.8vw", position: "relative" }}>
             <div style={{ position: "absolute", top: 0, left: "25%", right: "25%", height: "0.2vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent)" }} />
             <div style={{ fontSize: "2.5vw", fontWeight: 900, color: "rgba(201,168,76,0.18)", marginBottom: "0.5vh" }}>02</div>
-            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>كيف تتدخل NESDA في دعم المقاول الشاب؟</div>
+            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>كيف يتم تمويل PME قبل تدخل NESDA؟</div>
           </div>
           <div className="anim-morph-in delay-6" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1vw", padding: "2vh 1.8vw", position: "relative" }}>
             <div style={{ position: "absolute", top: 0, left: "25%", right: "25%", height: "0.2vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent)" }} />
             <div style={{ fontSize: "2.5vw", fontWeight: 900, color: "rgba(201,168,76,0.18)", marginBottom: "0.5vh" }}>03</div>
-            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>ما الواقع الفعلي في فرع وهران؟</div>
+            <div style={{ fontSize: "1.45vw", color: "#0d1830", lineHeight: 1.5, fontWeight: 600 }}>كيف تلعب NESDA دورًا في تمويل ومرافقة PME؟</div>
           </div>
         </div>
       </div>

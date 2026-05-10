@@ -18,9 +18,17 @@ export default function Slide13CDE() {
           <div className="anim-line-draw delay-4" style={{ width: "60%", height: "0.3vh", marginTop: "1vh", background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
           <div className="anim-morph-in delay-4" style={{ background: "rgba(201,168,76,0.18)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "1.5vw", padding: "2.5vh 2vw", textAlign: "center", boxShadow: "0 0 3vw rgba(201,168,76,0.35)" }}>
             <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginBottom: "0.5vh" }}>إنجاز وطني</div>
-            <div style={{ fontSize: "8vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>102</div>
+            <div style={{ fontSize: "6vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, textShadow: "0 0 3vw rgba(201,168,76,0.5)" }}>+100</div>
             <div style={{ fontSize: "1.5vw", color: "#0d1830", fontWeight: 600 }}>مركز تطوير مقاولاتية</div>
             <div style={{ fontSize: "1.3vw", color: "#8B6914", fontWeight: 700, marginTop: "0.3vh" }}>المرتبة الأولى عربياً</div>
+          </div>
+          <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
+            <div style={{ fontSize: "1.2vw", color: "#8B6914", fontWeight: 700, marginBottom: "0.3vh" }}>التكوين السنوي</div>
+            <div style={{ fontSize: "1.3vw", color: "#0d1830", lineHeight: 1.4 }}>+50,000 طالب وطالبة مكوّنين سنوياً</div>
+          </div>
+          <div className="anim-morph-in delay-6" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
+            <div style={{ fontSize: "1.2vw", color: "#8B6914", fontWeight: 700, marginBottom: "0.3vh" }}>المرشدون والمدربون</div>
+            <div style={{ fontSize: "1.3vw", color: "#0d1830", lineHeight: 1.4 }}>+700 مرشد ومدرب وموجّه</div>
           </div>
           <div className="anim-morph-in delay-5" style={{ background: "rgba(240,244,252,0.80)", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: "0.8vw", padding: "1.2vh 1.5vw" }}>
             <div style={{ fontSize: "1.2vw", color: "#8B6914", fontWeight: 700, marginBottom: "0.3vh" }}>الجهة المشرفة</div>

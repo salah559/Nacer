@@ -32,8 +32,8 @@ export default function Slide04Hypotheses() {
             <div style={{ display: "flex", gap: "1.5vw", alignItems: "flex-start" }}>
               <div style={{ width: "3.5vw", height: "3.5vw", flexShrink: 0, borderRadius: "50%", background: "rgba(201,168,76,0.35)", border: "1px solid rgba(201,168,76,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4vw", fontWeight: 900, color: "#8B6914" }}>H1</div>
               <div>
-                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>NESDA تُموّل فعلياً المؤسسات الصغيرة والمتوسطة</div>
-                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>من خلال ثلاث صيغ تمويلية رئيسية موجهة للمقاولين</div>
+                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>التمويل التقليدي محدود وغير كافٍ لضمان استدامة المؤسسات الصغيرة والمتوسطة</div>
+                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>صعوبة الولوج للقروض البنكية واشتراط الضمانات تشكل عائقاً حقيقياً</div>
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ export default function Slide04Hypotheses() {
             <div style={{ display: "flex", gap: "1.5vw", alignItems: "flex-start" }}>
               <div style={{ width: "3.5vw", height: "3.5vw", flexShrink: 0, borderRadius: "50%", background: "rgba(201,168,76,0.18)", border: "1px solid rgba(201,168,76,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4vw", fontWeight: 900, color: "#8B6914" }}>H2</div>
               <div>
-                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>تمويل NESDA يُسهم في خلق مناصب الشغل</div>
-                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>من خلال تحفيز إنشاء المؤسسات وتدعيم صمودها</div>
+                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>وجود دعم ومرافقة من NESDA يعزز فرص نجاح المشاريع ويقلل من معدلات فشلها</div>
+                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>التمويل المرفق بالتكوين والمتابعة يُحسّن استمرارية المؤسسات</div>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ export default function Slide04Hypotheses() {
             <div style={{ display: "flex", gap: "1.5vw", alignItems: "flex-start" }}>
               <div style={{ width: "3.5vw", height: "3.5vw", flexShrink: 0, borderRadius: "50%", background: "rgba(201,168,76,0.18)", border: "1px solid rgba(201,168,76,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4vw", fontWeight: 900, color: "#8B6914" }}>H3</div>
               <div>
-                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>فرع وهران يعكس النموذج الوطني لـ NESDA</div>
-                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>مع خصوصيات محلية تُستخلص من الدراسة الميدانية</div>
+                <div style={{ fontSize: "1.65vw", color: "#0d1830", fontWeight: 700, lineHeight: 1.4 }}>نشر الثقافة المقاولاتية عبر مراكز تطوير المقاولاتية يُشجّع روح المبادرة ويُحسّن الأداء الاقتصادي</div>
+                <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginTop: "0.3vh" }}>التكوين والمرافقة ينعكسان إيجاباً على أداء المؤسسات واستمراريتها</div>
               </div>
             </div>
           </div>

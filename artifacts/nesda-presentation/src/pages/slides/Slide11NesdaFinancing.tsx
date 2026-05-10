@@ -43,9 +43,9 @@ export default function Slide11NesdaFinancing() {
           <div className="anim-card-morph delay-5" style={{ background: "rgba(14,22,44,0.65)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", border: "1px solid rgba(201,168,76,0.18)", borderRadius: "1.2vw", padding: "2.5vh 2vw", textAlign: "center", position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", top: 0, left: "20%", right: "20%", height: "0.25vh", background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)" }} />
             <div style={{ fontSize: "1.7vw", fontWeight: 800, color: "#8B6914", marginBottom: "1vh" }}>قرض الاستغلال</div>
-            <div style={{ fontSize: "4.5vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, marginBottom: "0.5vh", textShadow: "0 0 2vw rgba(201,168,76,0.4)" }}>1M</div>
-            <div style={{ fontSize: "1.4vw", color: "#0d1830" }}>دج كحد أقصى</div>
-            <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginTop: "0.5vh" }}>قرض استثنائي إضافي</div>
+            <div style={{ fontSize: "4.5vw", fontWeight: 900, color: "#8B6914", lineHeight: 1, marginBottom: "0.5vh", textShadow: "0 0 2vw rgba(201,168,76,0.4)" }}>10M</div>
+            <div style={{ fontSize: "1.4vw", color: "#0d1830" }}>دج كحد أقصى للتمويل</div>
+            <div style={{ fontSize: "1.2vw", color: "#4a5a78", marginTop: "0.5vh" }}>سقف الاستثمار ممنوح بـ 30 مليون دج</div>
           </div>
         </div>
 
@@ -57,8 +57,8 @@ export default function Slide11NesdaFinancing() {
           </div>
           <div style={{ width: "0.15vh", height: "4vh", background: "rgba(201,168,76,0.2)" }} />
           <div style={{ textAlign: "center" }}>
-            <div style={{ fontSize: "1.3vw", color: "#4a5a78" }}>سقف الاستثمار</div>
-            <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#8B6914" }}>30 مليون دج</div>
+            <div style={{ fontSize: "1.3vw", color: "#4a5a78" }}>سقف التمويل</div>
+            <div style={{ fontSize: "1.6vw", fontWeight: 700, color: "#8B6914" }}>10 ملايين دج</div>
           </div>
           <div style={{ width: "0.15vh", height: "4vh", background: "rgba(201,168,76,0.2)" }} />
           <div style={{ textAlign: "center" }}>

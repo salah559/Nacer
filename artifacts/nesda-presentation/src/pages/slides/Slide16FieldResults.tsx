@@ -17,27 +17,27 @@ export default function Slide16FieldResults() {
           <div className="anim-line-draw delay-4" style={{ width: "12vw", height: "0.3vh", marginTop: "1.2vh", background: "linear-gradient(90deg, #c9a84c, #f0d080, transparent)" }} />
         </div>
 
-        {/* Stats row — clean cards */}
+        {/* Stats row — from thesis Table 10 + NESDA data */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: "1.5vw", marginBottom: "2vh" }}>
           <div className="anim-count-morph delay-3 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>87%</div>
-            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>نسبة القبول والتمويل</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>317K+</div>
+            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>إجمالي المشاريع الممولة حتى 2021</div>
           </div>
           <div className="anim-count-morph delay-4 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>64%</div>
-            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>التمويل الثلاثي الأكثر شيوعاً</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>65,812</div>
+            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>أعلى قمة مشاريع ممولة (2012)</div>
           </div>
           <div className="anim-count-morph delay-5 card-active" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>+3</div>
-            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>منصب شغل بالمشروع الواحد</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>51</div>
+            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>وكالة ولائية + 170 فرع محلي</div>
           </div>
           <div className="anim-count-morph delay-6 card-clean" style={{ textAlign: "center", position: "relative", overflow: "hidden", padding: "1.8vh 1vw" }}>
             <div className="gold-line" style={{ position: "absolute", top: 0, left: "20%", right: "20%" }} />
-            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>73%</div>
-            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>المشاريع لا تزال نشطة</div>
+            <div style={{ fontSize: "3.2vw", fontWeight: 900, color: "#8B6914", lineHeight: 1 }}>~9K</div>
+            <div style={{ fontSize: "1.05vw", color: "#5a5a7a", marginTop: "0.4vh", lineHeight: 1.3 }}>مشروع ممول نصف 2025</div>
           </div>
         </div>
 
