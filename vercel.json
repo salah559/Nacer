@@ -1,6 +1,6 @@
 {
-  "buildCommand": "BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build",
-  "outputDirectory": "artifacts/nesda-presentation/dist/public",
+  "buildCommand": "BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build && cp -r artifacts/nesda-presentation/dist/public public",
+  "outputDirectory": "public",
   "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [
