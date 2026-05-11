@@ -1,5 +1,5 @@
 {
-  "buildCommand": "sh -c 'pnpm install && cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm run build && cd ../.. && mkdir -p public && cp -r artifacts/nesda-presentation/dist/public/* public/'",
+  "buildCommand": "sh -c 'BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build && mkdir -p public && cp -r artifacts/nesda-presentation/dist/public/* public/'",
   "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
