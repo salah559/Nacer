@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm install && BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build",
-  "outputDirectory": "artifacts/nesda-presentation/dist/public",
+  "buildCommand": "pnpm install && BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build && node -e \"require('fs').cpSync('artifacts/nesda-presentation/dist/public', 'public', {recursive:true, force:true})\"",
+  "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
   "rewrites": [
