@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm install && BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build && node -e \"require('fs').cpSync('artifacts/nesda-presentation/dist/public', 'public', {recursive:true, force:true})\"",
+  "buildCommand": "pnpm install && (cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm exec vite build --config vite.vercel.config.ts)",
   "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
