@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm install && (cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm run build) && mkdir -p public && cp -r artifacts/nesda-presentation/dist/public/* public/",
+  "buildCommand": "node -e \"require('child_process').execSync('pnpm install',{stdio:'inherit'}); require('child_process').execSync('BASE_PATH=/ PORT=3000 pnpm run build',{cwd:'artifacts/nesda-presentation',stdio:'inherit'}); const fs=require('fs'); fs.rmSync('public',{recursive:true,force:true}); fs.mkdirSync('public',{recursive:true}); fs.cpSync('artifacts/nesda-presentation/dist/public','public',{recursive:true,force:true}); console.log('Build complete')\"",
   "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
