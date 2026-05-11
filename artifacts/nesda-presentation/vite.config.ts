@@ -4,9 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+const isVercel = process.env.VERCEL === "1";
+
 const rawPort = process.env.PORT;
 
-if (!rawPort) {
+if (!rawPort && !isVercel) {
   throw new Error(
     "PORT environment variable is required but was not provided.",
   );
@@ -15,7 +17,9 @@ if (!rawPort) {
 const port = Number(rawPort);
 
 if (Number.isNaN(port) || port <= 0) {
-  throw new Error(`Invalid PORT value: "${rawPort}"`);
+  if (!isVercel) {
+    throw new Error(`Invalid PORT value: "${rawPort}"`);
+  }
 }
 
 const basePath = process.env.BASE_PATH;
@@ -54,7 +58,9 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: isVercel
+      ? path.resolve(import.meta.dirname, "..", "..", "public")
+      : path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
   server: {
