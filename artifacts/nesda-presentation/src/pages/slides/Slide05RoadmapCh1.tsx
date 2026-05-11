@@ -3,20 +3,19 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 const chapters = [
   { n: "✓", title: "الإشكالية والمنهج", sub: "المقدمة العامة", done: true, active: false },
-  { n: "02", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة", done: false, active: true },
-  { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة", done: false, active: false },
-  { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان", done: false, active: false },
-  { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة", done: false, active: false },
+  { n: "01", title: "الإطار النظري NESDA_PME", sub: "ماهية PME، NESDA، التمويل، المقاولاتية", done: false, active: true },
+  { n: "02", title: "الإطار التطبيقي", sub: "فرع وهران — نتائج الميدان", done: false, active: false },
+  { n: "03", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة", done: false, active: false },
 ];
 
-// Progress line grows to reach the active item (item index 1 = ~28% height)
-const PROGRESS_HEIGHT = "28%";
+// Progress line grows to reach the active item (item index 1 = ~33% height)
+const PROGRESS_HEIGHT = "33%";
 const PROGRESS_DELAY = "0.3s";
 const ACTIVE_IDX = 1;
 // All animations wait for slide transition to finish (0.55s) then start
 const SLIDE_ENTER_DURATION = 0.55;
-const NODE_DELAYS =  [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 1.15, SLIDE_ENTER_DURATION + 1.30, SLIDE_ENTER_DURATION + 1.42, SLIDE_ENTER_DURATION + 1.52];
-const CARD_DELAYS =  [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 1.20, SLIDE_ENTER_DURATION + 1.36, SLIDE_ENTER_DURATION + 1.48, SLIDE_ENTER_DURATION + 1.58];
+const NODE_DELAYS =  [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 1.05, SLIDE_ENTER_DURATION + 1.25, SLIDE_ENTER_DURATION + 1.42];
+const CARD_DELAYS =  [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 1.12, SLIDE_ENTER_DURATION + 1.32, SLIDE_ENTER_DURATION + 1.48];
 
 export default function Slide05RoadmapCh1() {
   return (
@@ -43,7 +42,7 @@ export default function Slide05RoadmapCh1() {
           <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #1565C0, transparent)", flexShrink: 0 }} />
 
           <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.5vw", color: "#4a5a78", lineHeight: 1.5, flexShrink: 0 }}>
-            الإطار النظري للمؤسسات الصغيرة والمتوسطة
+            الإطار النظري — PME وNESDA والمقاولاتية
           </div>
 
           {/* Progress counter */}
@@ -51,9 +50,9 @@ export default function Slide05RoadmapCh1() {
             <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginBottom: "0.3vh" }}>التقدم في البحث</div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.8vw" }}>
               <div style={{ flex: 1, height: "0.4vh", background: "rgba(21,101,192,0.15)", borderRadius: "1vw", overflow: "hidden" }}>
-                <div style={{ width: "20%", height: "100%", background: "linear-gradient(90deg, #1565C0, #42A5F5)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
+                <div style={{ width: "25%", height: "100%", background: "linear-gradient(90deg, #1565C0, #42A5F5)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
               </div>
-              <span style={{ fontSize: "1.4vw", fontWeight: 700, color: "#1565C0" }}>20%</span>
+              <span style={{ fontSize: "1.4vw", fontWeight: 700, color: "#1565C0" }}>25%</span>
             </div>
           </div>
         </div>

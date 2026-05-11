@@ -3,18 +3,17 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 const chapters = [
   { n: "✓", title: "الإشكالية والمنهج", sub: "المقدمة العامة", done: true, active: false },
-  { n: "✓", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة", done: true, active: false },
-  { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة", done: false, active: true },
-  { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان", done: false, active: false },
-  { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة", done: false, active: false },
+  { n: "✓", title: "الإطار النظري NESDA_PME", sub: "ماهية PME، NESDA، التمويل، المقاولاتية", done: true, active: false },
+  { n: "02", title: "الإطار التطبيقي", sub: "فرع وهران — نتائج الميدان", done: false, active: true },
+  { n: "03", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة", done: false, active: false },
 ];
 
-// Progress line grows to active item (index 2 ≈ 48%)
-const PROGRESS_HEIGHT = "48%";
+// Progress line grows to active item (index 2 ≈ 67%)
+const PROGRESS_HEIGHT = "67%";
 const PROGRESS_DELAY = "0.3s";
 const SLIDE_ENTER_DURATION = 0.55;
-const NODE_DELAYS = [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 0.35, SLIDE_ENTER_DURATION + 1.25, SLIDE_ENTER_DURATION + 1.40, SLIDE_ENTER_DURATION + 1.52];
-const CARD_DELAYS = [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 0.40, SLIDE_ENTER_DURATION + 1.32, SLIDE_ENTER_DURATION + 1.47, SLIDE_ENTER_DURATION + 1.58];
+const NODE_DELAYS = [SLIDE_ENTER_DURATION + 0.25, SLIDE_ENTER_DURATION + 0.35, SLIDE_ENTER_DURATION + 1.15, SLIDE_ENTER_DURATION + 1.32];
+const CARD_DELAYS = [SLIDE_ENTER_DURATION + 0.30, SLIDE_ENTER_DURATION + 0.40, SLIDE_ENTER_DURATION + 1.22, SLIDE_ENTER_DURATION + 1.38];
 
 export default function Slide09RoadmapCh2() {
   return (
@@ -35,13 +34,13 @@ export default function Slide09RoadmapCh2() {
 
           <h2 className="anim-title-rtl delay-2" style={{ fontSize: "4vw", fontWeight: 900, color: "#0d1830", margin: 0, lineHeight: 1.15, flexShrink: 0 }}>ننتقل إلى</h2>
           <h2 className="anim-title-rtl delay-3" style={{ fontSize: "4vw", fontWeight: 900, margin: 0, lineHeight: 1.15, flexShrink: 0 }}>
-            <span className="text-gold" style={{ display: "inline-block" }}>الفصل الثاني</span>
+            <span className="text-gold" style={{ display: "inline-block" }}>الفصل التطبيقي</span>
           </h2>
 
           <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #1565C0, transparent)", flexShrink: 0 }} />
 
           <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.5vw", color: "#4a5a78", lineHeight: 1.5, flexShrink: 0 }}>
-            المقاولاتية والوكالة الوطنية NESDA
+            دراسة حالة — NESDA فرع وهران
           </div>
 
           {/* Progress counter */}
@@ -49,9 +48,9 @@ export default function Slide09RoadmapCh2() {
             <div style={{ fontSize: "1.3vw", color: "#4a5a78", marginBottom: "0.3vh" }}>التقدم في البحث</div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.8vw" }}>
               <div style={{ flex: 1, height: "0.4vh", background: "rgba(21,101,192,0.15)", borderRadius: "1vw", overflow: "hidden" }}>
-                <div style={{ width: "40%", height: "100%", background: "linear-gradient(90deg, #1565C0, #42A5F5)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
+                <div style={{ width: "50%", height: "100%", background: "linear-gradient(90deg, #1565C0, #42A5F5)", borderRadius: "1vw", animation: "lineGrow 0.8s ease 0.6s both" }} />
               </div>
-              <span style={{ fontSize: "1.4vw", fontWeight: 700, color: "#1565C0" }}>40%</span>
+              <span style={{ fontSize: "1.4vw", fontWeight: 700, color: "#1565C0" }}>50%</span>
             </div>
           </div>
         </div>

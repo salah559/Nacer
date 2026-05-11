@@ -3,14 +3,13 @@ const cls = isAllSlides ? "allslides-mode" : "";
 
 const chapters = [
   { n: "01", title: "الإشكالية والمنهج", sub: "المقدمة العامة" },
-  { n: "02", title: "الإطار النظري — PME", sub: "ماهيتها، تمويلها، دور الدولة" },
-  { n: "03", title: "NESDA والمقاولاتية", sub: "النشأة، القانون، دور الوكالة" },
-  { n: "04", title: "الدراسة التطبيقية", sub: "فرع وهران — نتائج الميدان" },
-  { n: "05", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة" },
+  { n: "02", title: "الإطار النظري NESDA_PME", sub: "ماهية PME، NESDA، التمويل، المقاولاتية" },
+  { n: "03", title: "الإطار التطبيقي", sub: "فرع وهران — نتائج الميدان" },
+  { n: "04", title: "الخلاصة والتوصيات", sub: "النتائج الكاملة" },
 ];
 
-const NODE_DELAYS = [0.35, 0.50, 0.65, 0.80, 0.95];
-const CARD_DELAYS = [0.42, 0.57, 0.72, 0.87, 1.02];
+const NODE_DELAYS = [0.35, 0.55, 0.75, 0.95];
+const CARD_DELAYS = [0.42, 0.62, 0.82, 1.02];
 
 export default function Slide02Roadmap() {
   return (
@@ -37,11 +36,11 @@ export default function Slide02Roadmap() {
           </h2>
           <div className="anim-line-draw delay-4" style={{ width: "55%", height: "0.3vh", marginTop: "1.5vh", marginBottom: "1.5vh", background: "linear-gradient(90deg, #1565C0, transparent)", flexShrink: 0 }} />
           <div className="anim-smooth-fade delay-5" style={{ fontSize: "1.5vw", color: "#4a5a78", lineHeight: 1.5, flexShrink: 0 }}>
-            خمسة فصول تغطي الجانبين النظري والتطبيقي للبحث
+            أربعة فصول تغطي الجانبين النظري والتطبيقي للبحث
           </div>
           {/* Chapter count badge */}
           <div className="anim-morph-in delay-6" style={{ marginTop: "2vh", display: "inline-flex", alignItems: "center", gap: "0.8vw", background: "rgba(21,101,192,0.07)", border: "1px solid rgba(21,101,192,0.3)", borderRadius: "2vw", padding: "0.6vh 1.2vw", alignSelf: "flex-start", flexShrink: 0 }}>
-            <span style={{ fontSize: "1.8vw", fontWeight: 900, color: "#1565C0" }}>05</span>
+            <span style={{ fontSize: "1.8vw", fontWeight: 900, color: "#1565C0" }}>04</span>
             <span style={{ fontSize: "1.3vw", color: "#4a5a78", fontWeight: 600 }}>فصول</span>
           </div>
         </div>
