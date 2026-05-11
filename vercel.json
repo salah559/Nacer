@@ -1,9 +1,12 @@
 {
-  "buildCommand": "pnpm install && cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm run build && cd ../.. && mkdir -p public && cp -r artifacts/nesda-presentation/dist/public/* public/",
+  "buildCommand": "sh -c 'pnpm install && cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm run build && cd ../.. && mkdir -p public && cp -r artifacts/nesda-presentation/dist/public/* public/'",
   "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
