@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node ../../build-vercel.js",
+  "buildCommand": "cd ../../ && node build-vercel.js",
   "outputDirectory": "public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
