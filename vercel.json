@@ -1,6 +1,6 @@
 {
-  "buildCommand": "bash scripts/vercel-build.sh",
-  "outputDirectory": "public",
+  "buildCommand": "pnpm install && BASE_PATH=/ PORT=3000 pnpm --filter @workspace/nesda-presentation run build",
+  "outputDirectory": "artifacts/nesda-presentation/dist/public",
   "installCommand": "echo 'installed via buildCommand'",
   "framework": null,
   "rewrites": [
