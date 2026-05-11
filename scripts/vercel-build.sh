@@ -1,14 +1,18 @@
 #!/bin/bash
 set -e
 
-# Build the presentation from its directory
-cd artifacts/nesda-presentation
+ROOTDIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+echo "Root dir: $ROOTDIR"
+ls -la "$ROOTDIR"
+
+cd "$ROOTDIR/artifacts/nesda-presentation"
 BASE_PATH=/ PORT=3000 pnpm run build
 
-# Go back to root and copy output
-cd ../..
+cd "$ROOTDIR"
 rm -rf public
 mkdir -p public
 cp -r artifacts/nesda-presentation/dist/public/* public/
 
 echo "Build complete. Output copied to public/"
+ls -la public/
