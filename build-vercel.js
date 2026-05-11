@@ -2,11 +2,21 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-const root = __dirname;
+// Find project root by walking up until we find pnpm-workspace.yaml
+let root = __dirname;
+while (!fs.existsSync(path.join(root, 'pnpm-workspace.yaml'))) {
+  const parent = path.dirname(root);
+  if (parent === root) {
+    console.error('Cannot find pnpm-workspace.yaml');
+    process.exit(1);
+  }
+  root = parent;
+}
+
 const packageDir = path.join(root, 'artifacts', 'nesda-presentation');
 
-console.log('Script location:', __filename);
-console.log('Root:', root);
+console.log('Script dir:', __dirname);
+console.log('Project root:', root);
 console.log('Package dir:', packageDir);
 console.log('CWD at start:', process.cwd());
 
