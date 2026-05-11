@@ -1,5 +1,5 @@
 {
-  "buildCommand": "(cd artifacts/nesda-presentation && BASE_PATH=/ PORT=3000 pnpm run build) && cp -r artifacts/nesda-presentation/dist/public public",
+  "buildCommand": "bash scripts/vercel-build.sh",
   "outputDirectory": "public",
   "installCommand": "pnpm install",
   "framework": null,
